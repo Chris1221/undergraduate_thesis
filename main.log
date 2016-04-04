@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 MAR 2016 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 APR 2016 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -727,7 +727,7 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
-) <Figures/uottawa.png, id=24, 283.0575pt x 237.88875pt>
+) <Figures/uottawa.png, id=40, 283.0575pt x 237.88875pt>
 File: Figures/uottawa.png Graphic file (type png)
 <use Figures/uottawa.png>
 Package pdftex.def Info: Figures/uottawa.png used on input line 88.
@@ -812,9 +812,11 @@ Package microtype Info: Loading generic settings for font family
 ]
 \openout2 = `Chapters/introduction.aux'.
 
-(/Users/yvesmarcel/repos/thesis/Chapters/introduction.tex)pdfTeX warning (ext4)
-: destination with the same identifier (name{page.1}) has been already used, du
-plicate ignored
+(/Users/yvesmarcel/repos/thesis/Chapters/introduction.tex
+Package acronym Info: Label `acro:CAD' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.185 \include{Chapters/introduction}
@@ -830,13 +832,7 @@ l.190 \backmatter
                   [2
 
 
-] (/Users/yvesmarcel/repos/thesis/main.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 8.
-
-) (/Users/yvesmarcel/repos/thesis/main.ind) [3
-
-]
+] (/Users/yvesmarcel/repos/thesis/main.ind)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
@@ -853,15 +849,15 @@ ms.aux) (/Users/yvesmarcel/repos/thesis/Chapters/introduction.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A41A3060C1D7709457008B3D4B0B7AB5;248.
+(rerunfilecheck)             Checksum: 1BF46B37ACA1C3B346682166310CEFC9;567.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
  ) 
 Here is how much of TeX's memory you used:
- 13448 strings out of 493089
- 197101 string characters out of 6134842
- 354645 words of memory out of 5000000
- 16635 multiletter control sequences out of 15000+600000
- 22624 words of font info for 82 fonts, out of 8000000 for 9000
+ 13463 strings out of 493089
+ 197213 string characters out of 6134842
+ 354722 words of memory out of 5000000
+ 16639 multiletter control sequences out of 15000+600000
+ 22918 words of font info for 87 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  40i,11n,35p,1476b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -879,11 +875,11 @@ e/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/
 15/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on /Users/yvesmarcel/repos/thesis/main.pdf (17 pages, 270949 byt
+Output written on /Users/yvesmarcel/repos/thesis/main.pdf (16 pages, 283780 byt
 es).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 24622 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 24654 words of extra memory for PDF output out of 24883 (max. 10000000)
 
