@@ -1,8 +1,17 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{1}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[McPherson and Tybjaerg-Hansen(2016)]{McPherson2016}
+Ruth McPherson and Anne Tybjaerg-Hansen.
+\newblock {Genetics of Coronary Artery Disease}.
+\newblock \emph{Circulation Research}, 118\penalty0 (4):\penalty0 564--578, feb
+  2016.
+\newblock ISSN 0009-7330.
+\newblock \doi{10.1161/CIRCRESAHA.115.306566}.
+\newblock URL \url{http://circres.ahajournals.org/content/118/4/564.abstract}.
 
 \end{thebibliography}
