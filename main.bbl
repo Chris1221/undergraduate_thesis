@@ -1,9 +1,28 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Dudbridge(2013)]{Dudbridge2013}
+Frank Dudbridge.
+\newblock {Power and Predictive Accuracy of Polygenic Risk Scores}.
+\newblock \emph{PLoS Genetics}, 9\penalty0 (3):\penalty0 e1003348, mar 2013.
+\newblock ISSN 15537390.
+\newblock \doi{10.1371/journal.pgen.1003348}.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3605113{\&}tool=pmcentrez{\&}rendertype=abstract}.
+
+\bibitem[Euesden et~al.(2014)Euesden, Lewis, and O'Reilly]{Euesden2014}
+J.~Euesden, C.~M. Lewis, and P.~F. O'Reilly.
+\newblock {PRSice: Polygenic Risk Score software}.
+\newblock \emph{Bioinformatics}, 31\penalty0 (9):\penalty0 1466--1468, dec
+  2014.
+\newblock ISSN 1367-4803.
+\newblock \doi{10.1093/bioinformatics/btu848}.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=4410663{\&}tool=pmcentrez{\&}rendertype=abstract}.
 
 \bibitem[McPherson and Tybjaerg-Hansen(2016)]{McPherson2016}
 Ruth McPherson and Anne Tybjaerg-Hansen.

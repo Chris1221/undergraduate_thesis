@@ -141,7 +141,7 @@ This score has several important properties which will be exploited in the below
 
 Notably, the non-centrality parameter of the $\chi^2$ test for association between $\hat{S}$ and $\underline{Y}$ in the test population, assuming that $\hat{\beta}$ has been estimated in a training population of size $n_1$ and tested in a test population of size $n_2$, is given by:
 
-$$ \lamdba = \frac{n_2 R^2_{\hat{S}, Y}}{1 - R^2_{\hat{S}, Y}} $$
+$$ \lambda = \frac{n_2 R^2_{\hat{S}, Y}}{1 - R^2_{\hat{S}, Y}} $$
 
 Where $R^2_{\hat{S}, Y}$ is the percent explained variance of the phenotype $Y$ with the estimated score $\hat{S}$. 
 
@@ -149,7 +149,29 @@ Additionally, note that $E[\hat{S}] = 0$ and the second moment in a particular i
 
 $$ \begin{aligned} Var(\hat{S}) &= \sum^m_{i=1} Var(\hat{\beta}_{il}, G_{i}) \\ &= \sum^m_{i=1} \hat{\beta}_{i} \\ &\approx m Var(\hat{\beta}_{i}) \end{aligned} $$
 
-
+These mathematical properties become important later. These identities have been adapted from \cite{Dudbridge2013}.
 
 \section{Polygenic Sliding Window Optimization}
+
+Frequently, not all $m$ variants are used in the construction of the \ac{PRS} though. Typically, researchers will type the top $m | P_m \leq \alpha_{adj}$ where $\alpha_{adj}$ denotes the shifted acceptance threshold after multiple testing correction. We denote these variants as $m_{P \leq T}$ where $T$ is the $P$ value threshold. 
+
+Though these variants have the highest probability of being truly associated with the phenotype, constructing a score with this few \ac{SNP}s misses the many small and insignificant effects hidden in marginally significant and insignificant hits. Thus, \cite{Euesden2014} have developed a method to find the best-fit \ac{PRS}, that is, the PRS which maximizes genomic signal while minizing noise as in \ref{pt}. We denote this as the \ac{oPRS}. 
+
+\begin{figure}[h]
+\label{pt}
+\caption{\ac{oPRS} plot for schizophrenia predicting major depresive disorder status. Adapted from \cite{Euesden2014}}
+\centering
+\includegraphics[width=0.8\textwidth]{Figures/pt.png}
+\end{figure}
+
+On a high level, this score involves iterating through a list of $P$ value thresholds $T$, constructing a score using all $m_{P < T}$ and selecting either the smallest $P$ value of association between $\hat{S}$ and $\underline{\mathbf{Y}}$ or the highest $R^2_{\hat{S}, Y}$ to move in the analysis. 
+
+More formally, we fix individual $n$ and construct a vector of estimated scores $\underline{\hat{S}}$ with length $n_T$ equal to the number of attempted $P$ value thresholds. 
+
+$$ \begin{aligned} \underline{\hat{S}} &\equiv \begin{bmatrix} \hat{S}_{T_1} \\ \vdots \\ \hat{S}_{n_T} \end{bmatrix} &&&&& \hat{S}_T &= \sum^{m_{P \leq T}}_{i=1} \hat{\beta}_i G_{ni} \end{aligned}$$
+
+Note, however, that when we build a score at each threshold for each individual, an $n \times T$ matrix is constructed, where $n$ is the number of individuals and $T$ is the number of thresholds. The entries are the estiamted score $\hat{S}_{nT}$ for individual $n$ at threshold $T$:
+
+$$ \bold{\hat{S}} = \begin{bmatrix} \hat{S}_{1,1} & \dots & \hat{S}_{1, T} \\ \vdots & \ddots & \vdots \\ \hat{S}_{n, 1} & \dots & \hat{S}_{n, T} \end{bmatrix} $$
+
 \section{Summary}
