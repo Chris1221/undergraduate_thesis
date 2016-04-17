@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{3}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,6 +13,16 @@ Ruth McPherson and Anne Tybjaerg-Hansen.
 \newblock ISSN 0009-7330.
 \newblock \doi{10.1161/CIRCRESAHA.115.306566}.
 \newblock URL \url{http://circres.ahajournals.org/content/118/4/564.abstract}.
+
+\bibitem[Sun et~al.(2006)Sun, Craiu, Paterson, and Bull]{Sun2006}
+Lei Sun, Radu~V. Craiu, Andrew~D. Paterson, and Shelley~B. Bull.
+\newblock {Stratified false discovery control for large-scale hypothesis
+  testing with application to genome-wide association studies}.
+\newblock \emph{Genetic Epidemiology}, 30\penalty0 (6):\penalty0 519--530, sep
+  2006.
+\newblock ISSN 07410395.
+\newblock \doi{10.1002/gepi.20164}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16800000}.
 
 \bibitem[Visscher et~al.(2012)Visscher, Brown, McCarthy, and
   Yang]{Visscher2012}

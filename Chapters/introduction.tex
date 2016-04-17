@@ -62,6 +62,11 @@ $\underline{\mathbf{\beta}}$ and $\underline{\mathbf{\epsilon}}$ are approximate
 
 The purpose of a \ac{GWAS} is not only to estimate these genetic effects $\underline{\mathbf{\beta}}$ by $\underline{\hat{\beta}}$ but also to estimate their significance of association with phenotype vector $\underline{\mathbf{Y}}$ through a $\chi^2$ test and corresponding test statistic $m$-vector $\hat{\chi}^2$. The degrees of freedom of this test statistic will vary between methods and models, and so will be left as futher reading. 
 
+\ac{GWAS} commonly estimate these effects through linear regression. The disease state (or disease level, should it be a continuous variable) is used as the response variable, while the main dependent variable is usually the number of minor alleles (0, 1, or 2) present.  The $\beta$ coefficient (for continous disease state) or \ac{OR}, therefore represents the average increase (for the continuous case) or the \ac{OR} per additional risk allele present. 
+
+
+\begin{rem} This description assumes an additive genetic model, which states that the effect of possessing one minor allele is exactly the same as half the effect of having two risk alleles. Additional genetic models include the dominant scheme, where the effect of having two minor alleles is the same as having one minor allele, the recessive scheme where only the case of two minor alleles impacts the phenotype, and the general genetic model, where the effect of one allele is $a \times$ the effect of two alleles, $a \in [0,1]$. \end{rem}
+ 
 By approximating $\underline{\chi^2}$ with $\hat{\underline{\chi^2}}$ and computing the corresponding $P$ values, reserchers are able to identify and quantify the effects of variants significantly ($P < 0.05$) associated with the phenotype. These results can be summarized in a Manhattan plot, named after the city of Manhattan with it's high rise buildings towering over the scenery. The $x$ axis of this plot is the genomic location (usually coloured by chromosome number) while the $y$ axis is the $\log_{10}$ of the $P$ value of association derived from $\hat{\underline{\chi^2}}$. 
 
 
@@ -73,13 +78,78 @@ By approximating $\underline{\chi^2}$ with $\hat{\underline{\chi^2}}$ and comput
 
 \subsection{Multiple Comparisson Problem}
 
-In such a set up, where $m$ may be in the millions and the threshold of significance is set to $P = \alpha = 0.05$, we encounter a canonical issue in statistical inference. Recall that $P$ is the probability of observing a $\chi^2$ statistic as large or larger than a specific $\chi^2_m$ assuming $H_0$ of no association is correct and $\alpha$ is the threshold at which a significant effect is declared. 
+In such a set up, where $m$ may be in the millions and the threshold of significance is set to $P = \alpha = 0.05$, we encounter a canonical issue in statistical inference. Recall that $P$ is the probability of observing a $\chi^2$ statistic as large or larger than a specific $\chi^2_m$ assuming $H_0$ of no association is correct and $\alpha$ is the threshold at which a significant effect is declared. Table \ref{hyptest} introduces relevant notation for this section. 
 
-For the sake of description, we define $M$ as the number of \textit{independant} variants (that is, the effective number of variants which are not in \ac{LD})
+
+\begin{table}[H]
+\centering
+\caption{Notation relating to hypothesis testing. Adapted from \cite{Sun2006}}
+\label{hyptest}
+\begin{tabular*}{.8\linewidth}{@{}llll@{}}
+\toprule
+                                  & \textbf{True $H_0$} & \textbf{True $H_1$} & \textbf{Total} \\ \midrule
+\textbf{Declared significant}     & $V$                 & $S$                 & $R$            \\
+\textbf{Declared non-significant} & $U$                 & $T$                 & $m - R$        \\
+\textbf{Total}                    & $m_0$               & $m - m_0$           & $m$            \\ \bottomrule
+\end{tabular*}
+\end{table}
+
+
+For the sake of description, we define $M$ as the number of \textit{independant} variants (that is, the effective number of variants which are not in \ac{LD} for a given $R^2$ or $D'$ threshold) for sake of description. Thus, $M$ tests and corresponding $M$-vector of $P$ values $\underline{\mathbf{P}}$ is constructed. Because in any statistical test, assuming that $H_0$ is true, there is $\alpha$ chance of falsely rejecting $H_0$ (type I error), by increasing the number of simultaneous tests conducted, the probability of falsely rejecting $H_0$ compounds exponentially as a function of the number of independent test conducted. That is, the conditional probability of falsely rejecting $H_0$ for all $M$ tests may be written as 
+
+$$ Pr(P \leq \alpha \, | \, H_0) = 1-(1 - \alpha)^M $$
+
+This may equivalently be described as the probability of making at least one false positive in $M$ tests. This may alternatively be notated 
+
+$$ Pr(V \geq 1) = 1-(1 - \alpha)^M $$
+
+Speaking asymptotically, $\lim_{M \to \infty} 1-(1 - \alpha)^M = 1$ and false positves are guarenteed. It is against this backdrop that we recall in any relevant genetic context, $M$ is large, and false positives are almost guarenteed.
+
+There exist several ways to correct for this issue, chief among them is the widely adopted Bonferroni correction. Put simply, Bonferroni correction adjusts testing such that $Pr(V \geq 1) = \alpha$ rather than $1-(1 - \alpha)^M$. It does so by rejecting all tests $p_i \in \underline{\mathbf{P}} | i \in 1 \dots M, i \in \mathbb{Z}^+$ such that
+
+$$ p_i \leq \frac{\alpha}{M} $$
+
+
+The proof is not complex, but shall not be presented here for the sake of brevity. [cite bf]  This adjustment (for $Pr(V \geq 1)$) is defined as control of the \ac{FWER}. This approach does not make any assumptions about the internal dependency strucutre of the tests, and as such, is conservative in the case of all categories of dependency. This is often undesired, as typically researchers will not prune their \ac{GWAS} data to only independant variants. A more commonly accepted procedure, controlling the \ac{FDR} rather than the \ac{FWER} adjusts $\underline{\mathbf{P}}$ such that the proportion of false disoveries in all discoveries is controlled at $\alpha$: 
+
+$$ FDR \equiv E \left[ \frac{V}{R} \right] = \alpha $$
+
+This approach has the benefit of being adaptable and more powerful in circumstances of some forms of dependency (most notably \ac{PRDS} which is common scenario) and is most often applicable to \ac{GWAS} where researchers are more willing to find more true positives at the cost of a fraction of false positives.
+
+Therefore, in summation, \ac{GWAS} is a statistical investigation which estimates several parameters given certain assumptions. Concepts presented in this section will be important background knowledge for the following sections, as most of our model builds off of these premeses. 
 
 \section{Polygenic Prediction of Complex Disease}
 
-Refering to the defintions proposed in the previous section and recalling that 
+Refering to the defintions proposed in the previous section and recalling that in a general additive model, a phenotype vector $\underline{\mathbf{Y}}$ may be expressed as a linear combination of the $\underline{\beta}$ weighted genetic $n \times m$-matrix $\mathbf{G}$ and $\underline{\epsilon}$ following a standard normal $N(0, 1)$ distrbution: 
+
+$$ \underline{\mathbf{Y}} = \underline{\beta}' \mathbf{G} + \underline{\epsilon} $$
+
+It has been previously proposed to combine genetic variants in order to crease a score $S$ which encompases estimated genetic effects in order to predict the phenotype vector $\underline{\mathbf{Y}}$. Define $S$ for individual $n$:
+
+$$ S_n = \sum^m_{i=1} \beta_i G_{ni} $$
+
+Note that in practice, our true statistics must be estimated. The logical estimator of $\underline{\beta}$ is the ordinary least squares regression estimator $\hat{\beta}$. There are other estimators, but the remainder of this section assumes this estimator. Our score is therefore described as:
+
+\begin{equation} 
+\label{score}
+\begin{aligned}
+\hat{S}_n = \sum^m_{i=1} \hat{\beta}_i G_{ni} 
+\end{aligned}
+\end{equation}
+
+This score has several important properties which will be exploited in the below analysis. Note that in practice, $\underline{\beta}$
+
+Notably, the non-centrality parameter of the $\chi^2$ test for association between $\hat{S}$ and $\underline{Y}$ in the test population, assuming that $\hat{\beta}$ has been estimated in a training population of size $n_1$ and tested in a test population of size $n_2$, is given by:
+
+$$ \lamdba = \frac{n_2 R^2_{\hat{S}, Y}}{1 - R^2_{\hat{S}, Y}} $$
+
+Where $R^2_{\hat{S}, Y}$ is the percent explained variance of the phenotype $Y$ with the estimated score $\hat{S}$. 
+
+Additionally, note that $E[\hat{S}] = 0$ and the second moment in a particular individual is given by
+
+$$ \begin{aligned} Var(\hat{S}) &= \sum^m_{i=1} Var(\hat{\beta}_{il}, G_{i}) \\ &= \sum^m_{i=1} \hat{\beta}_{i} \\ &\approx m Var(\hat{\beta}_{i}) \end{aligned} $$
+
+
 
 \section{Polygenic Sliding Window Optimization}
 \section{Summary}
