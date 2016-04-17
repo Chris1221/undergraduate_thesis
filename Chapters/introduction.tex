@@ -151,7 +151,7 @@ $$ \begin{aligned} Var(\hat{S}) &= \sum^m_{i=1} Var(\hat{\beta}_{il}, G_{i}) \\ 
 
 These mathematical properties become important later. These identities have been adapted from \cite{Dudbridge2013}.
 
-\section{Polygenic Sliding Window Optimization}
+\section{Optimal Polygenic Risk Scores}
 
 Frequently, not all $m$ variants are used in the construction of the \ac{PRS} though. Typically, researchers will type the top $m | P_m \leq \alpha_{adj}$ where $\alpha_{adj}$ denotes the shifted acceptance threshold after multiple testing correction. We denote these variants as $m_{P \leq T}$ where $T$ is the $P$ value threshold. 
 
@@ -172,6 +172,28 @@ $$ \begin{aligned} \underline{\hat{S}} &\equiv \begin{bmatrix} \hat{S}_{T_1} \\ 
 
 Note, however, that when we build a score at each threshold for each individual, an $n \times T$ matrix is constructed, where $n$ is the number of individuals and $T$ is the number of thresholds. The entries are the estiamted score $\hat{S}_{nT}$ for individual $n$ at threshold $T$:
 
-$$ \bold{\hat{S}} = \begin{bmatrix} \hat{S}_{1,1} & \dots & \hat{S}_{1, T} \\ \vdots & \ddots & \vdots \\ \hat{S}_{n, 1} & \dots & \hat{S}_{n, T} \end{bmatrix} $$
+\begin{equation} 
+\label{score_matrix}
+\begin{aligned}
+\bold{\hat{S}} = \begin{bmatrix} \hat{S}_{1,1} & \dots & \hat{S}_{1, T} \\ \vdots & \ddots & \vdots \\ \hat{S}_{n, 1} & \dots & \hat{S}_{n, T} \end{bmatrix}
+\end{aligned}
+\end{equation}
 
-\section{Summary}
+It is from the matrix described in \ref{score_matrix} that the rest of our model will be built.
+
+\begin{figure}[h]
+\label{pi0}
+\caption{Expected $-\log_{10} (P)$ value of linear regression estimate as a function of $P$-value threshold for selecting markers into Polygenic score. Note that $\pi_0$ refers to the proportion of \textit{true null} markers, that is, markers which have no effect on phenotype. (\cite{Dudbridge2013})}
+\centering
+\includegraphics[width=0.8\textwidth]{Figures/pi0.png}
+\end{figure}
+
+\begin{rem}
+Though it is always possible to construct an optimal score, only in certain circumstances is the $P$ value threshold $P_T < 1$, depending on the internal structure of the disease under question. At different heritability levels, a disease may only have an optimal score with $P_T =1$, as described in Figure \ref{pi0}.
+\end{rem} 
+
+\section{Summary and Study Goals}
+
+In this section, relevant background information pertaining to genetics and \ac{GWAS} was presented an explored. We introduce notation and theory for \ac{PRS} and \ac{oPRS} as well as touching on some theoretical properties which will be exploited later in the analysis.
+
+\improvement[inline]{Make sure to add in study goals here more clearly}
