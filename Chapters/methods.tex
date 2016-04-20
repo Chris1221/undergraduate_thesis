@@ -1,18 +1,35 @@
 \chapter{Methods}
 \label{methods}
 
-Building on the previously introduced notation, we introduce the present study.
 
 \section{Study Population}
 
-\subsection{Population Descriptions}
+There are four major cohorts used as a ``test''	 set in this study, comprising a total $n = 13371$.
+
+\textbf{Ottawa Heart Genomics Study (OHGS):} Details of this cohort have been previously described \citep{Davies2012}. Both cases (1) and controls (0) were recruited from the Lipid Clinic at the University of Ottawa Heart Institute (UOHI). Cases with diabetes melliitus were entirely excluded. Cases were required to have at
+least one of: a stenosis in a major epicardial vessel of at least 50\%; have had a percuteneous intervention (PCI); have had coronary artery bypass surgery (CABG); or have had a myocardial
+infarction (MI). Earlier studies using this cohort examined the effect of age, and cases were required to be $\leq$ 55 years old for men and $\leq$ 65 years old for women. The controls were either healthy elderly patients recruited from the catherization laboratory or the UOHI; they had no stenosis $\geq 50\%$ in any major epicardial vessel and were required to be at minimum 65 years old for men and 70 years old for women. The study protocol was approved by the Human Research Ethics Board of the University of Ottawa Heart Institute and all participants provided informed consent.
+
+\textbf{Cleveland Clinic (CCGB):} Cases and controls from the Cleveland Clinic Cohort followed the same collection procedure as outlined for OHGS except were collected at the catherization laboratory of the Cleveland Clinic.  
+
+
+\textbf{Duke Cathgen Study (DUKE):} Both cases and controls were recruited from the catherization laboratory at Duke University. Cases were required to have at least one epicardial coronary vessel with $\geq$ 50\% stenosis while being at most 55 years old for males and 65 years old for females. Controls were asymptomatic and required to have $\leq 30$ \% stenosis in all coronary vessels. Subjects with diabetes melliitus, severe pulmonary hypertension or congenital heart disease were excluded. The study protocol was approved by the ethics committee and all participants provided informed consent.
+
+\textbf{INTERHEART Cohort (ITH):} INTERHEART is a standardized case-control study of acute myocardial infarction from across the world. Only Caucasian participants were analyzed in this study due to issues with differing gene frequencies among ethnicities. Cases -- those showing acute MI, were age matched to within 5 years of controls who were community based individuals with no previous history or diagnosis of heart disease and exertional chest pain. The study protocol was approved by the ethics committees in all participating centers and all participants provided informed consent. A full list of ITH investigators is found at http://www.phri.ca/interheart/index2.html.
 
 \section{Genotyping and Imputation}
+
+SNP genotyping of the above cohorts was performed on either Affymetrix 6.0 or 500K chip arrays at the University of Ottawa Heart Institute using the recommended procedure from the manufacturer. They were processed as in \cite{Dandona2010,Schunkert2011}. Imputation was performed using IMPUTE2 and the August 2009 1000 Genomes reference panel. \citep{10.1371/journal.pgen.1000529}. Approximately 5.5 million \ac{SNP} passed quality control measures including info $> 0.5$, Hardy Weinburg Equilibrium $> 1 \times 10^{-6}$ and missingness $< 10\%$. 
 
 
 \section{Training Populations}
 
-\subsection{GIANT Consortium}
+This study additionally comprised two ``training'' populations which were used to estimate the $\hat{\beta}$ effects necessary for the construction of \ac{PRS}.
+
+\textbf{GIANT Consortium: } \ac{GIANT} consortium attempts to identify genetic loci which may modulate human body size, height, and obesity. We use for this study their data on BMI 
+
+
+
 
 \subsection{Global Lipids Consortium}
 

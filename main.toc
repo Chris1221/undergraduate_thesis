@@ -13,13 +13,12 @@
 \contentsline {section}{\numberline {1.5}Summary and Study Goals}{10}{section.1.5}
 \contentsline {chapter}{\chapternumberline {2}Methods}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Study Population}{11}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Population Descriptions}{11}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Genotyping and Imputation}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}Training Populations}{11}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}GIANT Consortium}{11}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Global Lipids Consortium}{11}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Polygenic Prediction of CAD}{11}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Traditional Risk Score}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Cardiometabolic Risk Score}{11}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Optimal Cardiometabolic Risk Score}{11}{subsection.2.4.3}
-\contentsline {chapter}{Bibliography}{13}{section*.32}
+\contentsline {section}{\numberline {2.2}Genotyping and Imputation}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}Training Populations}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}GIANT Consortium}{13}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Global Lipids Consortium}{13}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Polygenic Prediction of CAD}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Traditional Risk Score}{13}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Cardiometabolic Risk Score}{13}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Optimal Cardiometabolic Risk Score}{13}{subsection.2.4.3}
+\contentsline {chapter}{Bibliography}{15}{section*.32}
