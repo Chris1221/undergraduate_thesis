@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -159,6 +159,17 @@ Lei Sun, Radu~V. Craiu, Andrew~D. Paterson, and Shelley~B. Bull.
 \newblock ISSN 07410395.
 \newblock \doi{10.1002/gepi.20164}.
 \newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16800000}.
+
+\bibitem[{The CARDIoGRAMplusC4D
+  Consortium}(2015)]{TheCARDIoGRAMplusC4DConsortium2015}
+{The CARDIoGRAMplusC4D Consortium}.
+\newblock {A comprehensive 1000 Genomes-based genome-wide association
+  meta-analysis of coronary artery disease}.
+\newblock \emph{Nature Genetics}, 47\penalty0 (10):\penalty0 1121--1130, sep
+  2015.
+\newblock ISSN 1546-1718.
+\newblock \doi{10.1038/ng.3396}.
+\newblock URL \url{http://dx.doi.org/10.1038/ng.3396}.
 
 \bibitem[Visscher et~al.(2012)Visscher, Brown, McCarthy, and
   Yang]{Visscher2012}

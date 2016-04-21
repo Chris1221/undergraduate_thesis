@@ -29,15 +29,21 @@ This study additionally comprised two ``training'' populations which were used t
 \textbf{GIANT Consortium: } \ac{GIANT} consortium attempts to identify genetic loci which may modulate human body size, height, and obesity. We use for this study their data on BMI 
 
 
+\textbf{CARDIoGRAMplusC4D:} \unsure{add in details for cardiogram, and make sure to pull down the missing part}
 
-
-\subsection{Global Lipids Consortium}
 
 \section{Polygenic Prediction of CAD}
 
+In the following analysis we primarily compare three different methods for constructing \ac{PRS} $\hat{S}$.
+
 \subsection{Traditional Risk Score}
 
+The first, which we donote as the ``traditional risk score'', or $\hat{S}_{TRS}$. This score uses the ``traditional'' approach of only using the highest confidence genome wide significant loci for \ac{CAD} in the construction of the score. We derive the estimated $\underline{\hat{\beta}}$ effects from \citep{TheCARDIoGRAMplusC4DConsortium2015}, whose methodology is described above. We only use the 212 variants from this section which have been shown to be FDR signficicant with $q < 0.05$ across the whole genome, as is common practice. Recall from the derivation leading up to equation \ref{score} that \ac{PRS} $S$ for individual $n$ is described as  $$ S = \sum^m_{i=1} \beta_i G_{ni} $$ Therefore for this score, we define $\hat{\beta}$ as a vector of length 212 with each of the estimated addititive genetic effects derived from CARDIoGRAM plus C4D, and construct estimated score $\hat{S}$ for individual $n$ as $$ \hat{S}_{n, TRS} \equiv \sum^{212}_{i = 1} \hat{\beta}_i \bold{G}_{n, i} $$ This forms the basis for our first model.
+
 \subsection{Cardiometabolic Risk Score}
+
+The second score which we estimate is a novel derivation. We aim to use genetic information from several comorbid conditions 
+
 
 \subsection{Optimal Cardiometabolic Risk Score}
 
