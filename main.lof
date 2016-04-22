@@ -7,3 +7,7 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Expected $-\qopname \relax o{log}_{10} (P)$ value of linear regression estimate as a function of $P$-value threshold for selecting markers into Polygenic score. Note that $\pi _0$ refers to the proportion of \textit {true null} markers, that is, markers which have no effect on phenotype. (\cite {Dudbridge2013})}}{10}{figure.1.5}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Random effects meta analysis of AUC ROC from six cohorts.}}{18}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Score predicts better than chance}}{19}{figure.3.2}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Differences in score distributions between cohorts. NOT SCALED YET.}}{21}{figure.4.1}

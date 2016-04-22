@@ -1,7 +1,9 @@
 \chapter{Results}
-
+\let\cleardoublepage\clearpage 
 
 General characteristics of the study population are displayed in Table \ref{pop}.
+\tabularnewline
+\tabularnewline
 
 \begin{table}[bp]
 \centering
@@ -26,4 +28,84 @@ LDLc$^3$ (mmol/L)     & 3.29 $\pm$ 1.08      &  & 3.18 $\pm$ 1.17 &  & 3.43 $\pm
 
 \section{Traditional Risk Score}
 
- 
+The traditional risk score was significantly ($P < 2.2 \times 10^{16}$) associated with case/control status in all cohorts when adjusted for principal components to control for population stratification. \citep{Price2006,Zhang2013}. On average, scores between cases and control differed by $5.06 \times 10^{-4} \pm 1.73 \times 10^{-4}$. Full distributions of the score dependent on case control status are presented in Supplementary Figure 4.1. $\hat{S}_{TRS}$ predicted CAD status better than chance in all cohorts. Area under the receiver operator characteristic curve was calculated for each model and meta-analysed. The resulting AUC $\pm$ 95\% confidence intervals are displayed in Figure \ref{trs_meta}.
+
+\begin{figure}[h]
+\label{trs_meta}
+\caption{Random effects meta analysis of AUC ROC from six cohorts.}
+\centering
+\includegraphics[width=0.8\textwidth]{Figures/trs_meta.png}
+\end{figure}
+
+Logistic regression was used to predict observations following the model. Summary statistics from the models employed are displayed in Table \ref{trs}
+
+$$ CAD = X_0 + \hat{\beta}_1 \hat{S}_{TRS} + \hat{\beta}_2 PC_1 + \hat{\beta}_3 PC_3 + \epsilon $$
+
+\unsure{Add in abreviations}
+\begin{table}[H]
+\centering
+\caption{Summary statistics from Logistic association model. }
+\label{trs}
+\begin{tabular}{llllll}
+\hline
+Cohort           & OR        & SE       & $R^2$      & AIC      & AUC       \\ \hline
+Cleveland Clinic & 153.89908 & 36.42776 & 0.01621871 & 1877.724 & 0.5740551 \\
+Duke University  & 255.78537 & 33.44304 & 0.04713465 & 2335.567 & 0.6129263 \\
+Interheart       & 83.95637  & 46.45943 & 0.01695232 & 1172.994 & 0.5554871 \\
+OHGS A2          & 310.49752 & 34.52749 & 0.07650691 & 2558.277 & 0.6391285 \\
+OHGS B2          & 259.59352 & 24.94511 & 0.07425403 & 3681.768 & 0.6339916 \\
+OHGS C2          & 276.96733 & 45.92012 & 0.05491302 & 1318.919 & 0.6193695 \\ \hline
+\end{tabular}
+\end{table}
+
+An \ac{AUC} $\geq 0.5$ indicates that the model predicts CAD better than chance. The overall random effects meta analyzed \ac{AUC} was 0.61 $\pm 0.03$ for $\hat{S}_{TRS}$, with an average NagelKerke's Pseudo-$R^2$ of $0.047$. Interheart was the worst fit model, with NagelKerke's Pseudo-$R^2 = 0.017$ and \ac{AUC} $= 0.555$, barely predicting above chance. This is in contrast to the OHGS cohorts, which consistently fit better than Cleveland Clinic, Duke, or Interheart. As increasing the number of \acs{SNP} in the score will always increase the fit of the model, we compare the 202 FDR significant loci to randomly selected loci in 1000 bootstraps in Figure \ref{b2_perm}. 
+
+
+\begin{figure}[H]
+\label{b2_perm}
+\caption{Score predicts better than chance}
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/b2.png}
+\end{figure}
+
+These results are in line with literature values. Those in the top quintile of the \ac{PRS} were 70\% more likely to have \ac{CAD} than not (2045 cases vs 1198 controls). Similarly, those in the bottom quintile were  5\% less likely to be diagnosed with \ac{CAD} than not (1576 cases vs 1659 controls).
+
+\section{Cardiometabolic Risk Score}
+
+We add in each co-morbid score in a stepwise manner. $\hat{S}_{CMB; 1}$ uses just the information available for CAD and is equivalent to the above section.  $\hat{S}_{CMB; 2}$ uses information from CAD and BMI, while $\hat{S}_{CMB; 3}$ uses CAD, BMI, and LDLc. $\hat{S}_{CMB; 4}$ uses information from CAD, BMI, LDLc, and TG, while $\hat{S}_{CMB; 5}$ uses CAD, BMI, LDLc, TG, and HDLc. Note that in this section we restrict our analysis to the \ac{OHGS} cohorts along with Cleveland Clinic due to the lack of quality in lipid data present in the other cohorts. 
+
+The summary statistics of this analysis are presented in Table \ref{cmd-sum}. Higher genetic risk scores were uniformly associated with increased risk of \ac{CAD}. The score maintained its significance even after inclusion of biologically relevant covariates such as gender and smoking status, though the magnitude of this increase is not of interest to this article. 
+
+\newpage
+
+\begin{table}[H]
+\centering
+\caption{My caption}
+\label{cmd-sum}
+\begin{tabular}{lllllll}
+\hline
+Score & Cohort           & OR        & SE       & R2         & AIC      & AUC       \\ \hline
+$\hat{S}_{CMB; 1}$     & OHGS A2          & 310.49752 & 34.52749 & 0.07650691 & 2558.277 & 0.6391285 \\
+      & OHGS B2          & 259.59352 & 24.94511 & 0.07425403 & 3681.768 & 0.6339916 \\
+      & OHGS C2          & 276.96733 & 45.92012 & 0.05491302 & 1318.919 & 0.6193695 \\
+      & Cleveland Clinic & 153.89908 & 36.42776 & 0.01621871 & 1877.724 & 0.5740551 \\ \hline
+$\hat{S}_{CMB; 2}$     & OHGS\_A2         & 252.9639  & 25.29332 & 0.09108544 & 2547.617 & 0.6555183 \\
+      & OHGS\_B2         & 267.348   & 22.48745 & 0.09187763 & 3654.756 & 0.6501946 \\
+      & OHGS\_C2         & 280.9237  & 38.98146 & 0.07687197 & 1300.585 & 0.6455279 \\
+      & Cleveland        & 337.3714  & 35.18263 & 0.08387982 & 1791.596 & 0.6659644 \\ \hline
+$\hat{S}_{CMB; 3}$     & OHGS\_A2         & 236.0145  & 26.17239 & 0.07656732 & 2570.063 & 0.6429851 \\
+      & OHGS\_B2         & 255.7401  & 24.09888 & 0.0767165  & 3688.513 & 0.6371506 \\
+      & OHGS\_C2         & 284.9796  & 41.16138 & 0.07121422 & 1305.337 & 0.640201  \\
+      & Cleveland        & 344.9182  & 37.87978 & 0.07572764 & 1802.024 & 0.6546671 \\ \hline
+$\hat{S}_{CMB; 4}$     & OHGS\_A2         & 266.5048  & 29.24856 & 0.07786803 & 2568.062 & 0.6442205 \\
+      & OHGS\_B2         & 270.8893  & 26.45495 & 0.07264458 & 3697.51  & 0.6330786 \\
+      & OHGS\_C2         & 298.9828  & 44.83843 & 0.06638254 & 1309.38  & 0.6337181 \\
+      & Cleveland        & 372.189   & 41.80231 & 0.07218274 & 1806.542 & 0.6509422 \\ \hline
+$\hat{S}_{CMB; 5}$     & OHGS\_A2         & 297.0165  & 34.10419 & 0.07234597 & 2576.54  & 0.6401786 \\
+      & OHGS\_B2         & 299.0699  & 30.76742 & 0.06720315 & 3709.488 & 0.6280858 \\
+      & OHGS\_C2         & 323.9172  & 50.90267 & 0.06088933 & 1313.958 & 0.6275034 \\
+      & Cleveland        & 410.9963  & 48.57387 & 0.06493754 & 1815.742 & 0.6436849 \\ \hline
+\end{tabular}
+\end{table}
+
+In permutation analyses, each of the scores performed significantly better than an equivalent number of randomly selected \acp{SNP} in 1000 bootstraps. The random effects meta analysis \ac{AUC} values were $0.65 [ 0.64, 0.67], 0.64[0.63, 0.66], 0.64[0.63, 0.65], 0.63[0.62, 0.65]$ for scores 1 through 5 respectively. Interestingly, the more \acp{SNP} added in, the worse the model was at predicting the phenotype. The \ac{AIC} is also uniformly smaller in score 2 than in subsequent scores, meaning that this model fit the data the best. Persons in the upper quintile of this score were 81\% more likely (1725 cases vs 953 controls) to have \ac{CAD} than not (compared to 70 \% for the previous score) and people in the bottom quintile were 15.7\% less likely (1240 cases vs 1471 controls) to have \ac{CAD} than having it. There was also a substantive increase in NagelKerke's Pseudo $R^2$ in the second score compared to any other, especially in the Cleveland cohort. 

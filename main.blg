@@ -5,6 +5,7 @@ A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: Chapters/introduction.aux
 A level-1 auxiliary file: Chapters/methods.aux
 A level-1 auxiliary file: Chapters/results.aux
+A level-1 auxiliary file: Chapters/supp.aux
 The style file: plainnat.bst
 Database file #1: bibliography.bib
 Repeated entry---line 195 of file bibliography.bib
@@ -15,45 +16,45 @@ Repeated entry---line 231 of file bibliography.bib
  : @article{TheCARDIoGRAMplusC4DConsortium2015
  :                                            ,
 I'm skipping whatever remains of this entry
-You've used 12 entries,
+You've used 14 entries,
             2773 wiz_defined-function locations,
-            724 strings with 20876 characters,
-and the built_in function-call counts, 35166 in all, are:
-= -- 2362
-> -- 5502
+            745 strings with 21519 characters,
+and the built_in function-call counts, 36405 in all, are:
+= -- 2480
+> -- 5589
 < -- 4
-+ -- 1836
-- -- 1824
-* -- 4066
-:= -- 6187
-add.period$ -- 70
-call.type$ -- 12
-change.case$ -- 644
-chr.to.int$ -- 12
-cite$ -- 24
-duplicate$ -- 248
-empty$ -- 494
-format.name$ -- 1838
-if$ -- 6494
++ -- 1865
+- -- 1851
+* -- 4193
+:= -- 6385
+add.period$ -- 82
+call.type$ -- 14
+change.case$ -- 659
+chr.to.int$ -- 14
+cite$ -- 28
+duplicate$ -- 290
+empty$ -- 575
+format.name$ -- 1867
+if$ -- 6745
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 102
-num.names$ -- 48
-pop$ -- 1233
+missing$ -- 14
+newline$ -- 118
+num.names$ -- 56
+pop$ -- 1253
 preamble$ -- 1
-purify$ -- 632
+purify$ -- 645
 quote$ -- 0
-skip$ -- 744
+skip$ -- 775
 stack$ -- 0
-substring$ -- 331
-swap$ -- 23
+substring$ -- 382
+swap$ -- 27
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
+type$ -- 154
 warning$ -- 0
-while$ -- 58
+while$ -- 68
 width$ -- 0
-write$ -- 231
+write$ -- 269
 (There were 2 error messages)

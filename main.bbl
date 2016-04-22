@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -86,6 +86,17 @@ Ruth McPherson and Anne Tybjaerg-Hansen.
 \newblock ISSN 0009-7330.
 \newblock \doi{10.1161/CIRCRESAHA.115.306566}.
 \newblock URL \url{http://circres.ahajournals.org/content/118/4/564.abstract}.
+
+\bibitem[Price et~al.(2006)Price, Patterson, Plenge, Weinblatt, Shadick, and
+  Reich]{Price2006}
+Alkes~L Price, Nick~J Patterson, Robert~M Plenge, Michael~E Weinblatt, Nancy~a
+  Shadick, and David Reich.
+\newblock {Principal components analysis corrects for stratification in
+  genome-wide association studies.}
+\newblock \emph{Nature genetics}, 38\penalty0 (8):\penalty0 904--909, aug 2006.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/ng1847}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16862161}.
 
 \bibitem[Schunkert et~al.(2011)Schunkert, K{\"{o}}nig, Kathiresan, Reilly,
   Assimes, Holm, Preuss, Stewart, Barbalic, Gieger, Absher, Aherrahrou,
@@ -334,5 +345,15 @@ Peter~M Visscher, Matthew~A Brown, Mark~I McCarthy, and Jian Yang.
 \newblock \doi{10.1016/j.ajhg.2011.11.029}.
 \newblock URL
   \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3257326{\&}tool=pmcentrez{\&}rendertype=abstract}.
+
+\bibitem[Zhang et~al.(2013)Zhang, Guan, and Pan]{Zhang2013}
+Yiwei Zhang, Weihua Guan, and Wei Pan.
+\newblock {Adjustment for Population Stratification via Principal Components in
+  Association Analysis of Rare Variants}.
+\newblock \emph{Genetic epidemiology}, 37\penalty0 (1):\penalty0 99--109, jan
+  2013.
+\newblock ISSN 0741-0395.
+\newblock \doi{10.1002/gepi.21691}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4066816/}.
 
 \end{thebibliography}
