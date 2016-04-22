@@ -15,8 +15,11 @@
 \contentsline {section}{\numberline {2.1}Study Population}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Genotyping and Imputation}{12}{section.2.2}
 \contentsline {section}{\numberline {2.3}Training Populations}{12}{section.2.3}
-\contentsline {section}{\numberline {2.4}Polygenic Prediction of CAD}{12}{section.2.4}
+\contentsline {section}{\numberline {2.4}Polygenic Prediction of CAD}{13}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Traditional Risk Score}{13}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Cardiometabolic Risk Score}{13}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Optimal Cardiometabolic Risk Score}{13}{subsection.2.4.3}
-\contentsline {chapter}{Bibliography}{15}{section*.33}
+\contentsline {subsection}{\numberline {2.4.3}Optimal Cardiometabolic Risk Score}{14}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Statistical Analysis}{14}{section.2.5}
+\contentsline {section}{\numberline {2.6}Computational Resources}{14}{section.2.6}
+\contentsline {chapter}{\chapternumberline {3}Results}{17}{chapter.3}
+\contentsline {chapter}{Bibliography}{19}{section*.40}

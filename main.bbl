@@ -1,9 +1,17 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Consortium(2013)]{Consortium2013}
+Global Lipids~Genetics Consortium.
+\newblock {Discovery and refinement of loci associated with lipid levels}.
+\newblock \emph{Nat Genet}, 45\penalty0 (11):\penalty0 1274--1283, nov 2013.
+\newblock ISSN 1061-4036.
+\newblock URL \url{http://dx.doi.org/10.1038/ng.2797 http://10.1038/ng.2797
+  http://www.nature.com/ng/journal/v45/n11/abs/ng.2797.html{\#}supplementary-information}.
 
 \bibitem[Dandona et~al.(2010)Dandona, Stewart, Chen, Williams, So, O'Brien,
   Glover, LeMay, Assogba, Vo, Wang, Labinaz, Wells, McPherson, and
@@ -149,6 +157,151 @@ Heribert Schunkert, Inke~R K{\"{o}}nig, Sekar Kathiresan, Muredach~P Reilly,
 \newblock ISSN 1061-4036.
 \newblock \doi{10.1038/ng.784}.
 \newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3119261/}.
+
+\bibitem[Speliotes et~al.(2010)Speliotes, Willer, Berndt, Monda, Thorleifsson,
+  Jackson, Allen, Lindgren, Luan, M{\"{a}}gi, Randall, Vedantam, Winkler, Qi,
+  Workalemahu, Heid, Steinthorsdottir, Stringham, Weedon, Wheeler, Wood,
+  Ferreira, Weyant, Segr{\'{e}}, Estrada, Liang, Nemesh, Park, Gustafsson,
+  Kilpel{\"{a}}inen, Yang, Bouatia-Naji, Esko, Feitosa, Kutalik, Mangino,
+  Raychaudhuri, Scherag, Smith, Welch, Zhao, Aben, Absher, Amin, Dixon, Fisher,
+  Glazer, Goddard, Heard-Costa, Hoesel, Hottenga, Johansson, Johnson, Ketkar,
+  Lamina, Li, Moffatt, Myers, Narisu, Perry, Peters, Preuss, Ripatti,
+  Rivadeneira, Sandholt, Scott, Timpson, Tyrer, van Wingerden, Watanabe, White,
+  Wiklund, Barlassina, Chasman, Cooper, Jansson, Lawrence, Pellikka,
+  Prokopenko, Shi, Thiering, Alavere, Alibrandi, Almgren, Arnold, Aspelund,
+  Atwood, Balkau, Balmforth, Bennett, Ben-Shlomo, Bergman, Bergmann,
+  Biebermann, Blakemore, Boes, Bonnycastle, Bornstein, Brown, Buchanan,
+  Busonero, Campbell, Cappuccio, Cavalcanti-Proen{\c{c}}a, Chen, Chen, Chines,
+  Clarke, Coin, Connell, Day, den Heijer, Duan, Ebrahim, Elliott, Elosua,
+  Eiriksdottir, Erdos, Eriksson, Facheris, Felix, Fischer-Posovszky, Folsom,
+  Friedrich, Freimer, Fu, Gaget, Gejman, Geus, Gieger, Gjesing, Goel, Goyette,
+  Grallert, Gr{\"{a}}{\ss}ler, Greenawalt, Groves, Gudnason, Guiducci,
+  Hartikainen, Hassanali, Hall, Havulinna, Hayward, Heath, Hengstenberg, Hicks,
+  Hinney, Hofman, Homuth, Hui, Igl, Iribarren, Isomaa, Jacobs, Jarick, Jewell,
+  John, J{\o}rgensen, Jousilahti, Jula, Kaakinen, Kajantie, Kaplan, Kathiresan,
+  Kettunen, Kinnunen, Knowles, Kolcic, K{\"{o}}nig, Koskinen, Kovacs, Kuusisto,
+  Kraft, Kval{\o}y, Laitinen, Lantieri, Lanzani, Launer, Lecoeur,
+  Lehtim{\"{a}}ki, Lettre, Liu, Lokki, Lorentzon, Luben, Ludwig, MAGIC,
+  Manunta, Marek, Marre, Martin, McArdle, McCarthy, McKnight, Meitinger,
+  Melander, Meyre, Midthjell, Montgomery, Morken, Morris, Mulic, Ngwa, Nelis,
+  Neville, Nyholt, O'Donnell, O'Rahilly, Ong, Oostra, Par{\'{e}}, Parker,
+  Perola, Pichler, Pietil{\"{a}}inen, Platou, Polasek, Pouta, Rafelt,
+  Raitakari, Rayner, Ridderstr{\aa}le, Rief, Ruokonen, Robertson, Rzehak,
+  Salomaa, Sanders, Sandhu, Sanna, Saramies, Savolainen, Scherag, Schipf,
+  Schreiber, Schunkert, Silander, Sinisalo, Siscovick, Smit, Soranzo, Sovio,
+  Stephens, Surakka, Swift, Tammesoo, Tardif, Teder-Laving, Teslovich,
+  Thompson, Thomson, T{\"{o}}njes, Tuomi, van Meurs, van Ommen, Vatin, Viikari,
+  Visvikis-Siest, Vitart, Vogel, Voight, Waite, Wallaschofski, Walters, Widen,
+  Wiegand, Wild, Willemsen, Witte, Witteman, Xu, Zhang, Zgaga, Ziegler,
+  Zitting, Beilby, Farooqi, Hebebrand, Huikuri, James, K{\"{a}}h{\"{o}}nen,
+  Levinson, Macciardi, Nieminen, Ohlsson, Palmer, Ridker, Stumvoll, Beckmann,
+  Boeing, Boerwinkle, Boomsma, Caulfield, Chanock, Collins, Cupples, Smith,
+  Erdmann, Froguel, Gr{\"{o}}nberg, Gyllensten, Hall, Hansen, Harris,
+  Hattersley, Hayes, Heinrich, Hu, Hveem, Illig, Jarvelin, Kaprio, Karpe, Khaw,
+  Kiemeney, Krude, Laakso, Lawlor, Metspalu, Munroe, Ouwehand, Pedersen,
+  Penninx, Peters, Pramstaller, Quertermous, Reinehr, Rissanen, Rudan, Samani,
+  Schwarz, Shuldiner, Spector, Tuomilehto, Uda, Uitterlinden, Valle, Wabitsch,
+  Waeber, Wareham, Watkins, Wilson, Wright, Zillikens, Chatterjee, McCarroll,
+  Purcell, Schadt, Visscher, Assimes, Borecki, Deloukas, Fox, Groop,
+  Haritunians, Hunter, Kaplan, Mohlke, O'Connell, Peltonen, Schlessinger,
+  Strachan, van Duijn, Wichmann, Frayling, Thorsteinsdottir, Abecasis, Barroso,
+  Boehnke, Stefansson, North, McCarthy, Hirschhorn, Ingelsson, and
+  Loos]{Speliotes2010}
+Elizabeth~K Speliotes, Cristen~J Willer, Sonja~I Berndt, Keri~L Monda, Gudmar
+  Thorleifsson, Anne~U Jackson, Hana~Lango Allen, Cecilia~M Lindgren, Jian'an
+  Luan, Reedik M{\"{a}}gi, Joshua~C Randall, Sailaja Vedantam, Thomas~W
+  Winkler, Lu~Qi, Tsegaselassie Workalemahu, Iris~M Heid, Valgerdur
+  Steinthorsdottir, Heather~M Stringham, Michael~N Weedon, Eleanor Wheeler,
+  Andrew~R Wood, Teresa Ferreira, Robert~J Weyant, Ayellet~V Segr{\'{e}}, Karol
+  Estrada, Liming Liang, James Nemesh, Ju-Hyun Park, Stefan Gustafsson,
+  Tuomas~O Kilpel{\"{a}}inen, Jian Yang, Nabila Bouatia-Naji, T{\~{o}}nu Esko,
+  Mary~F Feitosa, Zolt{\'{a}}n Kutalik, Massimo Mangino, Soumya Raychaudhuri,
+  Andre Scherag, Albert~Vernon Smith, Ryan Welch, Jing~Hua Zhao, Katja~K Aben,
+  Devin~M Absher, Najaf Amin, Anna~L Dixon, Eva Fisher, Nicole~L Glazer,
+  Michael~E Goddard, Nancy~L Heard-Costa, Volker Hoesel, Jouke-Jan Hottenga,
+  {\AA}sa Johansson, Toby Johnson, Shamika Ketkar, Claudia Lamina, Shengxu Li,
+  Miriam~F Moffatt, Richard~H Myers, Narisu Narisu, John R~B Perry, Marjolein~J
+  Peters, Michael Preuss, Samuli Ripatti, Fernando Rivadeneira, Camilla
+  Sandholt, Laura~J Scott, Nicholas~J Timpson, Jonathan~P Tyrer, Sophie van
+  Wingerden, Richard~M Watanabe, Charles~C White, Fredrik Wiklund, Christina
+  Barlassina, Daniel~I Chasman, Matthew~N Cooper, John-Olov Jansson, Robert~W
+  Lawrence, Niina Pellikka, Inga Prokopenko, Jianxin Shi, Elisabeth Thiering,
+  Helene Alavere, Maria T~S Alibrandi, Peter Almgren, Alice~M Arnold, Thor
+  Aspelund, Larry~D Atwood, Beverley Balkau, Anthony~J Balmforth, Amanda~J
+  Bennett, Yoav Ben-Shlomo, Richard~N Bergman, Sven Bergmann, Heike Biebermann,
+  Alexandra I~F Blakemore, Tanja Boes, Lori~L Bonnycastle, Stefan~R Bornstein,
+  Morris~J Brown, Thomas~A Buchanan, Fabio Busonero, Harry Campbell,
+  Francesco~P Cappuccio, Christine Cavalcanti-Proen{\c{c}}a, Yii-Der~Ida Chen,
+  Chih-Mei Chen, Peter~S Chines, Robert Clarke, Lachlan Coin, John Connell, Ian
+  N~M Day, Martin den Heijer, Jubao Duan, Shah Ebrahim, Paul Elliott, Roberto
+  Elosua, Gudny Eiriksdottir, Michael~R Erdos, Johan~G Eriksson, Maurizio~F
+  Facheris, Stephan~B Felix, Pamela Fischer-Posovszky, Aaron~R Folsom, Nele
+  Friedrich, Nelson~B Freimer, Mao Fu, Stefan Gaget, Pablo~V Gejman, Eco J~C
+  Geus, Christian Gieger, Anette~P Gjesing, Anuj Goel, Philippe Goyette, Harald
+  Grallert, J{\"{u}}rgen Gr{\"{a}}{\ss}ler, Danielle~M Greenawalt,
+  Christopher~J Groves, Vilmundur Gudnason, Candace Guiducci, Anna-Liisa
+  Hartikainen, Neelam Hassanali, Alistair~S Hall, Aki~S Havulinna, Caroline
+  Hayward, Andrew~C Heath, Christian Hengstenberg, Andrew~A Hicks, Anke Hinney,
+  Albert Hofman, Georg Homuth, Jennie Hui, Wilmar Igl, Carlos Iribarren,
+  Bo~Isomaa, Kevin~B Jacobs, Ivonne Jarick, Elizabeth Jewell, Ulrich John,
+  Torben J{\o}rgensen, Pekka Jousilahti, Antti Jula, Marika Kaakinen, Eero
+  Kajantie, Lee~M Kaplan, Sekar Kathiresan, Johannes Kettunen, Leena Kinnunen,
+  Joshua~W Knowles, Ivana Kolcic, Inke~R K{\"{o}}nig, Seppo Koskinen, Peter
+  Kovacs, Johanna Kuusisto, Peter Kraft, Kirsti Kval{\o}y, Jaana Laitinen,
+  Olivier Lantieri, Chiara Lanzani, Lenore~J Launer, Cecile Lecoeur, Terho
+  Lehtim{\"{a}}ki, Guillaume Lettre, Jianjun Liu, Marja-Liisa Lokki, Mattias
+  Lorentzon, Robert~N Luben, Barbara Ludwig, MAGIC, Paolo Manunta, Diana Marek,
+  Michel Marre, Nicholas~G Martin, Wendy~L McArdle, Anne McCarthy, Barbara
+  McKnight, Thomas Meitinger, Olle Melander, David Meyre, Kristian Midthjell,
+  Grant~W Montgomery, Mario~A Morken, Andrew~P Morris, Rosanda Mulic, Julius~S
+  Ngwa, Mari Nelis, Matt~J Neville, Dale~R Nyholt, Christopher~J O'Donnell,
+  Stephen O'Rahilly, Ken~K Ong, Ben Oostra, Guillaume Par{\'{e}}, Alex~N
+  Parker, Markus Perola, Irene Pichler, Kirsi~H Pietil{\"{a}}inen, Carl G~P
+  Platou, Ozren Polasek, Anneli Pouta, Suzanne Rafelt, Olli Raitakari, Nigel~W
+  Rayner, Martin Ridderstr{\aa}le, Winfried Rief, Aimo Ruokonen, Neil~R
+  Robertson, Peter Rzehak, Veikko Salomaa, Alan~R Sanders, Manjinder~S Sandhu,
+  Serena Sanna, Jouko Saramies, Markku~J Savolainen, Susann Scherag, Sabine
+  Schipf, Stefan Schreiber, Heribert Schunkert, Kaisa Silander, Juha Sinisalo,
+  David~S Siscovick, Jan~H Smit, Nicole Soranzo, Ulla Sovio, Jonathan Stephens,
+  Ida Surakka, Amy~J Swift, Mari-Liis Tammesoo, Jean-Claude Tardif, Maris
+  Teder-Laving, Tanya~M Teslovich, John~R Thompson, Brian Thomson, Anke
+  T{\"{o}}njes, Tiinamaija Tuomi, Joyce B~J van Meurs, Gert-Jan van Ommen,
+  Vincent Vatin, Jorma Viikari, Sophie Visvikis-Siest, Veronique Vitart, Carla
+  I~G Vogel, Benjamin~F Voight, Lindsay~L Waite, Henri Wallaschofski, G~Bragi
+  Walters, Elisabeth Widen, Susanna Wiegand, Sarah~H Wild, Gonneke Willemsen,
+  Daniel~R Witte, Jacqueline~C Witteman, Jianfeng Xu, Qunyuan Zhang, Lina
+  Zgaga, Andreas Ziegler, Paavo Zitting, John~P Beilby, I~Sadaf Farooqi,
+  Johannes Hebebrand, Heikki~V Huikuri, Alan~L James, Mika K{\"{a}}h{\"{o}}nen,
+  Douglas~F Levinson, Fabio Macciardi, Markku~S Nieminen, Claes Ohlsson, Lyle~J
+  Palmer, Paul~M Ridker, Michael Stumvoll, Jacques~S Beckmann, Heiner Boeing,
+  Eric Boerwinkle, Dorret~I Boomsma, Mark~J Caulfield, Stephen~J Chanock,
+  Francis~S Collins, L~Adrienne Cupples, George~Davey Smith, Jeanette Erdmann,
+  Philippe Froguel, Henrik Gr{\"{o}}nberg, Ulf Gyllensten, Per Hall, Torben
+  Hansen, Tamara~B Harris, Andrew~T Hattersley, Richard~B Hayes, Joachim
+  Heinrich, Frank~B Hu, Kristian Hveem, Thomas Illig, Marjo-Riitta Jarvelin,
+  Jaakko Kaprio, Fredrik Karpe, Kay-Tee Khaw, Lambertus~A Kiemeney, Heiko
+  Krude, Markku Laakso, Debbie~A Lawlor, Andres Metspalu, Patricia~B Munroe,
+  Willem~H Ouwehand, Oluf Pedersen, Brenda~W Penninx, Annette Peters, Peter~P
+  Pramstaller, Thomas Quertermous, Thomas Reinehr, Aila Rissanen, Igor Rudan,
+  Nilesh~J Samani, Peter E~H Schwarz, Alan~R Shuldiner, Timothy~D Spector,
+  Jaakko Tuomilehto, Manuela Uda, Andr{\'{e}} Uitterlinden, Timo~T Valle,
+  Martin Wabitsch, G{\'{e}}rard Waeber, Nicholas~J Wareham, Hugh Watkins,
+  James~F Wilson, Alan~F Wright, M~Carola Zillikens, Nilanjan Chatterjee,
+  Steven~A McCarroll, Shaun Purcell, Eric~E Schadt, Peter~M Visscher,
+  Themistocles~L Assimes, Ingrid~B Borecki, Panos Deloukas, Caroline~S Fox,
+  Leif~C Groop, Talin Haritunians, David~J Hunter, Robert~C Kaplan, Karen~L
+  Mohlke, Jeffrey~R O'Connell, Leena Peltonen, David Schlessinger, David~P
+  Strachan, Cornelia~M van Duijn, H-Erich Wichmann, Timothy~M Frayling, Unnur
+  Thorsteinsdottir, Gon{\c{c}}alo~R Abecasis, In{\^{e}}s Barroso, Michael
+  Boehnke, Kari Stefansson, Kari~E North, Mark~I McCarthy, Joel~N Hirschhorn,
+  Erik Ingelsson, and Ruth J~F Loos.
+\newblock {Association analyses of 249,796 individuals reveal eighteen new loci
+  associated with body mass index}.
+\newblock \emph{Nature genetics}, 42\penalty0 (11):\penalty0 937--948, nov
+  2010.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/ng.686}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3014648/}.
 
 \bibitem[Sun et~al.(2006)Sun, Craiu, Paterson, and Bull]{Sun2006}
 Lei Sun, Radu~V. Craiu, Andrew~D. Paterson, and Shelley~B. Bull.

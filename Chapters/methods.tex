@@ -23,11 +23,13 @@ SNP genotyping of the above cohorts was performed on either Affymetrix 6.0 or 50
 
 
 \section{Training Populations}
+\label{training}
 
 This study additionally comprised two ``training'' populations which were used to estimate the $\hat{\beta}$ effects necessary for the construction of \ac{PRS}.
 
-\textbf{GIANT Consortium: } \ac{GIANT} consortium attempts to identify genetic loci which may modulate human body size, height, and obesity. We use for this study their data on BMI 
+\textbf{GIANT Consortium: } \ac{GIANT} consortium attempts to identify genetic loci which may modulate human body size, height, and obesity. We use for this study their data on BMI predicting \ac{SNP} calculated from approximately $n = 123,865$ on close to 2M \acp{SNP}. Collection methodologies and specific information is outlined in \cite{Speliotes2010}.
 
+\textbf{Global Lipids Consortium:} The Global Lipids Consortium estimates genetic effects in $n = 188,577$ individuals using whole genome and custom genotyping arrays. We use their estimated additive genetic effects for SNPs predicting \ac{TG}, \ac{HDLc}, and \ac{LDLc}. Collection methodologies and further information are outlined in \citep{Consortium2013}.
 
 \textbf{CARDIoGRAMplusC4D:} \unsure{add in details for cardiogram, and make sure to pull down the missing part}
 
@@ -38,12 +40,54 @@ In the following analysis we primarily compare three different methods for const
 
 \subsection{Traditional Risk Score}
 
-The first, which we donote as the ``traditional risk score'', or $\hat{S}_{TRS}$. This score uses the ``traditional'' approach of only using the highest confidence genome wide significant loci for \ac{CAD} in the construction of the score. We derive the estimated $\underline{\hat{\beta}}$ effects from \citep{TheCARDIoGRAMplusC4DConsortium2015}, whose methodology is described above. We only use the 212 variants from this section which have been shown to be FDR signficicant with $q < 0.05$ across the whole genome, as is common practice. Recall from the derivation leading up to equation \ref{score} that \ac{PRS} $S$ for individual $n$ is described as  $$ S = \sum^m_{i=1} \beta_i G_{ni} $$ Therefore for this score, we define $\hat{\beta}$ as a vector of length 212 with each of the estimated addititive genetic effects derived from CARDIoGRAM plus C4D, and construct estimated score $\hat{S}$ for individual $n$ as $$ \hat{S}_{n, TRS} \equiv \sum^{212}_{i = 1} \hat{\beta}_i \bold{G}_{n, i} $$ This forms the basis for our first model.
+The first, which we denote as the ``traditional risk score'', or $\hat{S}_{TRS}$. This score uses the ``traditional'' approach of only using the highest confidence genome wide significant loci for \ac{CAD} in the construction of the score. We derive the estimated $\underline{\hat{\beta}}$ effects from \citep{TheCARDIoGRAMplusC4DConsortium2015}, whose methodology is described above. We only use the 212 variants from this section which have been shown to be FDR signficicant with $q < 0.05$ across the whole genome, as is common practice. Recall from the derivation leading up to equation \ref{score} that \ac{PRS} $S$ for individual $n$ is described as  $$ S = \sum^m_{i=1} \beta_i G_{ni} $$ Therefore for this score, we define $\hat{\beta}$ as a vector of length 212 with each of the estimated additive genetic effects derived from CARDIoGRAM plus C4D, and construct estimated score $\hat{S}$ for individual $n$ as $$ \hat{S}_{n, TRS} \equiv \sum^{212}_{i = 1} \hat{\beta}_i \mathbf{G}_{n, i} $$ This forms the basis for our first model.
 
 \subsection{Cardiometabolic Risk Score}
 
-The second score which we estimate is a novel derivation. We aim to use genetic information from several comorbid conditions 
+The second score which we estimate is a novel derivation. We aim to use genetic information from several co-morbid conditions together to better explain \ac{CAD}. The motivation is that important signals may be spuriously insignificant in large meta analyses, or simply have too low effect to be accurately categorized as significant; taking information from co-morbid conditions allows researchers a wider span of information to integrate. 
 
+We use meta data from four co-morbid conditions to estimate the genetic effects of these traits and \textbf{re-prioritize} variants with the intention of creating a minimal score for \ac{CAD} which better predicts the phenotype. 
+
+First, we introduce some new notation. We denote $\underline{\hat{\beta}}_{LDLc}, \underline{\hat{\beta}}_{HDLc}, \underline{\hat{\beta}}_{TG}, \underline{\hat{\beta}}_{BMI}$ as the vectors of estimated effects for \ac{LDLc}, \ac{HDLc}, \ac{TG}, and \ac{BMI} respectively derived from the training sets outlined in section \ref{training}.
+
+We separately order variants by their P value and say $m^*$ is the number of genome-significant significant ($q \leq 0.05$) hits found in each study. We take $1 \dots m^*$ from each data set and call this set of variants $\underline{G}^*$ for important genetic effects. We define the set $G^*$ as containing all genetic elements $\mathbf{G}_i$ such that $i$ is a part of our selected significant ordered set $1 \dots m^* $.
+
+$$ \begin{aligned} G^* &\equiv \{ \mathbf{G}_i | i \in 1 \dots m^* \} &&&&&& m^* \, |  \, q < 0.05 \end{aligned}$$
+
+
+We then take all genetic effects $i \in G^*$ and calculate a score based on these variants instead of the 212. We define this new \ac{CMB} score for any individual $n$ as $\hat{S}_{CMB}$:
+
+$$ \hat{S}_{CMB} \equiv \sum_{i \in G^*_{LDLc}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{HDLc}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{TG}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{TG}} \hat{\beta}_i \mathbf{G}_{n, i} $$
+
+We use this new score to predict \ac{CAD}, with the hypothesis that incorporating several co-morbid conditions will better prioritize variants in order to achieve increased predictive accuracy. 
+ 
+\unsure[inline]{this isn't exactly correct, make the list beforehand}
+
+\improvement[inline]{talk about what to do in duplication cases in further work}
 
 \subsection{Optimal Cardiometabolic Risk Score}
 
+We further extend this $\hat{S}_{CMB}$ using \ac{oPRS} as introduced in section \ref{oPRS}. Instead of selecting $m^*$ to be all variants such that $q < 0.05$, we select all P values such that $P < T_{o}$ where $T_{o}$ is the optimal threshold found by iterating through $P$ value thresholds for score inclusion.
+
+$$ \begin{aligned} G^* &\equiv \{ \mathbf{G}_i | i \in 1 \dots m^* \} &&&&&& m^* \, |  \, P < T_{o} \end{aligned}$$
+
+And similarly construct our optimal cardiometabolic risk score as before:
+
+
+$$ \hat{S}_{oCMB} \equiv \sum_{i \in G^*_{LDLc}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{HDLc}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{TG}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{TG}} \hat{\beta}_i \mathbf{G}_{n, i} $$
+
+This forms the new optimal score for testing.
+
+\section{Statistical Analysis}
+
+\improvement[inline]{add in as go}
+
+\section{Computational Resources}
+
+All analyses were performed at the Center for Advanced Computing, a large scale Red Hat Enterprise linux parallel computing cluster used to quickly analyze large sets of data. All analysis was parallelized either using inbuilt libraries or OpenMPI standards. 
+
+Analyses were performed in R version 3.2.3 (https://www.r-project.org/), Python legacy version 2.7.9 (https://www.python.org/), Plink (http://pngu.mgh.harvard.edu/~purcell/plink/), and GCTA (http://cnsgenomics.com/software/gcta/).
+
+All analysis was logged and stored securely and anonymously; back ups of all data were made and encrypted.
+
+All analysis was version controlled using git + github and this thesis is entirely reproducible. Any code available upon request. 
