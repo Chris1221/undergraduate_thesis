@@ -2,7 +2,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt,a4paper,twoside]{memoir} % Change font size here (allowable values are 9pt-12pt), change the paper size, specify one or two sided printing and specify whether to show trimming lines
+\documentclass[10pt,a4paper,oneside]{memoir} % Change font size here (allowable values are 9pt-12pt), change the paper size, specify one or two sided printing and specify whether to show trimming lines
 
 \input{structure.tex} % Include the file containing the code defining the structure and style of the document
 
@@ -68,13 +68,31 @@ Secondary Thesis Supervisor:\\
 
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
 
+
+
+
 %----------------------------------------------------------------------------------------
 %	PREFACE
 %----------------------------------------------------------------------------------------
 
 \section*{Preface}
 
-Fill in later
+Throughout my undergraduate degree, I have made my fair share of mistakes. In truth, I have made many people's share of mistakes. Like the Rolling Stones, these failures have not always been what I wanted, but oftentimes they were exactly what I needed. This thesis represents the culmination of thousands of lessons taught to me by some truly incredible people.
+
+I would first like to thank Professor Aris-Brosou for taking a chance on a Biomedical Science student first year who knew nothing about programming or statistics, without whom my life would doubtlessly be very different.
+
+I would also like to thank Majid Nikpay, who has been a mentor to me for all of the years I have been researching statistical genetics.
+
+Additionally, I would like to thank all of my friends for the support and motivation they have provided throughout my degree. In particular, I would thank Aaron R. Shifman. He has been a comrade in a lonely field, and a sounding board for my oftentimes less than genius ideas. 
+
+My most heartfelt thanks goes out to my girlfriend of four years, Kennedy Hao. She has motivated me to continue on no matter the obstacle and has proven time and again to be my closest ally, no matter the battle. 
+
+Through any and all obstacles, I have had no further to look for support than to my family. They have helped me through stress, desperation, and have been the only reason I have been able to accomplish the things that I have. Without them, nothing else would be possible.
+
+My final acknowledgment is to my supervisor, Dr. Ruth McPherson. Working with her has been doubtlessly one of the single best decisions of my life. Three years have passed and yet Dr. McPherson continues to help me more in my career and my personal life than I could ever expect of anyone. Truly any success I may claim in the future will be a direct consequence of Dr. McPherson's kindness, generosity, and time.
+
+To everyone, both named and not, I give my most heartfelt thanks. 
+
 
 \begin{flushright}
 \textsc{\theauthor}\\
@@ -83,6 +101,15 @@ May 2016
 \end{flushright}
 
 \cleartoverso % Force a break to an even page
+
+
+
+\section*{Dedication}
+
+I, Christopher B. Cole, declare that any and all work presented or implied in this thesis is my own original work and has not been previously presented or submitted for academic publication. 
+
+\cleartoverso % Force a break to an even page
+
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT
@@ -174,7 +201,9 @@ Throughout this thesis, the following conventions for notation are used.
 \include{Chapters/introduction} % Include the introduction chapter
 \include{Chapters/methods} % Include the first content chapter
 \include{Chapters/results} % Include the second content chapter
-\include{Chapters/supp} % Include the third content chapter
+\include{Chapters/discussion} % Include the third content chapter
+\include{Chapters/conc}
+
 
 \backmatter
 

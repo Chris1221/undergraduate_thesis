@@ -1,0 +1,39 @@
+\chapter{Discussion}
+
+In this thesis we have introduced a novel method for using summary information from co-morbid conditions identified through \ac{GWAS} for the prediction of complex disease. We validate this technique in a meta analysis of four cohorts.
+
+Previously, polygenic risk scores (\ac{PRS}) have been used to predict complex diseases and to measure to genetic overlap between conditions. However, often researchers restrict themselves to using the loci which have the highest confidence -- those which reach genome-wide significance. Theoretical work disputes this notation, indicating that many low or modest effect variants may be hidden in the region of $P$-values classically called non-significant. To help better identify candidate variants which may be useful in predicting a condition, we use variants shown to be linked to co-morbid conditions in order to construct a cardiometabolic risk score for coronary artery disease (\ac{CAD}).
+
+We use meta data from the recent large scale meta-analysis conducted by the \ac{CARDIOGRAMC4D} consortium to construct the ``traditional'' \ac{PRS} for \ac{CAD} in our four cohorts. The score performs as is expected, significantly predicting \ac{CAD} with a relatively low explained variance, with NagelKereke's Pseudo-$R^2$ averaging 4.7\% between the cohorts. This model performs decently at predicting \ac{CAD} as well, with a meta analyzed overall \ac{AUC} of the \ac{ROC} curve of 0.61 with 95\% confidence interval between 0.58 and 0.63. Adding biologically relevant covariates increases the predictive accuracy whilst the \ac{PRS} maintains its significance.  Our new model, adding together the \ac{PRS} from co-morbid conditions as in Section \ref{cmb-rs}, showed an improvement over the traditional model in all cases. However, the largest (and only statistically significant) difference occurs between the traditional risk score and the score incorporating BMI loci. Interestingly, though the subsequent scores contain all \acp{SNP} present in the second BMI score, the increased noise makes the improvement over the \ac{TRS} less pronounced. This is directly conflicting with the notion that increasing the number of \acp{SNP} used to construct the \ac{PRS} will usually increase the predictive accuracy, even if it does not increase the significance of the model.
+
+We additionally showed that though our method involves additional \acp{SNP} to the \ac{PRS}, the increase in predictive accuracy occurs that which would be expected by chance, as shown in figure \ref{b2_perm}. This was not the case with the optimal model, as will be described below. 
+
+We can only speculate on the true reasons for the observed pattern in \ac{PRS} association. \ac{LDLc}, \ac{HDLc}, and \ac{TG} are well known risk factors for \ac{CAD}, and perhaps these results shed some light on the underlying relationship between these phenotypes and \ac{CAD}. It has been well documented that \ac{CAD} and \ac{BMI} share a substantial genetic relationship: in a recent study, the $r_G$, or genetic correction, between these two phenotypes was estimated to be $r_G = 0.66$ with standard error $0.2$, $P = 5 \times 10^{-4}$. \citep{Cole2015a} Full results for our cohorts are displayed in table \ref{rg}. 
+
+\begin{table}[H]
+\centering
+\caption{Genetic Correlations between Obesity and \ac{CAD}. Adapted from \cite{Cole2015a}}
+\label{rg}
+\begin{tabular}{llll}
+\hline
+\textbf{Study} & \textbf{Sample Size} & \textbf{$r_G$} & \textbf{SE} \\ \hline
+OHGS\_A2       & 3578                 & 0.566          & 0.244       \\
+OHGS\_B2       & 5718                 & 1.00           & 0.787       \\
+OHGS\_C2       & 2816                 & 0.778          & 0.713       \\
+CCGB\_2        & 4365                 & 0.868          & 0.496       \\ \hline
+\end{tabular}
+\end{table}
+
+It is evident that \ac{BMI} and \ac{CAD} share substantial genetic pleiotropy. Similar analyses for \ac{LDLc}, \ac{HDLc}, and \ac{TG} have not been conducted. It has recently been demonstrated that adiposity, that is, \ac{BMI} \textit{per se}, significantly interacted with a \ac{PRS} for dyslpidemia. \citep{Cole2014} This adds to a body of evidence suggesting multiple gene by environment interactions may play crucial roles in dyslipidemia risk. \cite{ColeChristopherB.a;NikpayMajidb;McPhersonRutha} Thus, it remains an open question whether the genetic predisposition to \ac{BMI} is interacting with the genetic predisposition to lipids such that the results observed are unexpected.
+
+The combined optimal model was shown to be highly effective at predicting \ac{CAD}, explaining between 24.5 and 33.8 percent of variance in the phenotype. Recall that estimated heritability $h^2$ is approximately 40\%, meaning that our score explains between 60\% and 80\% of the variance in \ac{CAD} attributable to genetics. However, it was found that predictive accuracy explained by the score may be attributable to the number of \acp{SNP} which were used in its construction, as the NagelKerke's Pseudo-$R^2$ was insignificantly different than 1000 bootstrap permutations using the same number of \acp{SNP}. Though it performed well, it is difficult to compare because of this reason. 
+
+Additionally, we observed that the optimal solution for \ac{BMI} was trivial; that is, no $P$-value threshold $T_o <1$ was optimal. Referring to Figure \ref{pi0}, this may lend evidence to the assertion to that there is a relatively large number of small effect size \acp{SNP} influence \ac{BMI} rather than a smaller set of large effect size \acp{SNP}. This would correspond to a lower $\pi_0$, or proportion of true null \acp{SNP} and no maxima $< 1$ for $P \in [0,1]$.
+
+Because of this, it is difficult to compare the \ac{oPRS} to either the \ac{TRS} or the \ac{CMB} scores. 
+
+\section{Future Directions} 
+
+Our study has provided a solid foundation upon which to further elucidate the roll which polygenic risk scores may play in both the prediction and understanding of \ac{CAD}. Future research may examine the exact algorithm by which the cardiometabolic score is calculated. Specifically, the roll and weighting of duplicated variants must be investigated to see if predictive variants which occur in more than one \ac{PRS} should be upweighted or prioritized to better facilitate phenotype prediction. Additionally, the roll of variant independence must be examined in depth; currently the optimal score does not include any reservations about variant dependency conditions. Whether or not this has impacted the predictive accuracy remains to be seen.
+
+Additionally, the trends observed must be validated mathematically; we are unsure of the exact mechanics and expected outcomes when scores are combined such as we have done. More research must be done to better understand the benefits and drawbacks of combining information in this way. 

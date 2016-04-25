@@ -60,6 +60,10 @@ OHGS C2          & 276.96733 & 45.92012 & 0.05491302 & 1318.919 & 0.6193695 \\ \
 
 An \ac{AUC} $\geq 0.5$ indicates that the model predicts CAD better than chance. The overall random effects meta analyzed \ac{AUC} was 0.61 $\pm 0.03$ for $\hat{S}_{TRS}$, with an average NagelKerke's Pseudo-$R^2$ of $0.047$. Interheart was the worst fit model, with NagelKerke's Pseudo-$R^2 = 0.017$ and \ac{AUC} $= 0.555$, barely predicting above chance. This is in contrast to the OHGS cohorts, which consistently fit better than Cleveland Clinic, Duke, or Interheart. As increasing the number of \acs{SNP} in the score will always increase the fit of the model, we compare the 202 FDR significant loci to randomly selected loci in 1000 bootstraps in Figure \ref{b2_perm}. 
 
+The score remains significantly associated when adjusted for individual's sex, a known cardiovascular risk factor. The predictive accuracy of the model significantly increases after inclusion of sex, as would be expected. The random effects meta analysis \ac{AUC} for all six cohorts becomes $0.69[0.62, 0.76]$. 
+
+In \ac{OHGS} B2, sex significantly ($P = 0.00226$) interacts with the effect of the risk score. This shows that sex modulates the effect of genetics in this cohort. The remainder of the cohorts do not interact.
+
 
 \begin{figure}[H]
 \label{b2_perm}
@@ -70,13 +74,13 @@ An \ac{AUC} $\geq 0.5$ indicates that the model predicts CAD better than chance.
 
 These results are in line with literature values. Those in the top quintile of the \ac{PRS} were 70\% more likely to have \ac{CAD} than not (2045 cases vs 1198 controls). Similarly, those in the bottom quintile were  5\% less likely to be diagnosed with \ac{CAD} than not (1576 cases vs 1659 controls).
 
+
+
 \section{Cardiometabolic Risk Score}
 
 We add in each co-morbid score in a stepwise manner. $\hat{S}_{CMB; 1}$ uses just the information available for CAD and is equivalent to the above section.  $\hat{S}_{CMB; 2}$ uses information from CAD and BMI, while $\hat{S}_{CMB; 3}$ uses CAD, BMI, and LDLc. $\hat{S}_{CMB; 4}$ uses information from CAD, BMI, LDLc, and TG, while $\hat{S}_{CMB; 5}$ uses CAD, BMI, LDLc, TG, and HDLc. Note that in this section we restrict our analysis to the \ac{OHGS} cohorts along with Cleveland Clinic due to the lack of quality in lipid data present in the other cohorts. 
 
-The summary statistics of this analysis are presented in Table \ref{cmd-sum}. Higher genetic risk scores were uniformly associated with increased risk of \ac{CAD}. The score maintained its significance even after inclusion of biologically relevant covariates such as gender and smoking status, though the magnitude of this increase is not of interest to this article. 
-
-\newpage
+The summary statistics of this analysis are presented in Table \ref{cmd-sum}. Higher genetic risk scores were uniformly and significantly ($P < 2.2 \times 10^{-16}$) associated with increased risk of \ac{CAD}.
 
 \begin{table}[H]
 \centering
@@ -109,3 +113,71 @@ $\hat{S}_{CMB; 5}$     & OHGS\_A2         & 297.0165  & 34.10419 & 0.07234597 & 
 \end{table}
 
 In permutation analyses, each of the scores performed significantly better than an equivalent number of randomly selected \acp{SNP} in 1000 bootstraps. The random effects meta analysis \ac{AUC} values were $0.65 [ 0.64, 0.67], 0.64[0.63, 0.66], 0.64[0.63, 0.65], 0.63[0.62, 0.65]$ for scores 1 through 5 respectively. Interestingly, the more \acp{SNP} added in, the worse the model was at predicting the phenotype. The \ac{AIC} is also uniformly smaller in score 2 than in subsequent scores, meaning that this model fit the data the best. Persons in the upper quintile of this score were 81\% more likely (1725 cases vs 953 controls) to have \ac{CAD} than not (compared to 70 \% for the previous score) and people in the bottom quintile were 15.7\% less likely (1240 cases vs 1471 controls) to have \ac{CAD} than having it. There was also a substantive increase in NagelKerke's Pseudo $R^2$ in the second score compared to any other, especially in the Cleveland cohort. 
+
+The score maintained its significance even after inclusion of biologically relevant covariates such as gender and smoking status. Additionally, the predictive accuracy of the score increased substantially after the inclusion of these covariates. After inclusion of individual's sex, a known cardiovascular risk factor, predictive accuracy increased substantially. The random effects meta analysis \ac{AUC} values were increased to $0.69[0.62, 0.76], 0.74[0.67, 0.81], 0.73 [0.66, 0.81], 0.73[0.66, 0.81], 0.73[0.66, 0.80]$ for $\hat{S}_{CMB; 1}$ through $\hat{S}_{CMB; 5}$ respectively. Again it appears as though $\hat{S}_{CMB; 2}$ is the best predictive model.
+
+
+We additionally investigated whether sex significantly modulates the effect of  $\hat{S}_{CMB; .}$ and found no significant interactions. 
+
+\subsection{Optimal Cardiometabolic Risk Score}
+
+When optimal scores were derived, the thresholds described in Table \ref{oprs} were observed.
+
+\begin{table}[H]
+\centering
+\caption{Optimal \ac{PRS} P value thresholds ($T_o$) derived for }
+\label{oprs}
+\begin{tabular}{lllll}
+\hline
+                  & \textbf{LDLc} & \textbf{HDLc} & \textbf{TG} & \textbf{BMI} \\ \hline
+OHGS\_A2 & 0.0001        & 0.0055        & 0.1743      & 1            \\
+OHGS\_B2 & 0.2484        & 0.0999        & 0.0002      & 1            \\
+OHGS\_C2 & 0.1299        & 0.0085        & 0.1528      & 1            \\
+CCGB\_2  & 0.1807        & 0.2039        & 0.004       & 1            \\ \hline
+\end{tabular}
+\end{table}
+
+
+The optimal $P$ value cutoff threshold $T_o$ for \ac{BMI} was found to be $1$ for all cases as demonstrated in \ref{oprs_bmi}. We discuss this result further below, however, for now we exclude \ac{BMI} from the analysis of optimal risk scores, and opt to use just scores for the lipid traits.
+
+\begin{figure}[H]
+\label{oprs_bmi}
+\caption{No optimal $P$ value threshold for \ac{BMI}.}
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/PRSice_HIGH-RES_PLOT_2016-04-23.png}
+\end{figure}
+
+Constructing a logistic regression model, we find that our cumulative score (combining optimal scores from all three traits) is significantly ($P < 2.2 \times 10^{-16}$.) associated with \ac{CAD} status, and those who have a higher \ac{PRS} tend to have higher risk for \ac{CAD}. We detail summary statistics for this association in table \ref{oprs_ss}. 
+
+
+
+\begin{table}[H]
+\centering
+\caption{Summary statistics for logistic fit of \ac{oPRS}.}
+\label{oprs_ss}
+\begin{tabular}{lllllll}
+\hline
+Study & $n_{SNPs}$ & OR         & SE      & $R^2$     & AIC     & ROC    \\ \hline
+OHGS\_A2 & 439971 & $2.2\times10^4$  & $1.3\times10^3$ & 0.2451 & 2313    & 0.7478 \\
+OHGS\_B2 & 790128 & $3.42\times10^4$ & $1.5\times10^3$ & 0.3377 & 3061.9  & 0.7963 \\
+OHGS\_C2 & 622050 & $3.34\times10^4$ & $2.5\times10^3$ & 0.3009 & 1095.1  & 0.7929 \\
+CCGB\_2 & 847335 & $3.78\times10^4$ & $2.3\times10^3$ & 0.2836 & 1517.21 & 0.7953 \\ \hline
+\end{tabular}
+\end{table}
+
+The \ac{oPRS}, comprising optimal scores for \ac{LDLc}, \ac{HDLc}, and \ac{TG} predicts \ac{CAD} with a very high accuracy, explaining between 24.5 and 33.8 percent of variance in \ac{CAD}. The random effects meta analysis of \ac{AUC} of the \ac{ROC} curve reveals an overall \ac{AUC} of $0.78 [0.75, 0.81]$, an extremely high value (Figure \ref{oprs_meta}). 
+
+\begin{figure}[H]
+\label{oprs_meta}
+\caption{Random effects meta analysis of \ac{oPRS} predicting risk for \ac{CAD}}
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/oprs_meta.png}
+\end{figure}
+
+
+Though the \ac{AUC} varies significantly between the cohorts, it is significantly higher than any observed in either the \ac{TRS} or the \ac{CMB} scores. However, as noted in table \ref{oprs_ss}, each \ac{oPRS} comprises several hundred thousand \acp{SNP}, and it is difficult to assess whether the increase in predictive accuracy is simply a consequence of increasing the number of \acp{SNP} used to predict the phenotype, or whether it is a true biological occurrence. When an equal number of \acp{SNP} were selected at random in 1000 bootstraps, it was found that the $R^2$ of our \ac{oPRS} was not significantly $P > 0.05$ different than that obtained through permutation.
+
+
+\subsection{Model Comparisons}
+
+When the cardiometabolic $\hat{S}_{CMB; 2}$, determined to be the best predictive candidate score for \ac{CAD} was compared against the \ac{TRS} score in 1000 random bootstraps in all cohorts combined, it was found to have a significantly larger \ac{AUC} ($P < 2.2 \times 10^{-16}$). A similar result was found when the \ac{oPRS} was compared to both the \ac{TRS} and the \ac{CMB} scores.

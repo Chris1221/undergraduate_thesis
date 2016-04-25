@@ -3,11 +3,11 @@
 
 As the efficiency and accuracy of rapid genome sequencing skyrockets, the potential for personalized therapies has made its way from science fiction to scientific reality. Using genetics to understand, diagnose, and eventually to predict illness is not a new idea; in recent years, however, technological ability and scientific understanding have advanced to such a point that researchers may predict risk for several diseases with reasonable confidence. Increasingly, variants in the human genome are being identified as being robustly linked to risk for complex illnesses such as heart disease [\small{cite 9p21}], obesity [\small{cite fto}], and schizophrenia [\small{cite something}]. However, much work remains to be done in order to create tools which may accurately predict individual disease risk from known and unknown genetic risk factors. In this thesis, we propose a novel extension to a well known methodology in order to better characterize disease risk from comorbid conditions using only summary statistics. 
 
-In brief, we present preliminary evidence for the use of \ac{PRS}s in predicting \ac{CAD}. We use recently published summary statistics from a \ac{GWAS} conducted by the \ac{CARDIOGRAMC4D} consortium alongside evidence gathered by the \ac{GLC} and the \ac{GIANT} consortium for lipids and \ac{BMI} \textit{per say}. We use this data alongside previously identified variants to construct first a simplistic \ac{PRS} using only genome wide statistically signficant ($P_{Bonferonni} < 0.05$ or $q_{FDR}$ < 0.05) variants, then expand our search to variants which may not be as robustly linked to phenotype. [Cite storey, BH, and dudbridge]. We use an empirical maximation approach and several strategies of mathematical optimization in order to construct an \ac{oPRS}, then devise a novel technique for integrating information from co-morbid \ac{oPRS} diseases in order to better predict \ac{CAD} in four cohorts comprising approximately $n=12,000$ individuals
+In brief, we present preliminary evidence for the use of \ac{PRS}s in predicting \ac{CAD}. We use recently published summary statistics from a \ac{GWAS} conducted by the \ac{CARDIOGRAMC4D} consortium alongside evidence gathered by the \ac{GLC} and the \ac{GIANT} consortium for lipids and \ac{BMI} \textit{per se}. We use this data alongside previously identified variants to construct first a simplistic \ac{PRS} using only genome wide statistically signficant ($P_{Bonferonni} < 0.05$ or $q_{FDR}$ < 0.05) variants, then expand our search to variants which may not be as robustly linked to phenotype. [Cite storey, BH, and dudbridge]. We use an empirical maximation approach and several strategies of mathematical optimization in order to construct an \ac{oPRS}, then devise a novel technique for integrating information from co-morbid \ac{oPRS} diseases in order to better predict \ac{CAD} in four cohorts comprising approximately $n=12,000$ individuals
 
 \section{Genetics of Coronary Artery Disease}
 
-\ac{CAD} occurs when the major blood vessels supplying the heart become diseased or damaged, often leading to severe complications such as \ac{MI} and death. [cite review articles] \ac{CAD} is known to be a complex genetic disease with heritability estimated by twin studies between 40 and 60\%. [mcPherson 2016, twin studies paper] Several important variants have been indentified which have been shown to robustly increase risk to \ac{CAD} by altering lipid transporting pathways [cite LDLR], structural collegan bodies [TRIB 1??], and others factors. 
+\ac{CAD} occurs when the major blood vessels supplying the heart become diseased or damaged, often leading to severe complications such as \ac{MI} and death. [cite review articles] \ac{CAD} is known to be a complex genetic disease with heritability estimated by twin studies between 40 and 60\%. [mcPherson 2016, twin studies paper] Several important variants have been identified which have been shown to robustly increase risk to \ac{CAD} by altering lipid transporting pathways, structural collagen bodies, and others factors. [cite]
 
 
 \begin{figure}[h]
@@ -16,9 +16,9 @@ In brief, we present preliminary evidence for the use of \ac{PRS}s in predicting
 \includegraphics[width=0.8\textwidth]{Figures/cad.png}
 \end{figure}
 
-With heart disease and stroke the leading cause of perscription drug use in Canada as well as one of the leading causes of death and hospitalization [cite herat and stroke], the need to better understand, diagnose, and prevent this deadly disease is apparent.  In order to better understand the need for improved statistical methodologies, it is important to understand the large body of previous attempts to characterize the genetic determinants of \ac{CAD}
+With heart disease and stroke the leading cause of prescription drug use in Canada as well as one of the leading causes of death and hospitalization [cite herat and stroke], the need to better understand, diagnose, and prevent this deadly disease is apparent.  In order to better understand the need for improved statistical methodologies, it is important to understand the large body of previous attempts to characterize the genetic determinants of \ac{CAD}
 
-Despite some promising beginings, initial attempts to understand and explain \ac{CAD} through genetics were largely unsuccessful.[CITE] The first variant to be succesfully and robustly linked to risk for \ac{CAD} was the 9p21.3 locus. Discovered by a team of researchers at the Univeristy of Ottawa Heart institute, the allele consists of a 58 \ac{kb} region on chromosome 9 which was shown to be associated with \ac{CAD} in a population of 23,000 caucasion individuals. (\cite{McPherson2016})
+Despite some promising beginnings, initial attempts to understand and explain \ac{CAD} through genetics were largely unsuccessful.[CITE] The first variant to be successfully and robustly linked to risk for \ac{CAD} was the 9p21.3 locus. Discovered by a team of researchers at the University of Ottawa Heart institute, the allele consists of a 58 \ac{kb} region on chromosome 9 which was shown to be associated with \ac{CAD} in a population of 23,000 Caucasian individuals. (\cite{McPherson2016})
 
 \begin{figure}[h]
 \caption{Fine mapping of the genomic interval on chromosome 9 associated with Coronary Heart Disease. Adapted from Mcpherson et al 2006}
@@ -193,8 +193,13 @@ It is from the matrix described in \ref{score_matrix} that the rest of our model
 Though it is always possible to construct an optimal score, only in certain circumstances is the $P$ value threshold $P_T < 1$, depending on the internal structure of the disease under question. At different heritability levels, a disease may only have an optimal score with $P_T =1$, as described in Figure \ref{pi0}.
 \end{rem} 
 
-\section{Summary and Study Goals}
+\section{Specific Aims}
 
-In this section, relevant background information pertaining to genetics and \ac{GWAS} was presented an explored. We introduce notation and theory for \ac{PRS} and \ac{oPRS} as well as touching on some theoretical properties which will be exploited later in the analysis.
+This study plans to address the following issues:
 
-\improvement[inline]{Make sure to add in study goals here more clearly}
+\begin{enumerate}
+	\item Characterize and evaluate the predictive accuracy of the traditional risk score (\ac{TRS}). Evaluate summary statistics for regression models and perform a meta analysis across cohorts to estimate an overall effect for the model. 
+	\item Propose two novel applications of \ac{PRS} to better predict \ac{CAD}. Develop these methods mathematically, validate them in test sets, and compare their performance to the traditional risk score.
+	\item Perform an exploratory analysis on secondary data to further evaluate the effectiveness of risk scores in predicting \ac{CAD}.
+	\item Discuss possible theoretical ramifications of findings, applications, and further research.
+\end{enumerate}

@@ -1,0 +1,547 @@
+---
+title: "Thesis"
+author: "Christopher Cole"
+date: "April 23, 2016"
+output: 
+  html_document: 
+    number_sections: yes
+    toc: yes
+---
+
+Call libraries
+
+```{R, results = FALSE, message = FALSE}
+require(dplyr)
+require(data.table)
+require(fmsb)
+#library(ROCR)
+require(pROC)
+require(metafor)
+library(pander)
+library(gtools)
+```
+
+
+# TRS Score
+
+## No covariates
+
+```{R}
+vars <- list()
+cohorts <- list()
+rocs <- list()
+reg <- list()
+pred <- list()
+perf <- list()
+
+or <- list()
+r2 <- list()
+se <- list()
+aic <- list()
+auc2 <- list()
+
+j <- 1
+
+for(i in list.files("/Users/Chris/repos/cad_grs/assets/out", full.names =  TRUE)[list.files("/Users/Chris/repos/cad_grs/assets/out", full.names =  TRUE) != "/Users/Chris/repos/cad_grs/assets/out/cmb"]){
+
+	cohorts[[j]] <- read.table(i, h = T)
+	colnames(cohorts[[j]])[colnames(cohorts[[j]]) == "case"] = "cad"
+
+	reg[[j]] <- glm(cad ~ SCORE+pc1+pc2, cohorts[[j]], family = "binomial")
+
+	pred[[j]] <- predict(reg[[j]], cohorts[[j]][, c("SCORE", "pc1", "pc2")])
+
+	rocs[[j]] <- roc(cohorts[[j]]$cad, pred[[j]])
+	vars[[j]] <- pROC::var(rocs[[j]])
+
+	# diagnostics
+	r2[[j]] <- NagelkerkeR2(reg[[j]])$R2
+	or[[j]] <- as.double(reg[[j]]$coefficients["SCORE"])
+	se[[j]] <- as.double(summary(reg[[j]])$coefficients[, "Std. Error"][2])
+	aic[[j]] <- summary(reg[[j]])$aic
+	auc2[[j]] <- auc(rocs[[j]])
+
+	j <- j + 1
+
+}
+
+report1 <- data.frame(score = 1, lab = c("Cleveland Clinic", "Duke University", "Interheart", "Ottawa Heart A","Ottawa Heart B","Ottawa Heart C"), OR = unlist(or), SE = unlist(se), r2 = unlist(r2), aic = unlist(aic), auc = unlist(auc2))
+
+pander(report1)
+
+df <- data.frame(auc = c(auc(rocs[[1]]), auc(rocs[[2]]), auc(rocs[[3]]), auc(rocs[[4]]), auc(rocs[[5]]), auc(rocs[[6]])), var = c(var(rocs[[1]]), var(rocs[[2]]), var(rocs[[3]]), var(rocs[[4]]), var(rocs[[1]]), var(rocs[[6]])))
+df$sd <- sqrt(df$var)
+
+meta <- rma(auc, var, data = df, slab = c("Cleveland Clinic", "Duke University", "Interheart", "Ottawa Heart A","Ottawa Heart B","Ottawa Heart C"))
+forest.rma(meta, xlab = "Area under the ROC Curve", mlab = "RE Model for All Studies", refline = 0.6909 )
+
+text(c(0.275, 1.1), 7.5, c("Study name", "AUC [95% CI]"), font = 2)
+```
+
+## Sex Covariates
+
+```{R}
+vars <- list()
+cohorts <- list()
+rocs <- list()
+reg <- list()
+pred <- list()
+perf <- list()
+
+or <- list()
+r2 <- list()
+se <- list()
+aic <- list()
+auc2 <- list()
+
+j <- 1
+
+for(i in list.files("/Users/Chris/repos/cad_grs/assets/out", full.names =  TRUE)[list.files("/Users/Chris/repos/cad_grs/assets/out", full.names =  TRUE) != "/Users/Chris/repos/cad_grs/assets/out/cmb"]){
+
+	cohorts[[j]] <- read.table(i, h = T)
+	colnames(cohorts[[j]])[colnames(cohorts[[j]]) == "case"] = "cad"
+	colnames(cohorts[[j]])[colnames(cohorts[[j]]) == "sex"] = "gender"
+
+	reg[[j]] <- glm(cad ~ SCORE+pc1+pc2 + gender, cohorts[[j]], family = "binomial")
+
+	pred[[j]] <- predict(reg[[j]], cohorts[[j]][, c("SCORE", "pc1", "pc2", "gender")])
+
+	rocs[[j]] <- roc(cohorts[[j]]$cad, pred[[j]])
+	vars[[j]] <- pROC::var(rocs[[j]])
+
+	# diagnostics
+	r2[[j]] <- NagelkerkeR2(reg[[j]])$R2
+	or[[j]] <- as.double(reg[[j]]$coefficients["SCORE"])
+	se[[j]] <- as.double(summary(reg[[j]])$coefficients[, "Std. Error"][2])
+	aic[[j]] <- summary(reg[[j]])$aic
+	auc2[[j]] <- auc(rocs[[j]])
+
+	j <- j + 1
+
+}
+
+report1s <- data.frame(score = 1, lab = c("Cleveland Clinic", "Duke University", "Interheart", "Ottawa Heart A","Ottawa Heart B","Ottawa Heart C"), OR = unlist(or), SE = unlist(se), r2 = unlist(r2), aic = unlist(aic), auc = unlist(auc2))
+
+pander(report1s)
+
+df <- data.frame(auc = c(auc(rocs[[1]]), auc(rocs[[2]]), auc(rocs[[3]]), auc(rocs[[4]]), auc(rocs[[5]]), auc(rocs[[6]])), var = c(var(rocs[[1]]), var(rocs[[2]]), var(rocs[[3]]), var(rocs[[4]]), var(rocs[[1]]), var(rocs[[6]])))
+df$sd <- sqrt(df$var)
+
+meta <- rma(auc, var, data = df, slab = c("Cleveland Clinic", "Duke University", "Interheart", "Ottawa Heart A","Ottawa Heart B","Ottawa Heart C"))
+forest.rma(meta, xlab = "Area under the ROC Curve", mlab = "RE Model for All Studies", refline = 0.6909 )
+
+text(c(0.275, 1.1), 7.5, c("Study name", "AUC [95% CI]"), font = 2)
+```
+
+## Sex Interaction
+
+
+```{R}
+vars <- list()
+cohorts <- list()
+rocs <- list()
+reg <- list()
+pred <- list()
+perf <- list()
+
+or <- list()
+r2 <- list()
+se <- list()
+aic <- list()
+auc2 <- list()
+
+j <- 1
+
+for(i in list.files("/Users/Chris/repos/cad_grs/assets/out", full.names =  TRUE)[list.files("/Users/Chris/repos/cad_grs/assets/out", full.names =  TRUE) != "/Users/Chris/repos/cad_grs/assets/out/cmb"]){
+
+	cohorts[[j]] <- read.table(i, h = T)
+	colnames(cohorts[[j]])[colnames(cohorts[[j]]) == "case"] = "cad"
+	colnames(cohorts[[j]])[colnames(cohorts[[j]]) == "sex"] = "gender"
+
+	reg[[j]] <- glm(cad ~ SCORE*gender+pc1+pc2, cohorts[[j]], family = "binomial")
+
+	pred[[j]] <- predict(reg[[j]], cohorts[[j]][, c("SCORE", "pc1", "pc2", "gender")])
+
+	rocs[[j]] <- roc(cohorts[[j]]$cad, pred[[j]])
+	vars[[j]] <- pROC::var(rocs[[j]])
+
+	# diagnostics
+	r2[[j]] <- NagelkerkeR2(reg[[j]])$R2
+	or[[j]] <- as.double(reg[[j]]$coefficients["SCORE"])
+	se[[j]] <- as.double(summary(reg[[j]])$coefficients[, "Std. Error"][2])
+	aic[[j]] <- summary(reg[[j]])$aic
+	auc2[[j]] <- auc(rocs[[j]])
+
+	j <- j + 1
+
+}
+
+report1s <- data.frame(score = 1, lab = c("Cleveland Clinic", "Duke University", "Interheart", "Ottawa Heart A","Ottawa Heart B","Ottawa Heart C"), OR = unlist(or), SE = unlist(se), r2 = unlist(r2), aic = unlist(aic), auc = unlist(auc2))
+
+pander(report1s)
+
+df <- data.frame(auc = c(auc(rocs[[1]]), auc(rocs[[2]]), auc(rocs[[3]]), auc(rocs[[4]]), auc(rocs[[5]]), auc(rocs[[6]])), var = c(var(rocs[[1]]), var(rocs[[2]]), var(rocs[[3]]), var(rocs[[4]]), var(rocs[[1]]), var(rocs[[6]])))
+df$sd <- sqrt(df$var)
+
+meta <- rma(auc, var, data = df, slab = c("Cleveland Clinic", "Duke University", "Interheart", "Ottawa Heart A","Ottawa Heart B","Ottawa Heart C"))
+forest.rma(meta, xlab = "Area under the ROC Curve", mlab = "RE Model for All Studies", refline = 0.6909 )
+
+text(c(0.275, 1.1), 7.5, c("Study name", "AUC [95% CI]"), font = 2)
+```
+
+## Differences
+
+Doing differences for Results section
+	
+```{R}
+y <- 0 ; n <- 0
+
+for(i in 1:6){
+	cohorts[[i]]$quantile <- as.integer(quantcut(cohorts[[i]]$SCORE, q = 10))
+
+	y <- y + length(cohorts[[i]]$cad[cohorts[[i]]$cad == 1 & cohorts[[i]]$quantile > 8])
+	n <- n + length(cohorts[[i]]$cad[cohorts[[i]]$cad == 0 & cohorts[[i]]$quantile > 8])}
+
+y/n
+```
+
+```{R}
+y <- 0 ; n <- 0
+
+for(i in 1:6){
+	cohorts[[i]]$quantile <- as.integer(quantcut(cohorts[[i]]$SCORE, q = 10))
+
+	y <- y + length(cohorts[[i]]$cad[cohorts[[i]]$cad == 1 & cohorts[[i]]$quantile < 3])
+	n <- n + length(cohorts[[i]]$cad[cohorts[[i]]$cad == 0 & cohorts[[i]]$quantile < 3])}
+
+y/n
+```
+
+
+# CMD Score
+
+## No covariates
+
+New way with `pROC`:  Note that the two packages conflict.
+```{R}
+
+#if dont want to plot ROC
+PLOT.ROC <- T
+par(mfrow = c(2,2))
+
+report <- list()
+
+for(score in 2:5){
+
+	score.name <- paste0("SCORE.", score)
+
+	vars <- list()
+	cohorts <- list()
+	rocs <- list()
+	reg <- list()
+	pred <- list()
+	perf <- list()
+
+	library(fmsb)
+	j <- 1
+
+	or <- list()
+	r2 <- list()
+	se <- list()
+	aic <- list()
+	auc2 <- list()
+	for(i in list.files("/Users/Chris/repos/cad_grs/assets/out/cmb", full.names = TRUE)){
+
+		cohorts[[j]] <- read.table(i, h = T)
+		colnames(cohorts[[j]])[colnames(cohorts[[j]]) == "case"] = "cad"
+
+		reg[[j]] <- glm(cad ~  get(score.name, envir = as.environment(cohorts[[j]])) +pc1+pc2, cohorts[[j]], family = "binomial")
+
+		pred[[j]] <- predict(reg[[j]], cohorts[[j]][, c(score.name, "pc1", "pc2")])
+
+		rocs[[j]] <- roc(cohorts[[j]]$cad, pred[[j]])
+		vars[[j]] <- pROC::var(rocs[[j]])
+
+		# diagnostics
+		r2[[j]] <- NagelkerkeR2(reg[[j]])$R2
+		or[[j]] <- as.double(reg[[j]]$coefficients[2])
+		se[[j]] <- as.double(summary(reg[[j]])$coefficients[, "Std. Error"][2])
+		aic[[j]] <- summary(reg[[j]])$aic
+		auc2[[j]] <- auc(rocs[[j]])
+
+		j <- j + 1
+	}
+
+	report[[score]] <- data.frame(score = score, lab = c("Ottawa Heart A","Ottawa Heart B","Ottawa Heart C", "Cleveland Clinic"), OR = unlist(or), SE = unlist(se), r2 = unlist(r2), aic = unlist(aic), auc = unlist(auc2))
+
+	df <- data.frame(auc = c(auc(rocs[[1]]), auc(rocs[[2]]), auc(rocs[[3]]), auc(rocs[[4]])), var = c(var(rocs[[1]]), var(rocs[[2]]), var(rocs[[3]]), var(rocs[[4]])))
+	df$sd <- sqrt(df$var)
+
+  if(PLOT.ROC){
+
+	meta <- rma(auc, var, data = df, slab = c("Ottawa Heart A","Ottawa Heart B","Ottawa Heart C", "Cleveland Clinic"))
+	forest.rma(meta, xlab = "Area under the ROC Curve", mlab = "RE Model for All Studies", refline = 0.6909 )
+
+	text(c(0.275, 1.1), 7.5, c("Study name", "AUC [95% CI]"), font = 2)
+  }
+  }
+
+pander(rbind(report1[-c(2,3),], report[[2]], report[[3]], report[[4]], report[[5]]));  
+```
+
+
+## Sex covariate
+```{R}
+
+#if dont want to plot ROC
+PLOT.ROC <- T
+par(mfrow = c(2,2))
+
+report <- list()
+
+for(score in 2:5){
+
+	score.name <- paste0("SCORE.", score)
+
+	vars <- list()
+	cohorts <- list()
+	rocs <- list()
+	reg <- list()
+	pred <- list()
+	perf <- list()
+
+	library(fmsb)
+	j <- 1
+
+	or <- list()
+	r2 <- list()
+	se <- list()
+	aic <- list()
+	auc2 <- list()
+	for(i in list.files("/Users/Chris/repos/cad_grs/assets/out/cmb", full.names = TRUE)){
+
+		cohorts[[j]] <- read.table(i, h = T)
+		colnames(cohorts[[j]])[colnames(cohorts[[j]]) == "case"] = "cad"
+
+		reg[[j]] <- glm(cad ~  get(score.name, envir = as.environment(cohorts[[j]])) +pc1+pc2 + gender, cohorts[[j]], family = "binomial")
+
+		pred[[j]] <- predict(reg[[j]], cohorts[[j]][, c(score.name, "pc1", "pc2", "gender")])
+
+		rocs[[j]] <- roc(cohorts[[j]]$cad, pred[[j]])
+		vars[[j]] <- pROC::var(rocs[[j]])
+
+		# diagnostics
+		r2[[j]] <- NagelkerkeR2(reg[[j]])$R2
+		or[[j]] <- as.double(reg[[j]]$coefficients[2])
+		se[[j]] <- as.double(summary(reg[[j]])$coefficients[, "Std. Error"][2])
+		aic[[j]] <- summary(reg[[j]])$aic
+		auc2[[j]] <- auc(rocs[[j]])
+
+		j <- j + 1
+	}
+
+	report[[score]] <- data.frame(score = score, lab = c("Ottawa Heart A","Ottawa Heart B","Ottawa Heart C", "Cleveland Clinic"), OR = unlist(or), SE = unlist(se), r2 = unlist(r2), aic = unlist(aic), auc = unlist(auc2))
+
+	df <- data.frame(auc = c(auc(rocs[[1]]), auc(rocs[[2]]), auc(rocs[[3]]), auc(rocs[[4]])), var = c(var(rocs[[1]]), var(rocs[[2]]), var(rocs[[3]]), var(rocs[[4]])))
+	df$sd <- sqrt(df$var)
+
+  if(PLOT.ROC){
+
+	meta <- rma(auc, var, data = df, slab = c("Ottawa Heart A","Ottawa Heart B","Ottawa Heart C", "Cleveland Clinic"))
+	forest.rma(meta, xlab = "Area under the ROC Curve", mlab = "RE", refline = 0.6909 )
+
+	#text(c(0.6, 0.9), 7.5, c("Study name", "AUC [95% CI]"), font = 2)
+  }
+  }
+
+pander(rbind(report1s[-c(2,3),],report[[2]], report[[3]], report[[4]], report[[5]]));  
+```
+
+
+
+## Sex Interaction
+```{R}
+
+#if dont want to plot ROC
+PLOT.ROC <- T
+par(mfrow = c(2,2))
+
+report <- list()
+
+for(score in 2:5){
+
+	score.name <- paste0("SCORE.", score)
+
+	vars <- list()
+	cohorts <- list()
+	rocs <- list()
+	reg <- list()
+	pred <- list()
+	perf <- list()
+	p <- list()
+
+	library(fmsb)
+	j <- 1
+
+	or <- list()
+	r2 <- list()
+	se <- list()
+	aic <- list()
+	auc2 <- list()
+	for(i in list.files("/Users/Chris/repos/cad_grs/assets/out/cmb", full.names = TRUE)){
+
+		cohorts[[j]] <- read.table(i, h = T)
+		colnames(cohorts[[j]])[colnames(cohorts[[j]]) == "case"] = "cad"
+
+		reg[[j]] <- glm(cad ~  get(score.name, envir = as.environment(cohorts[[j]]))*gender +pc1+pc2, cohorts[[j]], family = "binomial")
+
+		pred[[j]] <- predict(reg[[j]], cohorts[[j]][, c(score.name, "pc1", "pc2", "gender")])
+
+		rocs[[j]] <- roc(cohorts[[j]]$cad, pred[[j]])
+		vars[[j]] <- pROC::var(rocs[[j]])
+
+		# diagnostics
+		r2[[j]] <- NagelkerkeR2(reg[[j]])$R2
+		or[[j]] <- as.double(reg[[j]]$coefficients[2])
+		se[[j]] <- as.double(summary(reg[[j]])$coefficients[, "Std. Error"][2])
+		aic[[j]] <- summary(reg[[j]])$aic
+		auc2[[j]] <- auc(rocs[[j]])
+		p[[j]] <- as.double(coef(summary(reg[[j]]))[,4][6])
+
+		j <- j + 1
+	}
+
+	report[[score]] <- data.frame(score = score, lab = c("Ottawa Heart A","Ottawa Heart B","Ottawa Heart C", "Cleveland Clinic"), OR = unlist(or), SE = unlist(se), r2 = unlist(r2), aic = unlist(aic), auc = unlist(auc2), p.int = unlist(p))
+
+	df <- data.frame(auc = c(auc(rocs[[1]]), auc(rocs[[2]]), auc(rocs[[3]]), auc(rocs[[4]])), var = c(var(rocs[[1]]), var(rocs[[2]]), var(rocs[[3]]), var(rocs[[4]])))
+	df$sd <- sqrt(df$var)
+
+  if(PLOT.ROC){
+
+	meta <- rma(auc, var, data = df, slab = c("Ottawa Heart A","Ottawa Heart B","Ottawa Heart C", "Cleveland Clinic"))
+	forest.rma(meta, xlab = "Area under the ROC Curve", mlab = "RE", refline = 0.6909 )
+
+	#text(c(0.6, 0.9), 7.5, c("Study name", "AUC [95% CI]"), font = 2)
+  }
+  }
+
+pander(rbind(report[[2]], report[[3]], report[[4]], report[[5]]));  
+```
+
+
+
+## Quantile Plots
+
+Creating quantile plots. Useing B2 as an example (`i = 2`)
+
+```{R}
+library(gtools)
+library(popbio)
+
+i <-2
+cases <- list()
+
+cohorts[[i]]$quantile <- as.integer(quantcut(cohorts[[i]]$SCORE.5, q = 10))
+logi.hist.plot(cohorts[[i]]$SCORE.5, cohorts[[i]]$cad, type = "hist", col = "gray")
+```
+
+## Differencing
+
+Doing differences for Results section
+	
+```{R}
+y <- 0 ; n <- 0
+
+for(i in 1:4){
+	cohorts[[i]]$quantile <- as.integer(quantcut(cohorts[[i]]$SCORE.2, q = 10))
+
+	y <- y + length(cohorts[[i]]$cad[cohorts[[i]]$cad == 1 & cohorts[[i]]$quantile > 8])
+	n <- n + length(cohorts[[i]]$cad[cohorts[[i]]$cad == 0 & cohorts[[i]]$quantile > 8])}
+
+y/n
+```
+
+```{R}
+y <- 0 ; n <- 0
+
+for(i in 1:4){
+	cohorts[[i]]$quantile <- as.integer(quantcut(cohorts[[i]]$SCORE.2, q = 10))
+
+	y <- y + length(cohorts[[i]]$cad[cohorts[[i]]$cad == 1 & cohorts[[i]]$quantile < 3])
+	n <- n + length(cohorts[[i]]$cad[cohorts[[i]]$cad == 0 & cohorts[[i]]$quantile < 3])}
+
+y/n
+```
+
+# Optimal Cardiometabolic
+
+
+## Full process
+
+Once logged into HPCVL
+
+Step 1, recode cohort files to have the correct phenotype. We'll use BMI for this one
+
+```{bash, eval = F}
+
+# this takes a long time
+plink --bfile OHGS_A2_ALL_imp_b_s1_tg --pheno bmi.phen --recode --out OHGS_A2_ALL_imp_b_s1_bmi
+plink --bfile OHGS_B2_ALL_imp_b_s1_tg --pheno bmi.phen --recode --out OHGS_B2_ALL_imp_b_s1_bmi
+plink --bfile OHGS_C2_ALL_imp_b_s1_tg --pheno bmi.phen --recode --out OHGS_C2_ALL_imp_b_s1_bmi
+plink --bfile CCGB_2_ALL_imp_b_s1_tg --pheno bmi.phen --recode --out CCGB_2_ALL_imp_b_s1_bmi
+
+cd ~/repos/cad_grs/src
+
+qsub -N "bmi_a2" prslice_run.sh OHGS_A2 bmi
+qsub -N "bmi_b2" prslice_run.sh OHGS_B2 bmi
+qsub -N "bmi_C2" prslice_run.sh OHGS_C2 bmi
+qsub -N "bmi_cc2" prslice_run.sh CCGB_2 bmi
+```
+
+NOTE: Added `exclude.txt` to `/bin/` to house all duplicated SNPs.
+
+```{R, eval = F}
+r <- read.table("rawfile.raw", h = F)
+r$V1[duplicated(r$V1)]
+```
+
+
+# Model Comparisson 
+
+```{R, eval = F}
+
+
+cmd <- list()
+trs <- list()
+
+for(i in list.files("/Users/Chris/repos/cad_grs/assets/out/cmb", full.names = TRUE)) cmd[[i]] <- read.table(i, h = T) 
+
+for(i in list.files("/Users/Chris/repos/cad_grs/assets/out", full.names =  TRUE)[list.files("/Users/Chris/repos/cad_grs/assets/out", full.names =  TRUE) != "/Users/Chris/repos/cad_grs/assets/out/cmb"]) {
+  
+  trs[[i]] <- read.table(i, h = T)
+  colnames(trs[[i]])[colnames(trs[[i]]) == "case"] = "cad"
+
+}
+
+cmd[[1]] %>% merge(., cmd[[2]], by = colnames(cmd[[1]]), all = TRUE) %>% merge(.,cmd[[3]], by = colnames(cmd[[1]]), all = TRUE) %>% merge(., cmd[[2]], by = colnames(cmd[[1]]), all = TRUE) -> cmd
+
+
+join <- c("IID", "cad", "pc1", "pc2", "SCORE")
+
+trs[[4]] %>% merge(., trs[[5]], by = join, all = TRUE) %>% select(IID, cad, pc1, pc2, SCORE) %>% merge(., trs[[6]], by = join, all = TRUE) %>% select(IID, cad, pc1, pc2, SCORE) %>% merge(., trs[[1]], by = join, all = TRUE) %>% select(IID, cad, pc1, pc2, SCORE) -> trs
+
+cad <- merge(cmd, trs, by = c("IID", "cad", "pc1", "pc2"),all.x = TRUE)
+
+reg1 <- glm(cad ~ SCORE + pc1 + pc2, cad, family = "binomial")
+reg2 <- glm(cad ~ SCORE.2 + pc1 + pc2, cad, family = "binomial")
+
+pred1 <- predict(reg1, cad[,c("SCORE", "pc1", "pc2")])
+pred2 <- predict(reg2, cad[,c("SCORE.2", "pc1", "pc2")])
+
+roc1 <- roc(cad$cad, pred1)
+roc2 <- roc(cad$cad, pred2)
+
+roc.test(roc1, roc2, method = "delong")
+roc.test(roc1, roc2, method = "bootstrap",  boot.n=1000)
+```
+

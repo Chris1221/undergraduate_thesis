@@ -1,9 +1,38 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cole et~al.(2014)Cole, Nikpay, Lau, Stewart, Davies, Wells, Dent, and
+  McPherson]{Cole2014}
+C.~B. Cole, M.~Nikpay, P.~Lau, a.~F.~R. Stewart, R.~W. Davies, G.~a. Wells,
+  R.~Dent, and R.~McPherson.
+\newblock {Adiposity significantly modifies genetic risk for dyslipidemia}.
+\newblock \emph{The Journal of Lipid Research}, 55\penalty0 (11):\penalty0
+  2416--2422, sep 2014.
+\newblock ISSN 0022-2275.
+\newblock \doi{10.1194/jlr.P052522}.
+\newblock URL \url{http://www.jlr.org/cgi/doi/10.1194/jlr.P052522}.
+
+\bibitem[Cole et~al.(2015{\natexlab{a}})Cole, Nikpay, and
+  McPherson]{ColeChristopherB.a;NikpayMajidb;McPhersonRutha}
+Christopher~B Cole, Majid Nikpay, and Ruth McPherson.
+\newblock {Gene–environment interaction in dyslipidemia}, 2015{\natexlab{a}}.
+\newblock URL
+  \url{http://journals.lww.com/co-lipidology/Abstract/2015/04000/Gene{\_}environment{\_}interaction{\_}in{\_}dyslipidemia.10.aspx}.
+
+\bibitem[Cole et~al.(2015{\natexlab{b}})Cole, Nikpay, Stewart, and
+  McPherson]{Cole2015a}
+Christopher~B Cole, Majid Nikpay, Alexandre~Fr Stewart, and Ruth McPherson.
+\newblock {Increased genetic risk for obesity in premature coronary artery
+  disease.}
+\newblock \emph{European journal of human genetics : EJHG}, jul
+  2015{\natexlab{b}}.
+\newblock ISSN 1476-5438.
+\newblock \doi{10.1038/ejhg.2015.162}.
+\newblock URL \url{http://dx.doi.org/10.1038/ejhg.2015.162}.
 
 \bibitem[Consortium(2013)]{Consortium2013}
 Global Lipids~Genetics Consortium.
@@ -50,6 +79,15 @@ Robert~W Davies, George~A Wells, Alexandre F~R Stewart, Jeanette Erdmann,
 \newblock \doi{10.1161/CIRCGENETICS.111.961243}.
 \newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3335297/}.
 
+\bibitem[DeLong et~al.(1988)DeLong, DeLong, and Clarke-Pearson]{DeLong1988}
+Elizabeth~R DeLong, David~M DeLong, and Daniel~L Clarke-Pearson.
+\newblock {Comparing the Areas under Two or More Correlated Receiver Operating
+  Characteristic Curves: A Nonparametric Approach}.
+\newblock \emph{Biometrics}, 44\penalty0 (3):\penalty0 837--845, 1988.
+\newblock ISSN 0006341X, 15410420.
+\newblock \doi{10.2307/2531595}.
+\newblock URL \url{http://www.jstor.org/stable/2531595}.
+
 \bibitem[Dudbridge(2013)]{Dudbridge2013}
 Frank Dudbridge.
 \newblock {Power and Predictive Accuracy of Polygenic Risk Scores}.
@@ -87,6 +125,13 @@ Ruth McPherson and Anne Tybjaerg-Hansen.
 \newblock \doi{10.1161/CIRCRESAHA.115.306566}.
 \newblock URL \url{http://circres.ahajournals.org/content/118/4/564.abstract}.
 
+\bibitem[Nagelkerke(1991)]{Nagelkerke1991}
+N.~J~D Nagelkerke.
+\newblock {A note on a general definition of the coefficient of determination}.
+\newblock \emph{Biometrika}, 78\penalty0 (3):\penalty0 691--692, 1991.
+\newblock ISSN 00063444.
+\newblock \doi{10.1093/biomet/78.3.691}.
+
 \bibitem[Price et~al.(2006)Price, Patterson, Plenge, Weinblatt, Shadick, and
   Reich]{Price2006}
 Alkes~L Price, Nick~J Patterson, Robert~M Plenge, Michael~E Weinblatt, Nancy~a
@@ -97,6 +142,19 @@ Alkes~L Price, Nick~J Patterson, Robert~M Plenge, Michael~E Weinblatt, Nancy~a
 \newblock ISSN 1061-4036.
 \newblock \doi{10.1038/ng1847}.
 \newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16862161}.
+
+\bibitem[Robin et~al.(2011)Robin, Turck, Hainard, Tiberti, Lisacek, Sanchez,
+  and M{\"{u}}ller]{Robin2011}
+Xavier Robin, Natacha Turck, Alexandre Hainard, Natalia Tiberti,
+  Fr{\'{e}}d{\'{e}}rique Lisacek, Jean-Charles Sanchez, and Markus
+  M{\"{u}}ller.
+\newblock {pROC: an open-source package for R and S+ to analyze and compare ROC
+  curves.}
+\newblock \emph{BMC bioinformatics}, 12\penalty0 (1):\penalty0 77, jan 2011.
+\newblock ISSN 1471-2105.
+\newblock \doi{10.1186/1471-2105-12-77}.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3068975{\&}tool=pmcentrez{\&}rendertype=abstract}.
 
 \bibitem[Schunkert et~al.(2011)Schunkert, K{\"{o}}nig, Kathiresan, Reilly,
   Assimes, Holm, Preuss, Stewart, Barbalic, Gieger, Absher, Aherrahrou,
@@ -334,6 +392,13 @@ Lei Sun, Radu~V. Craiu, Andrew~D. Paterson, and Shelley~B. Bull.
 \newblock ISSN 1546-1718.
 \newblock \doi{10.1038/ng.3396}.
 \newblock URL \url{http://dx.doi.org/10.1038/ng.3396}.
+
+\bibitem[Viechtbauer(2010)]{metafor}
+Wolfgang Viechtbauer.
+\newblock Conducting meta-analyses in {R} with the {metafor} package.
+\newblock \emph{Journal of Statistical Software}, 36\penalty0 (3):\penalty0
+  1--48, 2010.
+\newblock URL \url{http://www.jstatsoft.org/v36/i03/}.
 
 \bibitem[Visscher et~al.(2012)Visscher, Brown, McCarthy, and
   Yang]{Visscher2012}

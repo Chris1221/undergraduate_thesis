@@ -31,7 +31,7 @@ This study additionally comprised two ``training'' populations which were used t
 
 \textbf{Global Lipids Consortium:} The Global Lipids Consortium estimates genetic effects in $n = 188,577$ individuals using whole genome and custom genotyping arrays. We use their estimated additive genetic effects for SNPs predicting \ac{TG}, \ac{HDLc}, and \ac{LDLc}. Collection methodologies and further information are outlined in \citep{Consortium2013}.
 
-\textbf{CARDIoGRAMplusC4D:} \unsure{add in details for cardiogram, and make sure to pull down the missing part}
+\textbf{CARDIoGRAMplusC4D:} The Coronary ARtery DIsease Genome wide Replication and Meta-analysis (CARDIoGRAM) plus The Coronary Artery Disease (C4D) Genetics is a collaborative effort combining \ac{GWAS} data from multiple data sources to better estimate potential genetic effects in \ac{CAD}. Their data represents 22 studies with 22,233 cases and 64,762 controls of European individuals. Further information and collection methodology is outlined in \cite{TheCARDIoGRAMplusC4DConsortium2015}.
 
 
 \section{Polygenic Prediction of CAD}
@@ -43,6 +43,7 @@ In the following analysis we primarily compare three different methods for const
 The first, which we denote as the ``traditional risk score'', or $\hat{S}_{TRS}$. This score uses the ``traditional'' approach of only using the highest confidence genome wide significant loci for \ac{CAD} in the construction of the score. We derive the estimated $\underline{\hat{\beta}}$ effects from \citep{TheCARDIoGRAMplusC4DConsortium2015}, whose methodology is described above. We only use the 212 variants from this section which have been shown to be FDR signficicant with $q < 0.05$ across the whole genome, as is common practice. Recall from the derivation leading up to equation \ref{score} that \ac{PRS} $S$ for individual $n$ is described as  $$ S = \sum^m_{i=1} \beta_i G_{ni} $$ Therefore for this score, we define $\hat{\beta}$ as a vector of length 212 with each of the estimated additive genetic effects derived from CARDIoGRAM plus C4D, and construct estimated score $\hat{S}$ for individual $n$ as $$ \hat{S}_{n, TRS} \equiv \sum^{212}_{i = 1} \hat{\beta}_i \mathbf{G}_{n, i} $$ This forms the basis for our first model.
 
 \subsection{Cardiometabolic Risk Score}
+\label{cmb-rs}
 
 The second score which we estimate is a novel derivation. We aim to use genetic information from several co-morbid conditions together to better explain \ac{CAD}. The motivation is that important signals may be spuriously insignificant in large meta analyses, or simply have too low effect to be accurately categorized as significant; taking information from co-morbid conditions allows researchers a wider span of information to integrate. 
 
@@ -60,10 +61,6 @@ We then take all genetic effects $i \in G^*$ and calculate a score based on thes
 $$ \hat{S}_{CMB} \equiv \sum_{i \in G^*_{LDLc}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{HDLc}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{TG}} \hat{\beta}_i \mathbf{G}_{n, i} + \sum_{i \in G^*_{TG}} \hat{\beta}_i \mathbf{G}_{n, i} $$
 
 We use this new score to predict \ac{CAD}, with the hypothesis that incorporating several co-morbid conditions will better prioritize variants in order to achieve increased predictive accuracy. 
- 
-\unsure[inline]{this isn't exactly correct, make the list beforehand}
-
-\improvement[inline]{talk about what to do in duplication cases in further work}
 
 \subsection{Optimal Cardiometabolic Risk Score}
 
@@ -80,7 +77,23 @@ This forms the new optimal score for testing.
 
 \section{Statistical Analysis}
 
-\improvement[inline]{add in as go}
+\subsection{Construction of \ac{PRS}}
+
+\ac{PRS} were constructed in both R and Plink v1.90 (https://www.cog-genomics.org/plink2) with validation in Plink v 1.07 (http://pngu.mgh.harvard.edu/~purcell/plink/). Each of approximately 5.5M imputed, post quality control, \ac{GWAS} were coded as 0,1, or 2, depending on the number of minor alleles present. \ac{PRS} was calculated as described in previous sections and a normal distribution was validated using both empirical tests (Levene, Shapiro-Wilk) and qualitative observations on qq plots and histograms. Each \ac{PRS} was confirmed to have a normal distribution, validating one of the assumptions of future models. 
+
+Optimal \ac{PRS} (\ac{oPRS}) were constructed again using R and Plink 1.90/1.07, though with the assistance of PRSice. \citep{Euesden2014} To determine optimal thresholds for \ac{SNP} inclusion, \acp{SNP} were ordered by $P$ value and 2500 ``slices'' or thresholds were created between $P = 0.0001$ and $P = 0.25$. For each of these thresholds, a logistic regression model was created, as detailed below, and the $P$ value of association was calculated. The model was adjusted for the first two principal components and sex. The maximal $P$ value of association was observed and extracted. Based on permutation analysis in the original publication, since our \ac{oPRS} showed $P$-values of association less than $\alpha = 0.001$, our association was deemed to be significant overcoming multiple testing correction. Results were graphically displayed using both base plotting in R and ggplot2. 
+
+\subsection{Predictive Model}
+
+In order to predict \ac{CAD} with our \ac{PRS}, covariate adjusted logistic (binomial) regression models were used. Scores were always adjusted for the first two principal components to adjust for population stratification. Nagelkerke's Pseudo $R^2$, gives an estimation of the scaled explained variance of a logistic model. It is given by
+
+$$ R^2 = 1 - \left\{  \frac{L(M_{intercept})}{L(M_{full})}  \right\}^{\frac{2}{N}} $$
+
+Where $L(M)$ is the conditional probability of the outcome variable (\ac{CAD}) given the independent variables and $L$ is the likelihood function operator. A full description of the operator is given in \cite{Nagelkerke1991}.
+
+Area under the receiver operator character curve, also known as the $c$-statistic, is a well known proxy for predictive accuracy of a binary model. It was calculated in the pROC package in R (\cite{Robin2011}). Differences between ROC model was assessed firstly by the method for correlated ROC curves proposed by \cite{DeLong1988}. A secondary, more robust, difference was estimated through 1000 bootstrap permutations of dependent variables in R. 
+
+Meta analysis was conducted in the metafor package in R. \citep{metafor} Random effects were assumed for study variables to have greater applicable to the population at large. 
 
 \section{Computational Resources}
 

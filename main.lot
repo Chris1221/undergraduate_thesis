@@ -3,7 +3,11 @@
 \contentsline {table}{\numberline {1.1}{\ignorespaces Notation relating to hypothesis testing. Adapted from \cite {Sun2006}}}{6}{table.1.1}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {3.1}{\ignorespaces General Population description. All values are expressed as mean $\pm $ one standard deviation unless otherwise noted. $^1$ Age represents age at consent for controls and age at diagnosis for cases $^2$ Obesity is defined as having a BMI of greater or equal to 30 kg/m2 at time of collection $^3$T G (triglyceride), LDLc (low density lipoprotein cholesterol), HDLc (high density lipoprotein cholesterol).}}{17}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Summary statistics from Logistic association model. }}{18}{table.3.2}
-\contentsline {table}{\numberline {3.3}{\ignorespaces My caption}}{20}{table.3.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces General Population description. All values are expressed as mean $\pm $ one standard deviation unless otherwise noted. $^1$ Age represents age at consent for controls and age at diagnosis for cases $^2$ Obesity is defined as having a BMI of greater or equal to 30 kg/m2 at time of collection $^3$T G (triglyceride), LDLc (low density lipoprotein cholesterol), HDLc (high density lipoprotein cholesterol).}}{18}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Summary statistics from Logistic association model. }}{19}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces My caption}}{21}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Optimal \ac {PRS} P value thresholds ($T_o$) derived for }}{22}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Summary statistics for logistic fit of \ac {oPRS}.}}{23}{table.3.5}
+\addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Genetic Correlations between Obesity and \ac {CAD}. Adapted from \cite {Cole2015a}}}{25}{table.4.1}
 \addvspace {10pt}
