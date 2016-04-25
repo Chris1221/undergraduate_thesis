@@ -20,7 +20,7 @@ TG $^3$ (mmol/L)      & 1.46 $\pm$ 1.47      &  & 1.66 $\pm$ 1.70 &  & 1.18 $\pm
 HDLc$^3$ (mmol/L)     & 1.27 $\pm$ 0.44      &  & 1.13 $\pm$ 0.39 &  & 1.46 $\pm$ 0.44 \\
 LDLc$^3$ (mmol/L)     & 3.29 $\pm$ 1.08      &  & 3.18 $\pm$ 1.17 &  & 3.43 $\pm$ 0.93 \\ \hline
 \end{tabular}
-\caption{General Population description. All values are expressed as mean $\pm$ one standard deviation unless otherwise noted. $^1$  Age represents age at consent for controls and age at diagnosis for cases
+\caption[General Population descriptions.]{General Population description. All values are expressed as mean $\pm$ one standard deviation unless otherwise noted. $^1$  Age represents age at consent for controls and age at diagnosis for cases
  $^2$ Obesity is defined as having a BMI of greater or equal to 30 kg/m2 at time of collection $^3$T G (triglyceride), LDLc (low density lipoprotein cholesterol), HDLc (high density lipoprotein cholesterol).}
 \label{pop}
 \end{table}
@@ -32,20 +32,18 @@ The traditional risk score was significantly ($P < 2.2 \times 10^{16}$) associat
 
 \begin{figure}[h]
 \label{trs_meta}
-\caption{Random effects meta analysis of AUC ROC from six cohorts.}
 \centering
 \includegraphics[width=0.8\textwidth]{Figures/trs_meta.png}
+\caption[Random effects meta analysis of AUC ROC from six cohorts.]{\textbf{Random effects meta analysis of AUC ROC from six cohorts.} Logistic regression models were constructed with $\hat{S}_{TRS}$ and the first two principal components adjusting for population stratification were used to predict \ac{CAD}. Various thresholds for false positives and true positives were used to construct \ac{ROC} curves. Area under these curves were estimated along with error. The associated effects were analyzed assuming cohorts were random effects and an overall effect was derived.}
 \end{figure}
 
 Logistic regression was used to predict observations following the model. Summary statistics from the models employed are displayed in Table \ref{trs}
 
 $$ CAD = X_0 + \hat{\beta}_1 \hat{S}_{TRS} + \hat{\beta}_2 PC_1 + \hat{\beta}_3 PC_3 + \epsilon $$
 
-\unsure{Add in abreviations}
 \begin{table}[H]
 \centering
-\caption{Summary statistics from Logistic association model. }
-\label{trs}
+
 \begin{tabular}{llllll}
 \hline
 Cohort           & OR        & SE       & $R^2$      & AIC      & AUC       \\ \hline
@@ -56,6 +54,8 @@ OHGS A2          & 310.49752 & 34.52749 & 0.07650691 & 2558.277 & 0.6391285 \\
 OHGS B2          & 259.59352 & 24.94511 & 0.07425403 & 3681.768 & 0.6339916 \\
 OHGS C2          & 276.96733 & 45.92012 & 0.05491302 & 1318.919 & 0.6193695 \\ \hline
 \end{tabular}
+\caption[Summary statistics from Logistic association model for $\hat{S}_{TRS}$.]{\textbf{Summary statistics from Logistic association model.} $\hat{S}_{TRS}$ along with the first two principal components to adjust for population stratification were used to predict \ac{CAD}. OR corresponds to the odds ratio of $\hat{S}_{TRS}$ along with its standard error (SE). $R^2$ corresponds to NagelKerke's Pseudo-$R^2$, while AIC corresponds to Akaike Information Criterion, a measure of model fit. AUC corresponds to the area under the \ac{ROC} curve as derived in the pROC package in R.}
+\label{trs}
 \end{table}
 
 An \ac{AUC} $\geq 0.5$ indicates that the model predicts CAD better than chance. The overall random effects meta analyzed \ac{AUC} was 0.61 $\pm 0.03$ for $\hat{S}_{TRS}$, with an average NagelKerke's Pseudo-$R^2$ of $0.047$. Interheart was the worst fit model, with NagelKerke's Pseudo-$R^2 = 0.017$ and \ac{AUC} $= 0.555$, barely predicting above chance. This is in contrast to the OHGS cohorts, which consistently fit better than Cleveland Clinic, Duke, or Interheart. As increasing the number of \acs{SNP} in the score will always increase the fit of the model, we compare the 202 FDR significant loci to randomly selected loci in 1000 bootstraps in Figure \ref{b2_perm}. 
@@ -66,10 +66,10 @@ In \ac{OHGS} B2, sex significantly ($P = 0.00226$) interacts with the effect of 
 
 
 \begin{figure}[H]
-\label{b2_perm}
-\caption{Score predicts better than chance}
 \centering
 \includegraphics[width=0.5\textwidth]{Figures/b2.png}
+\label{b2_perm}
+\caption[$\hat{S}_{TRS}$ predicts \ac{CAD} significantly better than 1000 \ac{PRS} constructed with an equal number of \acp{SNP}.]{\textbf{$\hat{S}_{TRS}$ predicts \ac{CAD} significantly better than 1000 \ac{PRS} constructed with an equal number of \acp{SNP}.} 202 \acp{SNP} were randomly selected from post quality control imputed \acp{SNP} and a \ac{PRS} was constructed using summary information from \cite{TheCARDIoGRAMplusC4DConsortium2015} and Nagelkerke's Pseudo $R^2$ was plotted against frequency. The red line denote the Nagelkerke's $R^2$ of the true \ac{TRS} which predicts significantly $P \approx 0$ better than the random model.}
 \end{figure}
 
 These results are in line with literature values. Those in the top quintile of the \ac{PRS} were 70\% more likely to have \ac{CAD} than not (2045 cases vs 1198 controls). Similarly, those in the bottom quintile were  5\% less likely to be diagnosed with \ac{CAD} than not (1576 cases vs 1659 controls).
@@ -84,8 +84,6 @@ The summary statistics of this analysis are presented in Table \ref{cmd-sum}. Hi
 
 \begin{table}[H]
 \centering
-\caption{My caption}
-\label{cmd-sum}
 \begin{tabular}{lllllll}
 \hline
 Score & Cohort           & OR        & SE       & R2         & AIC      & AUC       \\ \hline
@@ -110,6 +108,8 @@ $\hat{S}_{CMB; 5}$     & OHGS\_A2         & 297.0165  & 34.10419 & 0.07234597 & 
       & OHGS\_C2         & 323.9172  & 50.90267 & 0.06088933 & 1313.958 & 0.6275034 \\
       & Cleveland        & 410.9963  & 48.57387 & 0.06493754 & 1815.742 & 0.6436849 \\ \hline
 \end{tabular}
+\label{cmd-sum}
+\caption[Summary statistics from Logistic association model for $\hat{S}_{CMD}$.]{\textbf{Summary statistics from Logistic association model.} $\hat{S}_{CMD; x}$ along with the first two principal components to adjust for population stratification were used to predict \ac{CAD}. OR corresponds to the odds ratio of $\hat{S}_{TRS}$ along with its standard error (SE). $R^2$ corresponds to NagelKerke's Pseudo-$R^2$, while AIC corresponds to Akaike Information Criterion, a measure of model fit. AUC corresponds to the area under the \ac{ROC} curve as derived in the pROC package in R.}
 \end{table}
 
 In permutation analyses, each of the scores performed significantly better than an equivalent number of randomly selected \acp{SNP} in 1000 bootstraps. The random effects meta analysis \ac{AUC} values were $0.65 [ 0.64, 0.67], 0.64[0.63, 0.66], 0.64[0.63, 0.65], 0.63[0.62, 0.65]$ for scores 1 through 5 respectively. Interestingly, the more \acp{SNP} added in, the worse the model was at predicting the phenotype. The \ac{AIC} is also uniformly smaller in score 2 than in subsequent scores, meaning that this model fit the data the best. Persons in the upper quintile of this score were 81\% more likely (1725 cases vs 953 controls) to have \ac{CAD} than not (compared to 70 \% for the previous score) and people in the bottom quintile were 15.7\% less likely (1240 cases vs 1471 controls) to have \ac{CAD} than having it. There was also a substantive increase in NagelKerke's Pseudo $R^2$ in the second score compared to any other, especially in the Cleveland cohort. 
@@ -125,8 +125,7 @@ When optimal scores were derived, the thresholds described in Table \ref{oprs} w
 
 \begin{table}[H]
 \centering
-\caption{Optimal \ac{PRS} P value thresholds ($T_o$) derived for }
-\label{oprs}
+
 \begin{tabular}{lllll}
 \hline
                   & \textbf{LDLc} & \textbf{HDLc} & \textbf{TG} & \textbf{BMI} \\ \hline
@@ -135,16 +134,19 @@ OHGS\_B2 & 0.2484        & 0.0999        & 0.0002      & 1            \\
 OHGS\_C2 & 0.1299        & 0.0085        & 0.1528      & 1            \\
 CCGB\_2  & 0.1807        & 0.2039        & 0.004       & 1            \\ \hline
 \end{tabular}
+
+\caption[Optimal \ac{PRS} $P$-value thresholds.]{\textbf{Optimal \ac{PRS} $P$ value thresholds ($T_o$) derived for each trait in each cohort.} 2500 thresholds were created between $P = 0.0001$ and $P = 0.25$ and used as inclusion threshold $T$ for \ac{PRS}. These \acp{SNP} were used to construct a \ac{PRS}, which was used alongside the first two principal components and sex as covariates to predict \ac{CAD}. Their respective $P$-values of association were recorded and the maximal $-\log_{10} P$-value of association was used as the optimal threshold $T_0$.}
+\label{oprs}
 \end{table}
 
 
 The optimal $P$ value cutoff threshold $T_o$ for \ac{BMI} was found to be $1$ for all cases as demonstrated in \ref{oprs_bmi}. We discuss this result further below, however, for now we exclude \ac{BMI} from the analysis of optimal risk scores, and opt to use just scores for the lipid traits.
 
 \begin{figure}[H]
-\label{oprs_bmi}
-\caption{No optimal $P$ value threshold for \ac{BMI}.}
 \centering
 \includegraphics[width=0.5\textwidth]{Figures/PRSice_HIGH-RES_PLOT_2016-04-23.png}
+\label{oprs_bmi}
+\caption[Optimal $P$-value inclusion threshold for \ac{BMI}.]{\textbf{High definition assocaition plot for \ac{BMI} \acp{SNP} with \ac{CAD}.}2500 thresholds were created between $P = 0.0001$ and $P = 0.25$ and used as inclusion threshold $T$ for \ac{PRS}. These \acp{SNP} were used to construct a \ac{PRS}, which was used alongside the first two principal components and sex as covariates to predict \ac{CAD}. Their respective $P$-values of association were recorded and the maximal $-\log_{10} P$-value of association was used as the optimal threshold $T_0$. There was no maximal $-\log_{10} P$ value threshold less than 0.25, consistent with the model shown in figure \ref{pi0} with low $\pi_0$, or proportion of truly null \acp{SNP}.}
 \end{figure}
 
 Constructing a logistic regression model, we find that our cumulative score (combining optimal scores from all three traits) is significantly ($P < 2.2 \times 10^{-16}$.) associated with \ac{CAD} status, and those who have a higher \ac{PRS} tend to have higher risk for \ac{CAD}. We detail summary statistics for this association in table \ref{oprs_ss}. 
@@ -153,8 +155,7 @@ Constructing a logistic regression model, we find that our cumulative score (com
 
 \begin{table}[H]
 \centering
-\caption{Summary statistics for logistic fit of \ac{oPRS}.}
-\label{oprs_ss}
+
 \begin{tabular}{lllllll}
 \hline
 Study & $n_{SNPs}$ & OR         & SE      & $R^2$     & AIC     & ROC    \\ \hline
@@ -163,6 +164,8 @@ OHGS\_B2 & 790128 & $3.42\times10^4$ & $1.5\times10^3$ & 0.3377 & 3061.9  & 0.79
 OHGS\_C2 & 622050 & $3.34\times10^4$ & $2.5\times10^3$ & 0.3009 & 1095.1  & 0.7929 \\
 CCGB\_2 & 847335 & $3.78\times10^4$ & $2.3\times10^3$ & 0.2836 & 1517.21 & 0.7953 \\ \hline
 \end{tabular}
+\label{oprs_ss}
+\caption[Summary statistics from Logistic association model for $\hat{S}_{oCMD}$.]{\textbf{Summary statistics from Logistic association model.} $\hat{S}_{oCMD}$ along with the first two principal components to adjust for population stratification were used to predict \ac{CAD}. OR corresponds to the odds ratio of $\hat{S}_{TRS}$ along with its standard error (SE). $R^2$ corresponds to NagelKerke's Pseudo-$R^2$, while AIC corresponds to Akaike Information Criterion, a measure of model fit. AUC corresponds to the area under the \ac{ROC} curve as derived in the pROC package in R.}
 \end{table}
 
 The \ac{oPRS}, comprising optimal scores for \ac{LDLc}, \ac{HDLc}, and \ac{TG} predicts \ac{CAD} with a very high accuracy, explaining between 24.5 and 33.8 percent of variance in \ac{CAD}. The random effects meta analysis of \ac{AUC} of the \ac{ROC} curve reveals an overall \ac{AUC} of $0.78 [0.75, 0.81]$, an extremely high value (Figure \ref{oprs_meta}). 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 APR 2016 01:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 APR 2016 13:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,67 +1082,62 @@ Chris/repos/thesis/Figures/uottawa.png>] [1
 ] [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 120.
+Package acronym Info: Label `acro:CAD' newly defined as it shall be overridden
+although it is yet undefined on input line 120.
+Package acronym Info: Label `acro:GWAS' newly defined as it shall be overridden
+
+although it is yet undefined on input line 120.
+Package acronym Info: Label `acro:PRS' newly defined as it shall be overridden
+although it is yet undefined on input line 120.
+Package acronym Info: Label `acro:SNP' newly defined as it shall be overridden
+although it is yet undefined on input line 120.
+Package acronym Info: Label `acro:TRS' newly defined as it shall be overridden
+although it is yet undefined on input line 124.
+LaTeX Font Info:    Try loading font information for U+msa on input line 124.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 120.
+LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
+Package acronym Info: Label `acro:CMB' newly defined as it shall be overridden
+although it is yet undefined on input line 126.
+Package acronym Info: Label `acro:oPRS' newly defined as it shall be overridden
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
+although it is yet undefined on input line 126.
+Package acronym Info: Label `acro:BMI' newly defined as it shall be overridden
+although it is yet undefined on input line 126.
 [3
 
-] [4] (/Users/Chris/repos/thesis/main.toc
-Overfull \hbox (0.15273pt too wide) detected at line 2
+] (/Users/Chris/repos/thesis/main.toc
+Overfull \hbox (0.15273pt too wide) detected at line 3
  \T1/cmr/bx/n/10 viii
  []
 
-[5
+[4
 
-]
-Package acronym Info: Label `acro:PRS' newly defined as it shall be overridden
-although it is yet undefined on input line 23.
-) [6] (/Users/Chris/repos/thesis/main.lof
-Package acronym Info: Label `acro:CAD' newly defined as it shall be overridden
-although it is yet undefined on input line 3.
-Package acronym Info: Label `acro:GWAS' newly defined as it shall be overridden
+]) [5] (/Users/Chris/repos/thesis/main.lof) [6
 
-although it is yet undefined on input line 5.
-Package acronym Info: Label `acro:oPRS' newly defined as it shall be overridden
-
-although it is yet undefined on input line 6.
-Package acronym Info: Label `acro:BMI' newly defined as it shall be overridden
-although it is yet undefined on input line 12.
-) [7
-
-] (/Users/Chris/repos/thesis/main.lot) [8
+] (/Users/Chris/repos/thesis/main.lot) [7
 
 ]
 \openout2 = `acronyms.aux'.
 
-(/Users/Chris/repos/thesis/acronyms.tex [9
+(/Users/Chris/repos/thesis/acronyms.tex [8
 
 
 
-]) [10] [11
+]
+Package acronym Info: Acronym LD used in text but not spelled out in full in te
+xt on input line 26.
+Package acronym Info: Acronym ROC used in text but not spelled out in full in t
+ext on input line 37.
+) [9] [10
 
 
 ]
@@ -1169,31 +1164,31 @@ l.7
 ]
 Package acronym Info: Label `acro:MI' newly defined as it shall be overridden
 although it is yet undefined on input line 10.
-<Figures/cad.png, id=450, 657.45625pt x 417.56pt>
+<Figures/cad.png, id=464, 657.45625pt x 417.56pt>
 File: Figures/cad.png Graphic file (type png)
 <use Figures/cad.png>
-Package pdftex.def Info: Figures/cad.png used on input line 16.
+Package pdftex.def Info: Figures/cad.png used on input line 15.
 (pdftex.def)             Requested size: 316.80121pt x 201.21019pt.
-Package acronym Info: Label `acro:kb' newly defined as it shall be overridden
-although it is yet undefined on input line 21.
-<Figures/9p21.png, id=458, 853.1875pt x 658.46pt>
-File: Figures/9p21.png Graphic file (type png)
-<use Figures/9p21.png>
-Package pdftex.def Info: Figures/9p21.png used on input line 26.
-(pdftex.def)             Requested size: 316.80121pt x 244.5005pt.
 [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.27 \end{figure}
-                  </Users/Chris/repos/thesis/Figures/cad.png>] [3pdfTeX warning
- (ext4): destination with the same identifier (name{figure.1.2}) has been alrea
-dy used, duplicate ignored
+l.20 
+      </Users/Chris/repos/thesis/Figures/cad.png>]
+Package acronym Info: Label `acro:kb' newly defined as it shall be overridden
+although it is yet undefined on input line 21.
+<Figures/9p21.png, id=492, 853.1875pt x 658.46pt>
+File: Figures/9p21.png Graphic file (type png)
+<use Figures/9p21.png>
+Package pdftex.def Info: Figures/9p21.png used on input line 25.
+(pdftex.def)             Requested size: 316.80121pt x 244.5005pt.
+[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.34 
+l.30 
       </Users/Chris/repos/thesis/Figures/9p21.png>]
 Package acronym Info: Label `acro:DNA' newly defined as it shall be overridden
 although it is yet undefined on input line 37.
@@ -1208,8 +1203,6 @@ although it is yet undefined on input line 37.
 Package acronym Info: Label `acro:locus' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 37.
-Package acronym Info: Label `acro:SNP' newly defined as it shall be overridden
-although it is yet undefined on input line 41.
 Package acronym Info: Label `acro:CNV' newly defined as it shall be overridden
 although it is yet undefined on input line 41.
 Package acronym Info: Label `acro:InDel' newly defined as it shall be overridde
@@ -1217,34 +1210,36 @@ n
 although it is yet undefined on input line 41.
 Package acronym Info: Label `acro:RNA' newly defined as it shall be overridden
 although it is yet undefined on input line 41.
-[4]
+[4] [5]
 Package acronym Info: Label `acro:OR' newly defined as it shall be overridden
 although it is yet undefined on input line 65.
-<Figures/man_ex.jpg, id=511, 949.5475pt x 654.445pt>
+<Figures/man_ex.jpg, id=547, 949.5475pt x 654.445pt>
 File: Figures/man_ex.jpg Graphic file (type jpg)
 <use Figures/man_ex.jpg>
-Package pdftex.def Info: Figures/man_ex.jpg used on input line 76.
+Package pdftex.def Info: Figures/man_ex.jpg used on input line 75.
 (pdftex.def)             Requested size: 198.0pt x 136.45888pt.
-[5]
+Package acronym Info: Label `acro:LD' newly defined as it shall be overridden
+although it is yet undefined on input line 76.
+[6]
 Underfull \hbox (badness 10000) in alignment at lines 88--94
 [][][][] 
  []
 
-Package acronym Info: Label `acro:LD' newly defined as it shall be overridden
-although it is yet undefined on input line 98.
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.103 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.1
-.1}) has been already used, duplicate ignored
+l.100 $
+       $ Pr(P \leq \alpha \, | \, H_0) = 1-(1 - \alpha)^M $$pdfTeX warning (ext
+4): destination with the same identifier (name{table.1.1}) has been already use
+d, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.103 
-       </Users/Chris/repos/thesis/Figures/man_ex.jpg>]
+l.100 $
+       $ Pr(P \leq \alpha \, | \, H_0) = 1-(1 - \alpha)^M $$ </Users/Chris/repo
+s/thesis/Figures/man_ex.jpg>]
 Package acronym Info: Label `acro:FWER' newly defined as it shall be overridden
 
 although it is yet undefined on input line 113.
@@ -1253,36 +1248,41 @@ although it is yet undefined on input line 113.
 Package acronym Info: Label `acro:PRDS' newly defined as it shall be overridden
 
 although it is yet undefined on input line 117.
-[7] [8] <Figures/pt.png, id=561, 722.7pt x 390.258pt>
+[8] [9] <Figures/pt.png, id=598, 722.7pt x 390.258pt>
 File: Figures/pt.png Graphic file (type png)
 <use Figures/pt.png>
-Package pdftex.def Info: Figures/pt.png used on input line 165.
+Package pdftex.def Info: Figures/pt.png used on input line 164.
 (pdftex.def)             Requested size: 316.80121pt x 171.07092pt.
-<Figures/pi0.png, id=567, 403.2666pt x 362.7954pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10] <Figures/pi0.png, id=614, 403.2666pt x 362.7954pt>
 File: Figures/pi0.png Graphic file (type png)
 <use Figures/pi0.png>
-Package pdftex.def Info: Figures/pi0.png used on input line 189.
+Package pdftex.def Info: Figures/pi0.png used on input line 188.
 (pdftex.def)             Requested size: 316.80121pt x 285.01645pt.
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4}
-) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.190 \end{figure}
-                   </Users/Chris/repos/thesis/Figures/pt.png>]
-Package acronym Info: Label `acro:TRS' newly defined as it shall be overridden
-although it is yet undefined on input line 201.
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.204 	\item D
-              iscuss possible theoretical ramifications of findings, applica...
- </Users/Chris/repos/thesis/Figures/pi0.png>]) [11]
+l.202 	\item P
+              ropose two novel applications of \ac{PRS} to better predict \a...
+ </Users/Chris/repos/thesis/Figures/pt.png>]) [12pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.1.5}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.200 \include{Chapters/introduction}
+                                      % Include the introduction chapter </User
+s/Chris/repos/thesis/Figures/pi0.png>]
 \openout2 = `Chapters/methods.aux'.
 
-(/Users/Chris/repos/thesis/Chapters/methods.tex [12
+(/Users/Chris/repos/thesis/Chapters/methods.tex [13
 
 
 
@@ -1295,19 +1295,10 @@ although it is yet undefined on input line 32.
 Package acronym Info: Label `acro:LDLc' newly defined as it shall be overridden
 
 although it is yet undefined on input line 32.
-[13] [14]
-Package acronym Info: Label `acro:CMB' newly defined as it shall be overridden
-although it is yet undefined on input line 59.
-[15] [16]) [17]
+[14] [15] [16] [17] [18]) [19]
 \openout2 = `Chapters/results.aux'.
 
-(/Users/Chris/repos/thesis/Chapters/results.tex <Figures/trs_meta.png, id=703, 
-663.47874pt x 436.63126pt>
-File: Figures/trs_meta.png Graphic file (type png)
-<use Figures/trs_meta.png>
-Package pdftex.def Info: Figures/trs_meta.png used on input line 37.
-(pdftex.def)             Requested size: 316.80121pt x 208.48131pt.
-[18
+(/Users/Chris/repos/thesis/Chapters/results.tex [20
 
 
 
@@ -1316,118 +1307,136 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.38 \end{figure}
-                 ]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 44.
-Package acronym Info: Label `acro:AUC' newly defined as it shall be overridden
-although it is yet undefined on input line 61.
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+l.32 
+     ] <Figures/trs_meta.png, id=759, 663.47874pt x 436.63126pt>
+File: Figures/trs_meta.png Graphic file (type png)
+<use Figures/trs_meta.png>
+Package pdftex.def Info: Figures/trs_meta.png used on input line 36.
+(pdftex.def)             Requested size: 316.80121pt x 208.48131pt.
+Package acronym Info: Label `acro:ROC' newly defined as it shall be overridden
+although it is yet undefined on input line 37.
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.64 
-     pdfTeX warning (ext4): destination with the same identifier (name{table.3.
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.64 
+l.60 
       </Users/Chris/repos/thesis/Figures/trs_meta.png>]
+Package acronym Info: Label `acro:AUC' newly defined as it shall be overridden
+although it is yet undefined on input line 61.
 Package acronym Info: Label `acro:OHGS' newly defined as it shall be overridden
 
 although it is yet undefined on input line 65.
-<Figures/b2.png, id=726, 470.75874pt x 653.44125pt>
+<Figures/b2.png, id=781, 470.75874pt x 653.44125pt>
 File: Figures/b2.png Graphic file (type png)
 <use Figures/b2.png>
-Package pdftex.def Info: Figures/b2.png used on input line 72.
+Package pdftex.def Info: Figures/b2.png used on input line 70.
 (pdftex.def)             Requested size: 198.0pt x 274.8323pt.
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-}) has been already used, duplicate ignored
+[22pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.83 T
-      he summary statistics of this analysis are presented in Table \ref{cmd...
- </Users/Chris/repos/thesis/Figures/b2.png>]
-Overfull \hbox (2.35452pt too wide) in paragraph at lines 89--113
+l.74 
+     ] [23pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.3.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 
+      </Users/Chris/repos/thesis/Figures/b2.png>]
+Overfull \hbox (2.35452pt too wide) in paragraph at lines 87--112
  [][] 
  []
 
 Package acronym Info: Label `acro:AIC' newly defined as it shall be overridden
 although it is yet undefined on input line 115.
-[21pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
+[24pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.118 
-      ] <Figures/PRSice_HIGH-RES_PLOT_2016-04-23.png, id=757, 481.8pt x 481.8pt
->
+l.117 T
+       he score maintained its significance even after inclusion of biologic...
+]
+Overfull \hbox (147.59134pt too wide) in paragraph at lines 117--118
+\T1/cmr/m/n/10 (-20) ef-fects meta anal-y-sis [][] val-ues were in-creased to $
+\OT1/cmr/m/n/10 (-20) 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 69[0\OML/cmm/m/i
+t/10 :\OT1/cmr/m/n/10 (-20) 62\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (-20) 0\OML/cm
+m/m/it/10 :\OT1/cmr/m/n/10 (-20) 76]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (-20) 0\
+OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 74[0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-
+20) 67\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (-20) 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/
+10 (-20) 81]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (-20) 0\OML/cmm/m/it/10 :\OT1/cm
+r/m/n/10 (-20) 73[0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 66\OML/cmm/m/it/10 ;
+ \OT1/cmr/m/n/10 (-20) 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 81]\OML/cmm/m/i
+t/10 ; \OT1/cmr/m/n/10 (-20) 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 73[0\OML/
+cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 66\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (-20) 0
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 81]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (
+-20) 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 73[0\OML/cmm/m/it/10 :\OT1/cmr/m/
+n/10 (-20) 66\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (-20) 0\OML/cmm/m/it/10 :\OT1/c
+mr/m/n/10 (-20) 80]$
+ []
+
+<Figures/PRSice_HIGH-RES_PLOT_2016-04-23.png, id=845, 481.8pt x 481.8pt>
 File: Figures/PRSice_HIGH-RES_PLOT_2016-04-23.png Graphic file (type png)
 <use Figures/PRSice_HIGH-RES_PLOT_2016-04-23.png>
 Package pdftex.def Info: Figures/PRSice_HIGH-RES_PLOT_2016-04-23.png used on in
 put line 147.
 (pdftex.def)             Requested size: 198.0pt x 197.99507pt.
-[22pdfTeX warning (ext4): destination with the same identifier (name{table.3.4}
+[25pdfTeX warning (ext4): destination with the same identifier (name{table.3.4}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.167 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.167 
-       </Users/Chris/repos/thesis/Figures/PRSice_HIGH-RES_PLOT_2016-04-23.png (
-PNG copy)>]
-Package acronym Info: Label `acro:ROC' newly defined as it shall be overridden
-although it is yet undefined on input line 168.
-<Figures/oprs_meta.png, id=782, 718.685pt x 461.725pt>
+l.151 
+      ] <Figures/oprs_meta.png, id=890, 718.685pt x 461.725pt>
 File: Figures/oprs_meta.png Graphic file (type png)
 <use Figures/oprs_meta.png>
-Package pdftex.def Info: Figures/oprs_meta.png used on input line 174.
+Package pdftex.def Info: Figures/oprs_meta.png used on input line 177.
 (pdftex.def)             Requested size: 198.0pt x 127.20374pt.
-) [23pdfTeX warning (ext4): destination with the same identifier (name{table.3.
-5}) has been already used, duplicate ignored
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.203 \include{Chapters/results}
-                                 % Include the second content chapterpdfTeX war
-ning (ext4): destination with the same identifier (name{figure.3.4}) has been a
-lready used, duplicate ignored
+l.178 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{table.3.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.203 \include{Chapters/results}
+l.178 \end{figure}
+                   </Users/Chris/repos/thesis/Figures/PRSice_HIGH-RES_PLOT_2016
+-04-23.png (PNG copy)>]) [27pdfTeX warning (ext4): destination with the same id
+entifier (name{figure.3.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.202 \include{Chapters/results}
                                  % Include the second content chapter </Users/C
 hris/repos/thesis/Figures/oprs_meta.png>]
 \openout2 = `Chapters/discussion.aux'.
 
 (/Users/Chris/repos/thesis/Chapters/discussion.tex
-Overfull \hbox (2.9707pt too wide) in paragraph at lines 7--8
-[]\T1/cmr/m/n/9 (-20) We use meta data from the re-cent large scale meta-analys
-is con-ducted by the [][]
+Overfull \hbox (34.08975pt too wide) in paragraph at lines 7--8
+[]\T1/cmr/m/n/10 (-20) We use meta data from the re-cent large scale meta-analy
+sis con-ducted by the [][]
  []
 
-[24
+[28
 
 
 
-] [25pdfTeX warning (ext4): destination with the same identifier (name{table.4.
+] [29pdfTeX warning (ext4): destination with the same identifier (name{table.4.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.32 
-     ]) [26]
+l.33 
+     ]) [30]
 \openout2 = `Chapters/conc.aux'.
 
-(/Users/Chris/repos/thesis/Chapters/conc.tex) [27
+(/Users/Chris/repos/thesis/Chapters/conc.tex) [31
 
 
 
@@ -1441,46 +1450,28 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 6032) in paragraph at lines 38--44
-[]\T1/cmr/m/n/9 (+20) Global Lipids Ge-net-ics Con-sor-tium.  Dis-cov-ery and r
-e-fine-ment of loci as-so-ci-ated
+Underfull \hbox (badness 1019) in paragraph at lines 38--44
+[]\T1/cmr/m/n/10 (+20) Global Lipids Ge-net-ics Con-sor-tium.  Dis-cov-ery and 
+re-fine-ment of loci as-so-ci-ated
  []
 
 
-Underfull \hbox (badness 5893) in paragraph at lines 38--44
-\T1/cmr/m/n/9 (+20) with lipid lev-els.  \T1/cmr/m/it/9 (+20) Nat Genet\T1/cmr/
-m/n/9 (+20) , 45(11):1274--1283, nov 2013.  ISSN 1061-4036.
- []
-
-[28
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 92--99
-\T1/cmr/m/n/9 (+20) URL [][]$\T1/cmtt/m/n/9 http : / / www . pubmedcentral . ni
-h . gov / articlerender . fcgi ? artid = 3605113{&}tool =
+Underfull \hbox (badness 10000) in paragraph at lines 38--44
+[][]$\T1/cmtt/m/n/10 http : / / dx . doi . org / 10 . 1038 / ng . 2797http : / 
+/ 10 . 1038 / ng . 2797http : / / www . nature .
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 101--109
-[]\T1/cmr/m/n/9 (+20) J. Eu-es-den, C. M. Lewis, and P. F. O'Reilly.  PRSice: P
-oly-genic Risk Score soft-
+Underfull \hbox (badness 10000) in paragraph at lines 46--53
+\T1/cmtt/m/n/10 / / 10 . 1038 / nature13595http : / / www . nature . com / natu
+re / journal / v511 / n7510 / abs /
  []
 
-
-Underfull \hbox (badness 1173) in paragraph at lines 101--109
-\T1/cmr/m/n/9 (+20) ware.  \T1/cmr/m/it/9 (+20) Bioin-for-mat-ics\T1/cmr/m/n/9 
-(+20) , 31(9):1466--1468, dec 2014.  ISSN 1367-4803.  doi: $10 . 1093 /
- []
+[32
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 101--109
-\T1/cmr/m/n/9 (+20) bioinformatics / btu848$.  URL [][]$\T1/cmtt/m/n/9 http : /
- / www . pubmedcentral . nih . gov / articlerender . fcgi ?
- []
 
-[29] [30] [31] [32]) (/Users/Chris/repos/thesis/main.ind) [33]
+] [33] [34] [35] [36] [37] [38]) (/Users/Chris/repos/thesis/main.ind) [39]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1490,67 +1481,65 @@ Underfull \hbox (badness 3260) in paragraph at lines 101--109
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
 (/Users/Chris/repos/thesis/main.aux (/Users/Chris/repos/thesis/acronyms.aux) (/
 Users/Chris/repos/thesis/Chapters/introduction.aux) (/Users/Chris/repos/thesis/
 Chapters/methods.aux) (/Users/Chris/repos/thesis/Chapters/results.aux) (/Users/
 Chris/repos/thesis/Chapters/discussion.aux) (/Users/Chris/repos/thesis/Chapters
 /conc.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 564F00D4A0593F21DED2F3DE3E08564D;2266.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
+(rerunfilecheck)             Checksum: 671D3BF41BF8AD36D3BAAFE97DD8E06C;2268.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 24842 strings out of 493089
- 431959 string characters out of 6134842
- 604792 words of memory out of 5000000
- 27392 multiletter control sequences out of 15000+600000
- 31964 words of font info for 175 fonts, out of 8000000 for 9000
+ 24772 strings out of 493089
+ 430624 string characters out of 6134842
+ 604538 words of memory out of 5000000
+ 27347 multiletter control sequences out of 15000+600000
+ 29685 words of font info for 157 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 71i,15n,78p,3624b,713s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,15n,56p,3624b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/cm-super/sfti0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/cm-super/sftt0900.pfb>
-Output written on /Users/Chris/repos/thesis/main.pdf (45 pages, 1116371 bytes).
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/cm-super/sftt1000.pfb>
+Output written on /Users/Chris/repos/thesis/main.pdf (50 pages, 1072708 bytes).
 
 PDF statistics:
- 1112 PDF objects out of 1200 (max. 8388607)
- 988 compressed objects within 10 object streams
- 201 named destinations out of 1000 (max. 500000)
- 28495 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1247 PDF objects out of 1440 (max. 8388607)
+ 1082 compressed objects within 11 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 25935 words of extra memory for PDF output out of 29859 (max. 10000000)
 

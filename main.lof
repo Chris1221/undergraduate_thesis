@@ -1,15 +1,15 @@
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Progression of the formation of plaque causing \ac {CAD}. Adapted from Gretch 2003.}}{2}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Fine mapping of the genomic interval on chromosome 9 associated with Coronary Heart Disease. Adapted from Mcpherson et al 2006}}{3}{figure.1.2}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Example of a Manhattan plot from a \ac {GWAS} for \ac {CAD} performed by Shunkert et al. 2011}}{6}{figure.1.3}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces \ac {oPRS} plot for schizophrenia predicting major depresive disorder status. Adapted from \cite {Euesden2014}}}{9}{figure.1.4}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Expected $-\qopname \relax o{log}_{10} (P)$ value of linear regression estimate as a function of $P$-value threshold for selecting markers into Polygenic score. Note that $\pi _0$ refers to the proportion of \textit {true null} markers, that is, markers which have no effect on phenotype. (\cite {Dudbridge2013})}}{10}{figure.1.5}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Progression of the formation of plaque causing \ac {CAD}.}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Fine mapping of the genomic interval on chromosome 9 associated with Coronary Heart Disease.}}{3}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Representative Manhattan plot with explanation of major features.}}{7}{figure.1.3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Optimal \ac {PRS} construction and interpretation.}}{11}{figure.1.4}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Expected $-\qopname \relax o{log}_{10} (P)$ value of linear regression estimate as a function of $P$-value threshold for selecting markers into \ac {PRS}.}}{12}{figure.1.5}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Random effects meta analysis of AUC ROC from six cohorts.}}{19}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Score predicts better than chance}}{20}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces No optimal $P$ value threshold for \ac {BMI}.}}{22}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Random effects meta analysis of \ac {oPRS} predicting risk for \ac {CAD}}}{23}{figure.3.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Random effects meta analysis of AUC ROC from six cohorts.}}{21}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces $\mathaccentV {hat}05E{S}_{TRS}$ predicts \ac {CAD} significantly better than 1000 \ac {PRS} constructed with an equal number of \acp {SNP}.}}{23}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Optimal $P$-value inclusion threshold for \ac {BMI}.}}{26}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Random effects meta analysis of \ac {oPRS} predicting risk for \ac {CAD}}}{27}{figure.3.4}
 \addvspace {10pt}
 \addvspace {10pt}

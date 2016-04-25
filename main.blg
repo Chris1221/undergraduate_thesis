@@ -30,45 +30,45 @@ I was expecting a `{' or a `('---line 354 of file bibliography.bib
  : SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 21 entries,
+You've used 28 entries,
             2773 wiz_defined-function locations,
-            816 strings with 23870 characters,
-and the built_in function-call counts, 40178 in all, are:
-= -- 2827
-> -- 5849
-< -- 6
-+ -- 1954
-- -- 1932
-* -- 4551
-:= -- 6992
-add.period$ -- 118
-call.type$ -- 21
-change.case$ -- 707
-chr.to.int$ -- 20
-cite$ -- 42
-duplicate$ -- 429
-empty$ -- 836
-format.name$ -- 1955
-if$ -- 7512
+            882 strings with 26426 characters,
+and the built_in function-call counts, 45168 in all, are:
+= -- 3266
+> -- 6289
+< -- 9
++ -- 2102
+- -- 2073
+* -- 5045
+:= -- 7809
+add.period$ -- 155
+call.type$ -- 28
+change.case$ -- 775
+chr.to.int$ -- 27
+cite$ -- 56
+duplicate$ -- 572
+empty$ -- 1114
+format.name$ -- 2105
+if$ -- 8505
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 20
-newline$ -- 168
-num.names$ -- 84
-pop$ -- 1329
+missing$ -- 27
+newline$ -- 219
+num.names$ -- 112
+pop$ -- 1439
 preamble$ -- 1
-purify$ -- 686
+purify$ -- 747
 quote$ -- 0
-skip$ -- 881
+skip$ -- 1010
 stack$ -- 0
-substring$ -- 499
-swap$ -- 39
+substring$ -- 681
+swap$ -- 50
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 231
+type$ -- 308
 warning$ -- 0
-while$ -- 98
+while$ -- 131
 width$ -- 0
-write$ -- 388
+write$ -- 510
 (There were 5 error messages)

@@ -1,36 +1,36 @@
 \chapter{Introduction}
 \label{introduction}
 
-As the efficiency and accuracy of rapid genome sequencing skyrockets, the potential for personalized therapies has made its way from science fiction to scientific reality. Using genetics to understand, diagnose, and eventually to predict illness is not a new idea; in recent years, however, technological ability and scientific understanding have advanced to such a point that researchers may predict risk for several diseases with reasonable confidence. Increasingly, variants in the human genome are being identified as being robustly linked to risk for complex illnesses such as heart disease [\small{cite 9p21}], obesity [\small{cite fto}], and schizophrenia [\small{cite something}]. However, much work remains to be done in order to create tools which may accurately predict individual disease risk from known and unknown genetic risk factors. In this thesis, we propose a novel extension to a well known methodology in order to better characterize disease risk from comorbid conditions using only summary statistics. 
+As the efficiency and accuracy of rapid genome sequencing skyrockets, the potential for personalized therapies has made its way from science fiction to scientific reality. Using genetics to understand, diagnose, and eventually to predict illness is not a new idea; in recent years, however, technological ability and scientific understanding have advanced to such a point that researchers may predict risk for several diseases with reasonable confidence. Increasingly, variants in the human genome are being identified as being robustly linked to risk for complex illnesses such as heart disease \citep{McPherson2007a}, obesity \citep{Qi2008}, and schizophrenia \citep{Consortium2014}. However, much work remains to be done in order to create tools which may accurately predict individual disease risk from known and unknown genetic risk factors. In this thesis, we propose a novel extension to a well known methodology in order to better characterize disease risk from co-morbid conditions using only summary statistics. 
 
-In brief, we present preliminary evidence for the use of \ac{PRS}s in predicting \ac{CAD}. We use recently published summary statistics from a \ac{GWAS} conducted by the \ac{CARDIOGRAMC4D} consortium alongside evidence gathered by the \ac{GLC} and the \ac{GIANT} consortium for lipids and \ac{BMI} \textit{per se}. We use this data alongside previously identified variants to construct first a simplistic \ac{PRS} using only genome wide statistically signficant ($P_{Bonferonni} < 0.05$ or $q_{FDR}$ < 0.05) variants, then expand our search to variants which may not be as robustly linked to phenotype. [Cite storey, BH, and dudbridge]. We use an empirical maximation approach and several strategies of mathematical optimization in order to construct an \ac{oPRS}, then devise a novel technique for integrating information from co-morbid \ac{oPRS} diseases in order to better predict \ac{CAD} in four cohorts comprising approximately $n=12,000$ individuals
+In brief, we present preliminary evidence for the use of \acp{PRS} in predicting \ac{CAD}. We use recently published summary statistics from a \ac{GWAS} conducted by the \ac{CARDIOGRAMC4D} consortium alongside evidence gathered by the \ac{GLC} and the \ac{GIANT} consortium for lipids and \ac{BMI} \textit{per se}. We use this data alongside previously identified variants to construct first a simplistic \ac{PRS} using only genome wide statistically significant ($P_{Bonferonni} < 0.05$ or $q_{FDR}$ < 0.05) variants, then expand our search to variants which may not be as robustly linked to phenotype. \citep{Storey1995,Dudbridge2013} We use an empirical maximization approach and several strategies of mathematical optimization in order to construct an \ac{oPRS}, then devise a novel technique for integrating information from co-morbid \ac{oPRS} disease scores in order to better predict \ac{CAD} in four cohorts.
 
 \section{Genetics of Coronary Artery Disease}
 
-\ac{CAD} occurs when the major blood vessels supplying the heart become diseased or damaged, often leading to severe complications such as \ac{MI} and death. [cite review articles] \ac{CAD} is known to be a complex genetic disease with heritability estimated by twin studies between 40 and 60\%. [mcPherson 2016, twin studies paper] Several important variants have been identified which have been shown to robustly increase risk to \ac{CAD} by altering lipid transporting pathways, structural collagen bodies, and others factors. [cite]
+\ac{CAD} occurs when the major blood vessels supplying the heart become diseased or damaged, often leading to severe complications such as \ac{MI} and death. \citep{McPherson2014} \ac{CAD} is known to be a complex genetic disease with heritability estimated by twin studies between 40 and 60\%. \citep{Vinkhuyzen2013} Several important variants have been identified which have been shown to robustly increase risk to \ac{CAD} by altering lipid transporting pathways, structural collagen bodies, and others factors. \citep{Mega2015,TheCARDIoGRAMplusC4DConsortium2015,Visscher2012,McPherson2016}
 
 
 \begin{figure}[h]
-\caption{Progression of the formation of plaque causing \ac{CAD}. Adapted from Gretch 2003.}
 \centering
 \includegraphics[width=0.8\textwidth]{Figures/cad.png}
+\caption[Progression of the formation of plaque causing \ac{CAD}.]{\textbf{Progression of the formation of plaque causing \ac{CAD}.} Genetic and environmental variants may influence lipid transporting pathways, structural collagen bodies, and others factors which may hasten or influence the development of \ac{CAD}. Adapted from Gretch 2003.}
 \end{figure}
 
-With heart disease and stroke the leading cause of prescription drug use in Canada as well as one of the leading causes of death and hospitalization [cite herat and stroke], the need to better understand, diagnose, and prevent this deadly disease is apparent.  In order to better understand the need for improved statistical methodologies, it is important to understand the large body of previous attempts to characterize the genetic determinants of \ac{CAD}
+The need to better understand, diagnose, and prevent this deadly disease is apparent.  In order to better understand the need for improved statistical methodologies, it is important to understand the large body of previous attempts to characterize the genetic determinants of \ac{CAD}.
 
-Despite some promising beginnings, initial attempts to understand and explain \ac{CAD} through genetics were largely unsuccessful.[CITE] The first variant to be successfully and robustly linked to risk for \ac{CAD} was the 9p21.3 locus. Discovered by a team of researchers at the University of Ottawa Heart institute, the allele consists of a 58 \ac{kb} region on chromosome 9 which was shown to be associated with \ac{CAD} in a population of 23,000 Caucasian individuals. (\cite{McPherson2016})
+Despite some promising beginnings, initial attempts to understand and explain \ac{CAD} through genetics were largely unsuccessful. \citep{Visscher2012} The first variant to be successfully and robustly linked to risk for \ac{CAD} was the 9p21.3 locus. Discovered by a team of researchers at the University of Ottawa Heart institute, the allele consists of a 58 \ac{kb} region on chromosome 9 which was shown to be associated with \ac{CAD} in a population of 23,000 Caucasian individuals. (\cite{McPherson2016})
 
 \begin{figure}[h]
-\caption{Fine mapping of the genomic interval on chromosome 9 associated with Coronary Heart Disease. Adapted from Mcpherson et al 2006}
 \centering
 \includegraphics[width=0.8\textwidth]{Figures/9p21.png}
+\caption[Fine mapping of the genomic interval on chromosome 9 associated with Coronary Heart Disease.]{\textbf{Fine mapping of the genomic interval on chromosome 9 associated with Coronary Heart Disease.} (A) SNPs spaced ~5 kb apart in the interval extending 175 kb upstream and downstream of rs10757274 and rs2383206 were assayed in 500 cases and 500 controls from the OHS population with GeneChip Human Mapping 500K Array Sets (Affymetrix, Santa Clara, CA). Bars represent P values (determined with $\chi^2$ tests) for differences in allele frequency between cases and controls. Arrowheads indicate rs10757274 and rs2383206. The asterisk represents rs518394. The risk interval is indicated with a gray box. The linkage disequilibrium map indicates pairwise $R^2$ values. Blocks are shaded on a continuous scale, where white represents an $R^2$ of 0 and black represents an $R^2$ of 1. (B) Physical map of the region showing the location of the risk interval (gray box) relative to the noncoding RNA DQ485453 and adjacent genes CDKN2A, ARF, and CDKN2B. Arrowheads indicate rs10757274 and rs2383206, and the asterisk represents rs518394 [see (A)]. Adapted from \cite{McPherson2007a}}
 \end{figure}
 
-This initial success began the era of the \ac{GWAS}, explained in more detail in section \ref{gwas}.  Researchers across the globe began frantically searching for more loci with the hope of understanding and predicting complex disease; in that goal, the \ac{GWAS} has failed. (\cite{Visscher2012}) A number of important genetic markers for \ac{CAD} have been discovered, but often in small familial cases or with very low effect sizes. [Cite] As the dust settles and the low hanging fruit have been picked, common variants have been shown to explain approximately 28\% of the heritablity of \ac{CAD} [cite majid], yet a large portion remains to be accounted for. This has become known as the problem of ``missing heritabillity'' of complex disease; common genetic variants explain a relatively small portion of the total estimated heritability of a disease, therefore researchers must resort to ever more obscure and complex methods to attempt to explain the complex interactions between genetic elements in the human genome. [cite review paper] From pathway analysis to partitioned heritability to all kinds of arcane statistical procedures, researchers from across the globe have tried their hardest to shrink this gap between our knowledge and accurate prediction and understanding of complex disease. To this end, we develop our own methodology incorporating multiple sources of information for the more accurate prediction of clinical end points. 
+This initial success began the era of the \ac{GWAS}, explained in more detail in section \ref{gwas}.  Researchers across the globe began frantically searching for more loci with the hope of understanding and predicting complex disease; in that goal, the \ac{GWAS} has failed. (\cite{Visscher2012}) A number of important genetic markers for \ac{CAD} have been discovered, but often in small familial cases or with very low effect sizes. As the dust settles and the low hanging fruit have been picked, common variants have been shown to explain approximately 28\% of the heritability of \ac{CAD} \citep{TheCARDIoGRAMplusC4DConsortium2015}, yet a large portion remains to be accounted for. This has become known as the problem of ``missing heritabillity'' of complex disease; common genetic variants explain a relatively small portion of the total estimated heritability of a disease, therefore researchers must resort to ever more obscure and complex methods to attempt to explain the complex interactions between genetic elements in the human genome. From pathway analysis to partitioned heritability to all kinds of arcane statistical procedures, researchers from across the globe have tried their hardest to shrink this gap between our knowledge and accurate prediction and understanding of complex disease. To this end, we develop our own methodology incorporating multiple sources of information for the more accurate prediction of clinical end points. 
 
 \section{Genome Wide Association Studies} \label{gwas}
 
-In order to properly introduce the model, however, the basic underpinnings must be explored and explained. Genome wide association studies seek to indetify associations between individual genotypes and disease phenotypes in a hypothesis free manner. In this section, the statistical model required to understand \ac{GWAS} is presented and explored.
+In order to properly introduce the model, however, the basic underpinnings must be explored and explained. Genome wide association studies seek to identify associations between individual genotypes and disease phenotypes in a hypothesis free manner. In this section, the statistical model required to understand \ac{GWAS} is presented and explored.
 
 \subsection{Primer on Genetics}
 
@@ -38,10 +38,10 @@ In order to properly introduce the model, however, the basic underpinnings must 
 
 \subsection{Sequencing}
 
-DNA sequencing is the process of ascertaining a particular individual's genotype by means of chemical identification of the bases present at predefined sites. [cite] These sites, whether they be a change in a single base called a \ac{SNP}, a variation in the number of tandem repeats of a small sequence named a \ac{CNV} or an \ac{InDel} of a sequence, may alter amino acid sequence, affect regulatory regions, or impact regulatory \ac{RNA} sequences.
+DNA sequencing is the process of ascertaining a particular individual's genotype by means of chemical identification of the bases present at predefined sites. These sites, whether they be a change in a single base called a \ac{SNP}, a variation in the number of tandem repeats of a small sequence named a \ac{CNV} or an \ac{InDel} of a sequence, may alter amino acid sequence, affect regulatory regions, or impact regulatory \ac{RNA} sequences.
 
 \begin{definition}[Allele]
-A specific form or subtype of a genetic locus. This could be one or more individual variations or a combination therof. 
+A specific form or subtype of a genetic locus. This could be one or more individual variations or a combination thereof. 
 \end{definition}
 
 \begin{rem}
@@ -71,9 +71,9 @@ By approximating $\underline{\chi^2}$ with $\hat{\underline{\chi^2}}$ and comput
 
 
 \begin{figure}[H]
-\caption{Example of a Manhattan plot from a \ac{GWAS} for \ac{CAD} performed by Shunkert et al. 2011}
 \centering
 \includegraphics[width=0.5\textwidth]{Figures/man_ex.jpg}
+\caption[Representative Manhattan plot with explanation of major features.]{\textbf{Example of a Manhattan plot from a \ac{GWAS} for \ac{CAD} performed by Shunkert et al. 2011.} Chromosomal position of \acp{SNP} are sorted and plotted on the $x$ axis while the $- \log_{10}$ of their $P$ value derived through either linear regression estimation or $\chi^2$ is plotted on the $y$ axis. Notice that ``genome wide significant'' loci pass the threshold of $P < 5 \times 10^{-8}$.  Those variants which have ``towers'' supporting them are the most canonically likely to be truly associated; these towers represent loci in strong \ac{LD} to a causal variant, or one linked to one.}
 \end{figure}
 
 \subsection{Multiple Comparisson Problem}
@@ -160,9 +160,9 @@ Though these variants have the highest probability of being truly associated wit
 
 \begin{figure}[h]
 \label{pt}
-\caption{\ac{oPRS} plot for schizophrenia predicting major depresive disorder status. Adapted from \cite{Euesden2014}}
 \centering
 \includegraphics[width=0.8\textwidth]{Figures/pt.png}
+\caption[Optimal \ac{PRS} construction and interpretation.]{\textbf{High definition plot of optimal \ac{PRS} association for schizophrenia associated loci predicting major depressive disorder status.} 5000 thresholds were created from $P = 0$ to $P=0.5$ for \ac{SNP} inclusion; subsequently created scores were tested for association with major depressive disorder through logistic regression adjusted for principal components. The optimal score is the threshold which maximizes the $-\log_{10} P$ value of association. Adapted from \cite{Euesden2014}}
 \end{figure}
 
 On a high level, this score involves iterating through a list of $P$ value thresholds $T$, constructing a score using all $m_{P < T}$ and selecting either the smallest $P$ value of association between $\hat{S}$ and $\underline{\mathbf{Y}}$ or the highest $R^2_{\hat{S}, Y}$ to move in the analysis. 
@@ -184,9 +184,9 @@ It is from the matrix described in \ref{score_matrix} that the rest of our model
 
 \begin{figure}[h]
 \label{pi0}
-\caption{Expected $-\log_{10} (P)$ value of linear regression estimate as a function of $P$-value threshold for selecting markers into Polygenic score. Note that $\pi_0$ refers to the proportion of \textit{true null} markers, that is, markers which have no effect on phenotype. (\cite{Dudbridge2013})}
 \centering
 \includegraphics[width=0.8\textwidth]{Figures/pi0.png}
+\caption[Expected $-\log_{10} (P)$ value of linear regression estimate as a function of $P$-value threshold for selecting markers into \ac{PRS}.]{\textbf{Expected $-\log_{10} (P)$ value of linear regression estimate as a function of $P$-value threshold for selecting markers into \ac{PRS}.} $\pi_0$ refers to the proportion of \textit{true null} markers, that is, markers which have no effect on phenotype. raining sample, 3322 cases and 3587 controls; replication sample, 2687 cases and 2656 controls. Marker panel of 74062 independent SNPs. Variance explained by markers, 28.7\%.\citep{Dudbridge2013}}
 \end{figure}
 
 \begin{rem}

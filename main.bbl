@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -41,6 +41,15 @@ Global Lipids~Genetics Consortium.
 \newblock ISSN 1061-4036.
 \newblock URL \url{http://dx.doi.org/10.1038/ng.2797 http://10.1038/ng.2797
   http://www.nature.com/ng/journal/v45/n11/abs/ng.2797.html{\#}supplementary-information}.
+
+\bibitem[Consortium(2014)]{Consortium2014}
+Schizophrenia Working Group of the Psychiatric~Genomics Consortium.
+\newblock {Biological insights from 108 schizophrenia-associated genetic loci}.
+\newblock \emph{Nature}, 511\penalty0 (7510):\penalty0 421--427, jul 2014.
+\newblock ISSN 0028-0836.
+\newblock URL \url{http://dx.doi.org/10.1038/nature13595
+  http://10.1038/nature13595
+  http://www.nature.com/nature/journal/v511/n7510/abs/nature13595.html{\#}supplementary-information}.
 
 \bibitem[Dandona et~al.(2010)Dandona, Stewart, Chen, Williams, So, O'Brien,
   Glover, LeMay, Assogba, Vo, Wang, Labinaz, Wells, McPherson, and
@@ -116,6 +125,16 @@ Bryan~N Howie, Peter Donnelly, and Jonathan Marchini.
 \newblock \doi{10.1371/journal.pgen.1000529}.
 \newblock URL \url{http://dx.doi.org/10.1371{\%}2Fjournal.pgen.1000529}.
 
+\bibitem[McPherson and Tybj{\ae}rg-Hansen(2014)]{McPherson2014}
+Ruth McPherson and Anne Tybj{\ae}rg-Hansen.
+\newblock {Genetics of coronary artery disease}.
+\newblock \emph{Circulation Research}, 114\penalty0 (12):\penalty0 1890--1903,
+  2014.
+\newblock ISSN 15244571.
+\newblock \doi{10.1161/CIRCRESAHA.114.302692}.
+\newblock URL
+  \url{http://circres.ahajournals.org/content/114/12/1890.abstract?etoc}.
+
 \bibitem[McPherson and Tybjaerg-Hansen(2016)]{McPherson2016}
 Ruth McPherson and Anne Tybjaerg-Hansen.
 \newblock {Genetics of Coronary Artery Disease}.
@@ -124,6 +143,37 @@ Ruth McPherson and Anne Tybjaerg-Hansen.
 \newblock ISSN 0009-7330.
 \newblock \doi{10.1161/CIRCRESAHA.115.306566}.
 \newblock URL \url{http://circres.ahajournals.org/content/118/4/564.abstract}.
+
+\bibitem[McPherson et~al.(2007)McPherson, Pertsemlidis, Kavaslar, Stewart,
+  Roberts, Cox, Hinds, Pennacchio, Tybjaerg-Hansen, Folsom, Boerwinkle, Hobbs,
+  and Cohen]{McPherson2007a}
+Ruth McPherson, Alexander Pertsemlidis, Nihan Kavaslar, Alexandre Stewart,
+  Robert Roberts, David~R Cox, David~A Hinds, Len~A Pennacchio, Anne
+  Tybjaerg-Hansen, Aaron~R Folsom, Eric Boerwinkle, Helen~H Hobbs, and
+  Jonathan~C Cohen.
+\newblock {A Common Allele on Chromosome 9 Associated with Coronary Heart
+  Disease}.
+\newblock \emph{Science (New York, N.Y.)}, 316\penalty0 (5830):\penalty0
+  1488--1491, jun 2007.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.1142447}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2711874/}.
+
+\bibitem[Mega et~al.(2015)Mega, Stitziel, Smith, Chasman, Caulfield, Devlin,
+  Nordio, Hyde, Cannon, Sacks, Poulter, Sever, Ridker, Braunwald, Melander,
+  Kathiresan, and Sabatine]{Mega2015}
+Jessica~L Mega, Nathan~O Stitziel, J~Gustav Smith, Daniel~I Chasman, Mark~J
+  Caulfield, James~J Devlin, Francesco Nordio, Craig~L Hyde, Christopher~P
+  Cannon, Frank~M Sacks, Neil~R Poulter, Peter~S Sever, Paul~M Ridker, Eugene
+  Braunwald, Olle Melander, Sekar Kathiresan, and Marc~S Sabatine.
+\newblock {Genetic risk, coronary heart disease events, and the clinical
+  benefit of statin therapy: an analysis of primary and secondary prevention
+  trials}.
+\newblock \emph{The Lancet}, 385:\penalty0 2264--2271, 2015.
+\newblock ISSN 01406736.
+\newblock \doi{10.1016/S0140-6736(14)61730-X}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S014067361461730X}.
 
 \bibitem[Nagelkerke(1991)]{Nagelkerke1991}
 N.~J~D Nagelkerke.
@@ -142,6 +192,18 @@ Alkes~L Price, Nick~J Patterson, Robert~M Plenge, Michael~E Weinblatt, Nancy~a
 \newblock ISSN 1061-4036.
 \newblock \doi{10.1038/ng1847}.
 \newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16862161}.
+
+\bibitem[Qi et~al.(2008)Qi, Kang, Zhang, van Dam, Kraft, Hunter, Lee, and
+  Hu]{Qi2008}
+Lu~Qi, Kihwa Kang, Cuilin Zhang, Rob~M van Dam, Peter Kraft, David Hunter,
+  Chih-Hao Lee, and Frank~B Hu.
+\newblock {Fat Mass–and Obesity-Associated (FTO) Gene Variant Is Associated
+  With Obesity: Longitudinal Analyses in Two Cohort Studies and Functional Test
+  }.
+\newblock \emph{Diabetes}, 57\penalty0 (11):\penalty0 3145--3151, nov 2008.
+\newblock \doi{10.2337/db08-0006}.
+\newblock URL
+  \url{http://diabetes.diabetesjournals.org/content/57/11/3145.abstract}.
 
 \bibitem[Robin et~al.(2011)Robin, Turck, Hainard, Tiberti, Lisacek, Sanchez,
   and M{\"{u}}ller]{Robin2011}
@@ -372,6 +434,11 @@ Elizabeth~K Speliotes, Cristen~J Willer, Sonja~I Berndt, Keri~L Monda, Gudmar
 \newblock \doi{10.1038/ng.686}.
 \newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3014648/}.
 
+\bibitem[Storey(1995)]{Storey1995}
+John~D Storey.
+\newblock {A direct approachto false discovery rates}.
+\newblock \emph{J. R. Statist.Soc. B}, 1995.
+
 \bibitem[Sun et~al.(2006)Sun, Craiu, Paterson, and Bull]{Sun2006}
 Lei Sun, Radu~V. Craiu, Andrew~D. Paterson, and Shelley~B. Bull.
 \newblock {Stratified false discovery control for large-scale hypothesis
@@ -399,6 +466,17 @@ Wolfgang Viechtbauer.
 \newblock \emph{Journal of Statistical Software}, 36\penalty0 (3):\penalty0
   1--48, 2010.
 \newblock URL \url{http://www.jstatsoft.org/v36/i03/}.
+
+\bibitem[Vinkhuyzen et~al.(2013)Vinkhuyzen, Wray, Yang, Goddard, and
+  Visscher]{Vinkhuyzen2013}
+Anna A~E Vinkhuyzen, Naomi~R Wray, Jian Yang, Michael~E Goddard, and Peter~M
+  Visscher.
+\newblock {Estimation and Partitioning of Heritability in Human Populations
+  using Whole Genome Analysis Methods}.
+\newblock \emph{Annual review of genetics}, 47:\penalty0 75--95, aug 2013.
+\newblock ISSN 0066-4197.
+\newblock \doi{10.1146/annurev-genet-111212-133258}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4037293/}.
 
 \bibitem[Visscher et~al.(2012)Visscher, Brown, McCarthy, and
   Yang]{Visscher2012}
