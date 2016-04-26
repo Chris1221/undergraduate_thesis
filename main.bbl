@@ -1,0 +1,509 @@
+\begin{thebibliography}{29}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cole et~al.(2014)Cole, Nikpay, Lau, Stewart, Davies, Wells, Dent, and
+  McPherson]{Cole2014}
+C.~B. Cole, M.~Nikpay, P.~Lau, a.~F.~R. Stewart, R.~W. Davies, G.~a. Wells,
+  R.~Dent, and R.~McPherson.
+\newblock {Adiposity significantly modifies genetic risk for dyslipidemia}.
+\newblock \emph{The Journal of Lipid Research}, 55\penalty0 (11):\penalty0
+  2416--2422, sep 2014.
+\newblock ISSN 0022-2275.
+\newblock \doi{10.1194/jlr.P052522}.
+\newblock URL \url{http://www.jlr.org/cgi/doi/10.1194/jlr.P052522}.
+
+\bibitem[Cole et~al.(2015{\natexlab{a}})Cole, Nikpay, and
+  McPherson]{ColeChristopherB.a;NikpayMajidb;McPhersonRutha}
+Christopher~B Cole, Majid Nikpay, and Ruth McPherson.
+\newblock {Gene–environment interaction in dyslipidemia}, 2015{\natexlab{a}}.
+\newblock URL
+  \url{http://journals.lww.com/co-lipidology/Abstract/2015/04000/Gene{\_}environment{\_}interaction{\_}in{\_}dyslipidemia.10.aspx}.
+
+\bibitem[Cole et~al.(2015{\natexlab{b}})Cole, Nikpay, Stewart, and
+  McPherson]{Cole2015a}
+Christopher~B Cole, Majid Nikpay, Alexandre~Fr Stewart, and Ruth McPherson.
+\newblock {Increased genetic risk for obesity in premature coronary artery
+  disease.}
+\newblock \emph{European journal of human genetics : EJHG}, jul
+  2015{\natexlab{b}}.
+\newblock ISSN 1476-5438.
+\newblock \doi{10.1038/ejhg.2015.162}.
+\newblock URL \url{http://dx.doi.org/10.1038/ejhg.2015.162}.
+
+\bibitem[Consortium(2013)]{Consortium2013}
+Global Lipids~Genetics Consortium.
+\newblock {Discovery and refinement of loci associated with lipid levels}.
+\newblock \emph{Nat Genet}, 45\penalty0 (11):\penalty0 1274--1283, nov 2013.
+\newblock ISSN 1061-4036.
+\newblock URL \url{http://dx.doi.org/10.1038/ng.2797 http://10.1038/ng.2797
+  http://www.nature.com/ng/journal/v45/n11/abs/ng.2797.html{\#}supplementary-information}.
+
+\bibitem[Consortium(2014)]{Consortium2014}
+Schizophrenia Working Group of the Psychiatric~Genomics Consortium.
+\newblock {Biological insights from 108 schizophrenia-associated genetic loci}.
+\newblock \emph{Nature}, 511\penalty0 (7510):\penalty0 421--427, jul 2014.
+\newblock ISSN 0028-0836.
+\newblock URL \url{http://dx.doi.org/10.1038/nature13595
+  http://10.1038/nature13595
+  http://www.nature.com/nature/journal/v511/n7510/abs/nature13595.html{\#}supplementary-information}.
+
+\bibitem[Dandona et~al.(2010)Dandona, Stewart, Chen, Williams, So, O'Brien,
+  Glover, LeMay, Assogba, Vo, Wang, Labinaz, Wells, McPherson, and
+  Roberts]{Dandona2010}
+Sonny Dandona, Alexandre F~R Stewart, Li~Chen, Kathryn Williams, Derek So,
+  Ed~O'Brien, Christopher Glover, Michel LeMay, Olivia Assogba, Lan Vo,
+  Yan~Qing Wang, Marino Labinaz, George~A Wells, Ruth McPherson, and Robert
+  Roberts.
+\newblock {Gene Dosage of the Common Variant 9p21 Predicts Severity of Coronary
+  Artery Disease}.
+\newblock \emph{Journal of the American College of Cardiology}, 56\penalty0
+  (6):\penalty0 479--486, aug 2010.
+\newblock ISSN 0735-1097.
+\newblock \doi{http://dx.doi.org/10.1016/j.jacc.2009.10.092}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0735109710019583}.
+
+\bibitem[Davies et~al.(2012)Davies, Wells, Stewart, Erdmann, Shah, Ferguson,
+  Hall, Anand, Burnett, Epstein, Dandona, Chen, Nahrstaedt, Loley, K{\"{o}}nig,
+  Kraus, Granger, Engert, Hengstenberg, Wichmann, Schreiber, Tang, Ellis,
+  Rader, Hazen, Reilly, Samani, Schunkert, Roberts, and McPherson]{Davies2012}
+Robert~W Davies, George~A Wells, Alexandre F~R Stewart, Jeanette Erdmann,
+  Svati~H Shah, Jane~F Ferguson, Alistair~S Hall, Sonia~S Anand, Mary~S
+  Burnett, Stephen~E Epstein, Sonny Dandona, Li~Chen, Janja Nahrstaedt,
+  Christina Loley, Inke~R K{\"{o}}nig, William~E Kraus, Christopher~B Granger,
+  James~C Engert, Christian Hengstenberg, H-Erich Wichmann, Stefan Schreiber,
+  W~H~Wilson Tang, Stephen~G Ellis, Daniel~J Rader, Stanley~L Hazen, Muredach~P
+  Reilly, Nilesh~J Samani, Heribert Schunkert, Robert Roberts, and Ruth
+  McPherson.
+\newblock {A Genome Wide Association Study for Coronary Artery Disease
+  Identifies a Novel Susceptibility Locus in the Major Histocompatibility
+  Complex}.
+\newblock \emph{Circulation. Cardiovascular genetics}, 5\penalty0 (2):\penalty0
+  217--225, apr 2012.
+\newblock ISSN 1942-325X.
+\newblock \doi{10.1161/CIRCGENETICS.111.961243}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3335297/}.
+
+\bibitem[DeLong et~al.(1988)DeLong, DeLong, and Clarke-Pearson]{DeLong1988}
+Elizabeth~R DeLong, David~M DeLong, and Daniel~L Clarke-Pearson.
+\newblock {Comparing the Areas under Two or More Correlated Receiver Operating
+  Characteristic Curves: A Nonparametric Approach}.
+\newblock \emph{Biometrics}, 44\penalty0 (3):\penalty0 837--845, 1988.
+\newblock ISSN 0006341X, 15410420.
+\newblock \doi{10.2307/2531595}.
+\newblock URL \url{http://www.jstor.org/stable/2531595}.
+
+\bibitem[Dudbridge(2013)]{Dudbridge2013}
+Frank Dudbridge.
+\newblock {Power and Predictive Accuracy of Polygenic Risk Scores}.
+\newblock \emph{PLoS Genetics}, 9\penalty0 (3):\penalty0 e1003348, mar 2013.
+\newblock ISSN 15537390.
+\newblock \doi{10.1371/journal.pgen.1003348}.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3605113{\&}tool=pmcentrez{\&}rendertype=abstract}.
+
+\bibitem[Euesden et~al.(2014)Euesden, Lewis, and O'Reilly]{Euesden2014}
+J.~Euesden, C.~M. Lewis, and P.~F. O'Reilly.
+\newblock {PRSice: Polygenic Risk Score software}.
+\newblock \emph{Bioinformatics}, 31\penalty0 (9):\penalty0 1466--1468, dec
+  2014.
+\newblock ISSN 1367-4803.
+\newblock \doi{10.1093/bioinformatics/btu848}.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=4410663{\&}tool=pmcentrez{\&}rendertype=abstract}.
+
+\bibitem[Howie et~al.(2009)Howie, Donnelly, and
+  Marchini]{10.1371/journal.pgen.1000529}
+Bryan~N Howie, Peter Donnelly, and Jonathan Marchini.
+\newblock {A Flexible and Accurate Genotype Imputation Method for the Next
+  Generation of Genome-Wide Association Studies}.
+\newblock \emph{PLoS Genet}, 5\penalty0 (6):\penalty0 e1000529, 2009.
+\newblock \doi{10.1371/journal.pgen.1000529}.
+\newblock URL \url{http://dx.doi.org/10.1371{\%}2Fjournal.pgen.1000529}.
+
+\bibitem[McPherson and Tybj{\ae}rg-Hansen(2014)]{McPherson2014}
+Ruth McPherson and Anne Tybj{\ae}rg-Hansen.
+\newblock {Genetics of coronary artery disease}.
+\newblock \emph{Circulation Research}, 114\penalty0 (12):\penalty0 1890--1903,
+  2014.
+\newblock ISSN 15244571.
+\newblock \doi{10.1161/CIRCRESAHA.114.302692}.
+\newblock URL
+  \url{http://circres.ahajournals.org/content/114/12/1890.abstract?etoc}.
+
+\bibitem[McPherson and Tybjaerg-Hansen(2016)]{McPherson2016}
+Ruth McPherson and Anne Tybjaerg-Hansen.
+\newblock {Genetics of Coronary Artery Disease}.
+\newblock \emph{Circulation Research}, 118\penalty0 (4):\penalty0 564--578, feb
+  2016.
+\newblock ISSN 0009-7330.
+\newblock \doi{10.1161/CIRCRESAHA.115.306566}.
+\newblock URL \url{http://circres.ahajournals.org/content/118/4/564.abstract}.
+
+\bibitem[McPherson et~al.(2007)McPherson, Pertsemlidis, Kavaslar, Stewart,
+  Roberts, Cox, Hinds, Pennacchio, Tybjaerg-Hansen, Folsom, Boerwinkle, Hobbs,
+  and Cohen]{McPherson2007a}
+Ruth McPherson, Alexander Pertsemlidis, Nihan Kavaslar, Alexandre Stewart,
+  Robert Roberts, David~R Cox, David~A Hinds, Len~A Pennacchio, Anne
+  Tybjaerg-Hansen, Aaron~R Folsom, Eric Boerwinkle, Helen~H Hobbs, and
+  Jonathan~C Cohen.
+\newblock {A Common Allele on Chromosome 9 Associated with Coronary Heart
+  Disease}.
+\newblock \emph{Science (New York, N.Y.)}, 316\penalty0 (5830):\penalty0
+  1488--1491, jun 2007.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.1142447}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2711874/}.
+
+\bibitem[Mega et~al.(2015)Mega, Stitziel, Smith, Chasman, Caulfield, Devlin,
+  Nordio, Hyde, Cannon, Sacks, Poulter, Sever, Ridker, Braunwald, Melander,
+  Kathiresan, and Sabatine]{Mega2015}
+Jessica~L Mega, Nathan~O Stitziel, J~Gustav Smith, Daniel~I Chasman, Mark~J
+  Caulfield, James~J Devlin, Francesco Nordio, Craig~L Hyde, Christopher~P
+  Cannon, Frank~M Sacks, Neil~R Poulter, Peter~S Sever, Paul~M Ridker, Eugene
+  Braunwald, Olle Melander, Sekar Kathiresan, and Marc~S Sabatine.
+\newblock {Genetic risk, coronary heart disease events, and the clinical
+  benefit of statin therapy: an analysis of primary and secondary prevention
+  trials}.
+\newblock \emph{The Lancet}, 385:\penalty0 2264--2271, 2015.
+\newblock ISSN 01406736.
+\newblock \doi{10.1016/S0140-6736(14)61730-X}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S014067361461730X}.
+
+\bibitem[Nagelkerke(1991)]{Nagelkerke1991}
+N.~J~D Nagelkerke.
+\newblock {A note on a general definition of the coefficient of determination}.
+\newblock \emph{Biometrika}, 78\penalty0 (3):\penalty0 691--692, 1991.
+\newblock ISSN 00063444.
+\newblock \doi{10.1093/biomet/78.3.691}.
+
+\bibitem[Price et~al.(2006)Price, Patterson, Plenge, Weinblatt, Shadick, and
+  Reich]{Price2006}
+Alkes~L Price, Nick~J Patterson, Robert~M Plenge, Michael~E Weinblatt, Nancy~a
+  Shadick, and David Reich.
+\newblock {Principal components analysis corrects for stratification in
+  genome-wide association studies.}
+\newblock \emph{Nature genetics}, 38\penalty0 (8):\penalty0 904--909, aug 2006.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/ng1847}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16862161}.
+
+\bibitem[Qi et~al.(2008)Qi, Kang, Zhang, van Dam, Kraft, Hunter, Lee, and
+  Hu]{Qi2008}
+Lu~Qi, Kihwa Kang, Cuilin Zhang, Rob~M van Dam, Peter Kraft, David Hunter,
+  Chih-Hao Lee, and Frank~B Hu.
+\newblock {Fat Mass–and Obesity-Associated (FTO) Gene Variant Is Associated
+  With Obesity: Longitudinal Analyses in Two Cohort Studies and Functional Test
+  }.
+\newblock \emph{Diabetes}, 57\penalty0 (11):\penalty0 3145--3151, nov 2008.
+\newblock \doi{10.2337/db08-0006}.
+\newblock URL
+  \url{http://diabetes.diabetesjournals.org/content/57/11/3145.abstract}.
+
+\bibitem[Robin et~al.(2011)Robin, Turck, Hainard, Tiberti, Lisacek, Sanchez,
+  and M{\"{u}}ller]{Robin2011}
+Xavier Robin, Natacha Turck, Alexandre Hainard, Natalia Tiberti,
+  Fr{\'{e}}d{\'{e}}rique Lisacek, Jean-Charles Sanchez, and Markus
+  M{\"{u}}ller.
+\newblock {pROC: an open-source package for R and S+ to analyze and compare ROC
+  curves.}
+\newblock \emph{BMC bioinformatics}, 12\penalty0 (1):\penalty0 77, jan 2011.
+\newblock ISSN 1471-2105.
+\newblock \doi{10.1186/1471-2105-12-77}.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3068975{\&}tool=pmcentrez{\&}rendertype=abstract}.
+
+\bibitem[Schunkert et~al.(2011)Schunkert, K{\"{o}}nig, Kathiresan, Reilly,
+  Assimes, Holm, Preuss, Stewart, Barbalic, Gieger, Absher, Aherrahrou,
+  Allayee, Altshuler, Anand, Andersen, Anderson, Ardissino, Ball, Balmforth,
+  Barnes, Becker, Becker, Berger, Bis, Boekholdt, Boerwinkle, Braund, Brown,
+  Burnett, Buysschaert, {Carlquist John F}, Chen, Cichon, Codd, Davies,
+  Dedoussis, Dehghan, Demissie, Devaney, Do, Doering, Eifert, {El Mokhtari},
+  Ellis, Elosua, Engert, Epstein, de~Faire, Fischer, Folsom, Freyer, Gigante,
+  Girelli, Gretarsdottir, Gudnason, Gulcher, Halperin, Hammond, Hazen, Hofman,
+  Horne, Illig, Iribarren, Jones, Jukema, Kaiser, Kaplan, Kastelein, Khaw,
+  Knowles, Kolovou, Kong, Laaksonen, Lambrechts, Leander, Lettre, Li, Lieb,
+  Linsel-Nitschke, Loley, Lotery, Mannucci, Maouche, Martinelli, McKeown,
+  Meisinger, Meitinger, Melander, Merlini, Mooser, Morgan, M{\"{u}}hleisen,
+  Muhlestein, M{\"{u}}nzel, Musunuru, Nahrstaedt, Nelson, N{\"{o}}then,
+  Olivieri, Patel, Patterson, Peters, Peyvandi, Qu, Quyyumi, Rader, Rallidis,
+  Rice, Rosendaal, Rubin, Salomaa, Sampietro, Sandhu, Schadt, Sch{\"{a}}fer,
+  Schillert, Schreiber, Schrezenmeir, Schwartz, Siscovick, Sivananthan,
+  Sivapalaratnam, Smith, Smith, Snoep, Soranzo, Spertus, Stark, Stirrups,
+  Stoll, Tang, Tennstedt, Thorgeirsson, Thorleifsson, Tomaszewski,
+  Uitterlinden, van Rij, Voight, Wareham, Wells, Wichmann, Wild, Willenborg,
+  Witteman, Wright, Ye, Zeller, Ziegler, Cambien, Goodall, Cupples,
+  Quertermous, M{\"{a}}rz, Hengstenberg, Blankenberg, Ouwehand, Hall, Deloukas,
+  Thompson, Stefansson, Roberts, Thorsteinsdottir, O'Donnell, McPherson,
+  Erdmann, Samani, and Consortium]{Schunkert2011}
+Heribert Schunkert, Inke~R K{\"{o}}nig, Sekar Kathiresan, Muredach~P Reilly,
+  Themistocles~L Assimes, Hilma Holm, Michael Preuss, Alexandre F~R Stewart,
+  Maja Barbalic, Christian Gieger, Devin Absher, Zouhair Aherrahrou, Hooman
+  Allayee, David Altshuler, Sonia~S Anand, Karl Andersen, Jeffrey~L Anderson,
+  Diego Ardissino, Stephen~G Ball, Anthony~J Balmforth, Timothy~A Barnes,
+  Diane~M Becker, Lewis~C Becker, Klaus Berger, Joshua~C Bis, S~Matthijs
+  Boekholdt, Eric Boerwinkle, Peter~S Braund, Morris~J Brown, Mary~Susan
+  Burnett, Ian Buysschaert, Cardiogenics {Carlquist John F}, Li~Chen, Sven
+  Cichon, Veryan Codd, Robert~W Davies, George Dedoussis, Abbas Dehghan,
+  Serkalem Demissie, Joseph~M Devaney, Ron Do, Angela Doering, Sandra Eifert,
+  Nour~Eddine {El Mokhtari}, Stephen~G Ellis, Roberto Elosua, James~C Engert,
+  Stephen~E Epstein, Ulf de~Faire, Marcus Fischer, Aaron~R Folsom, Jennifer
+  Freyer, Bruna Gigante, Domenico Girelli, Solveig Gretarsdottir, Vilmundur
+  Gudnason, Jeffrey~R Gulcher, Eran Halperin, Naomi Hammond, Stanley~L Hazen,
+  Albert Hofman, Benjamin~D Horne, Thomas Illig, Carlos Iribarren, Gregory~T
+  Jones, JWouter Jukema, Michael~A Kaiser, Lee~M Kaplan, John J~P Kastelein,
+  Kay-Tee Khaw, Joshua~W Knowles, Genovefa Kolovou, Augustine Kong, Reijo
+  Laaksonen, Diether Lambrechts, Karin Leander, Guillaume Lettre, Mingyao Li,
+  Wolfgang Lieb, Patrick Linsel-Nitschke, Christina Loley, Andrew~J Lotery,
+  Pier~M Mannucci, Seraya Maouche, Nicola Martinelli, Pascal~P McKeown, Christa
+  Meisinger, Thomas Meitinger, Olle Melander, Pier~Angelica Merlini, Vincent
+  Mooser, Thomas Morgan, Thomas~W M{\"{u}}hleisen, Joseph~B Muhlestein, Thomas
+  M{\"{u}}nzel, Kiran Musunuru, Janja Nahrstaedt, Christopher~P Nelson,
+  Markus~M N{\"{o}}then, Oliviero Olivieri, Riyaz~S Patel, Chris~C Patterson,
+  Annette Peters, Flora Peyvandi, Liming Qu, Arshed~A Quyyumi, Daniel~J Rader,
+  Loukianos~S Rallidis, Catherine Rice, Frits~R Rosendaal, Diana Rubin, Veikko
+  Salomaa, M~Lourdes Sampietro, Manj~S Sandhu, Eric Schadt, Arne Sch{\"{a}}fer,
+  Arne Schillert, Stefan Schreiber, J{\"{u}}rgen Schrezenmeir, Stephen~M
+  Schwartz, David~S Siscovick, Mohan Sivananthan, Suthesh Sivapalaratnam,
+  Albert Smith, Tamara~B Smith, Jaapjan~D Snoep, Nicole Soranzo, John~A
+  Spertus, Klaus Stark, Kathy Stirrups, Monika Stoll, W~H~Wilson Tang,
+  Stephanie Tennstedt, Gudmundur Thorgeirsson, Gudmar Thorleifsson, Maciej
+  Tomaszewski, Andre~G Uitterlinden, Andre~M van Rij, Benjamin~F Voight, Nick~J
+  Wareham, George~A Wells, H-Erich Wichmann, Philipp~S Wild, Christina
+  Willenborg, Jaqueline C~M Witteman, Benjamin~J Wright, Shu Ye, Tanja Zeller,
+  Andreas Ziegler, Francois Cambien, Alison~H Goodall, L~Adrienne Cupples,
+  Thomas Quertermous, Winfried M{\"{a}}rz, Christian Hengstenberg, Stefan
+  Blankenberg, Willem~H Ouwehand, Alistair~S Hall, Panos Deloukas, John~R
+  Thompson, Kari Stefansson, Robert Roberts, Unnur Thorsteinsdottir,
+  Christopher~J O'Donnell, Ruth McPherson, Jeanette Erdmann, Nilesh~J Samani,
+  and for the~CARDIoGRAM Consortium.
+\newblock {Large-scale association analyses identifies 13 new susceptibility
+  loci for coronary artery disease}.
+\newblock \emph{Nature genetics}, 43\penalty0 (4):\penalty0 333--338, mar 2011.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/ng.784}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3119261/}.
+
+\bibitem[Speliotes et~al.(2010)Speliotes, Willer, Berndt, Monda, Thorleifsson,
+  Jackson, Allen, Lindgren, Luan, M{\"{a}}gi, Randall, Vedantam, Winkler, Qi,
+  Workalemahu, Heid, Steinthorsdottir, Stringham, Weedon, Wheeler, Wood,
+  Ferreira, Weyant, Segr{\'{e}}, Estrada, Liang, Nemesh, Park, Gustafsson,
+  Kilpel{\"{a}}inen, Yang, Bouatia-Naji, Esko, Feitosa, Kutalik, Mangino,
+  Raychaudhuri, Scherag, Smith, Welch, Zhao, Aben, Absher, Amin, Dixon, Fisher,
+  Glazer, Goddard, Heard-Costa, Hoesel, Hottenga, Johansson, Johnson, Ketkar,
+  Lamina, Li, Moffatt, Myers, Narisu, Perry, Peters, Preuss, Ripatti,
+  Rivadeneira, Sandholt, Scott, Timpson, Tyrer, van Wingerden, Watanabe, White,
+  Wiklund, Barlassina, Chasman, Cooper, Jansson, Lawrence, Pellikka,
+  Prokopenko, Shi, Thiering, Alavere, Alibrandi, Almgren, Arnold, Aspelund,
+  Atwood, Balkau, Balmforth, Bennett, Ben-Shlomo, Bergman, Bergmann,
+  Biebermann, Blakemore, Boes, Bonnycastle, Bornstein, Brown, Buchanan,
+  Busonero, Campbell, Cappuccio, Cavalcanti-Proen{\c{c}}a, Chen, Chen, Chines,
+  Clarke, Coin, Connell, Day, den Heijer, Duan, Ebrahim, Elliott, Elosua,
+  Eiriksdottir, Erdos, Eriksson, Facheris, Felix, Fischer-Posovszky, Folsom,
+  Friedrich, Freimer, Fu, Gaget, Gejman, Geus, Gieger, Gjesing, Goel, Goyette,
+  Grallert, Gr{\"{a}}{\ss}ler, Greenawalt, Groves, Gudnason, Guiducci,
+  Hartikainen, Hassanali, Hall, Havulinna, Hayward, Heath, Hengstenberg, Hicks,
+  Hinney, Hofman, Homuth, Hui, Igl, Iribarren, Isomaa, Jacobs, Jarick, Jewell,
+  John, J{\o}rgensen, Jousilahti, Jula, Kaakinen, Kajantie, Kaplan, Kathiresan,
+  Kettunen, Kinnunen, Knowles, Kolcic, K{\"{o}}nig, Koskinen, Kovacs, Kuusisto,
+  Kraft, Kval{\o}y, Laitinen, Lantieri, Lanzani, Launer, Lecoeur,
+  Lehtim{\"{a}}ki, Lettre, Liu, Lokki, Lorentzon, Luben, Ludwig, MAGIC,
+  Manunta, Marek, Marre, Martin, McArdle, McCarthy, McKnight, Meitinger,
+  Melander, Meyre, Midthjell, Montgomery, Morken, Morris, Mulic, Ngwa, Nelis,
+  Neville, Nyholt, O'Donnell, O'Rahilly, Ong, Oostra, Par{\'{e}}, Parker,
+  Perola, Pichler, Pietil{\"{a}}inen, Platou, Polasek, Pouta, Rafelt,
+  Raitakari, Rayner, Ridderstr{\aa}le, Rief, Ruokonen, Robertson, Rzehak,
+  Salomaa, Sanders, Sandhu, Sanna, Saramies, Savolainen, Scherag, Schipf,
+  Schreiber, Schunkert, Silander, Sinisalo, Siscovick, Smit, Soranzo, Sovio,
+  Stephens, Surakka, Swift, Tammesoo, Tardif, Teder-Laving, Teslovich,
+  Thompson, Thomson, T{\"{o}}njes, Tuomi, van Meurs, van Ommen, Vatin, Viikari,
+  Visvikis-Siest, Vitart, Vogel, Voight, Waite, Wallaschofski, Walters, Widen,
+  Wiegand, Wild, Willemsen, Witte, Witteman, Xu, Zhang, Zgaga, Ziegler,
+  Zitting, Beilby, Farooqi, Hebebrand, Huikuri, James, K{\"{a}}h{\"{o}}nen,
+  Levinson, Macciardi, Nieminen, Ohlsson, Palmer, Ridker, Stumvoll, Beckmann,
+  Boeing, Boerwinkle, Boomsma, Caulfield, Chanock, Collins, Cupples, Smith,
+  Erdmann, Froguel, Gr{\"{o}}nberg, Gyllensten, Hall, Hansen, Harris,
+  Hattersley, Hayes, Heinrich, Hu, Hveem, Illig, Jarvelin, Kaprio, Karpe, Khaw,
+  Kiemeney, Krude, Laakso, Lawlor, Metspalu, Munroe, Ouwehand, Pedersen,
+  Penninx, Peters, Pramstaller, Quertermous, Reinehr, Rissanen, Rudan, Samani,
+  Schwarz, Shuldiner, Spector, Tuomilehto, Uda, Uitterlinden, Valle, Wabitsch,
+  Waeber, Wareham, Watkins, Wilson, Wright, Zillikens, Chatterjee, McCarroll,
+  Purcell, Schadt, Visscher, Assimes, Borecki, Deloukas, Fox, Groop,
+  Haritunians, Hunter, Kaplan, Mohlke, O'Connell, Peltonen, Schlessinger,
+  Strachan, van Duijn, Wichmann, Frayling, Thorsteinsdottir, Abecasis, Barroso,
+  Boehnke, Stefansson, North, McCarthy, Hirschhorn, Ingelsson, and
+  Loos]{Speliotes2010}
+Elizabeth~K Speliotes, Cristen~J Willer, Sonja~I Berndt, Keri~L Monda, Gudmar
+  Thorleifsson, Anne~U Jackson, Hana~Lango Allen, Cecilia~M Lindgren, Jian'an
+  Luan, Reedik M{\"{a}}gi, Joshua~C Randall, Sailaja Vedantam, Thomas~W
+  Winkler, Lu~Qi, Tsegaselassie Workalemahu, Iris~M Heid, Valgerdur
+  Steinthorsdottir, Heather~M Stringham, Michael~N Weedon, Eleanor Wheeler,
+  Andrew~R Wood, Teresa Ferreira, Robert~J Weyant, Ayellet~V Segr{\'{e}}, Karol
+  Estrada, Liming Liang, James Nemesh, Ju-Hyun Park, Stefan Gustafsson,
+  Tuomas~O Kilpel{\"{a}}inen, Jian Yang, Nabila Bouatia-Naji, T{\~{o}}nu Esko,
+  Mary~F Feitosa, Zolt{\'{a}}n Kutalik, Massimo Mangino, Soumya Raychaudhuri,
+  Andre Scherag, Albert~Vernon Smith, Ryan Welch, Jing~Hua Zhao, Katja~K Aben,
+  Devin~M Absher, Najaf Amin, Anna~L Dixon, Eva Fisher, Nicole~L Glazer,
+  Michael~E Goddard, Nancy~L Heard-Costa, Volker Hoesel, Jouke-Jan Hottenga,
+  {\AA}sa Johansson, Toby Johnson, Shamika Ketkar, Claudia Lamina, Shengxu Li,
+  Miriam~F Moffatt, Richard~H Myers, Narisu Narisu, John R~B Perry, Marjolein~J
+  Peters, Michael Preuss, Samuli Ripatti, Fernando Rivadeneira, Camilla
+  Sandholt, Laura~J Scott, Nicholas~J Timpson, Jonathan~P Tyrer, Sophie van
+  Wingerden, Richard~M Watanabe, Charles~C White, Fredrik Wiklund, Christina
+  Barlassina, Daniel~I Chasman, Matthew~N Cooper, John-Olov Jansson, Robert~W
+  Lawrence, Niina Pellikka, Inga Prokopenko, Jianxin Shi, Elisabeth Thiering,
+  Helene Alavere, Maria T~S Alibrandi, Peter Almgren, Alice~M Arnold, Thor
+  Aspelund, Larry~D Atwood, Beverley Balkau, Anthony~J Balmforth, Amanda~J
+  Bennett, Yoav Ben-Shlomo, Richard~N Bergman, Sven Bergmann, Heike Biebermann,
+  Alexandra I~F Blakemore, Tanja Boes, Lori~L Bonnycastle, Stefan~R Bornstein,
+  Morris~J Brown, Thomas~A Buchanan, Fabio Busonero, Harry Campbell,
+  Francesco~P Cappuccio, Christine Cavalcanti-Proen{\c{c}}a, Yii-Der~Ida Chen,
+  Chih-Mei Chen, Peter~S Chines, Robert Clarke, Lachlan Coin, John Connell, Ian
+  N~M Day, Martin den Heijer, Jubao Duan, Shah Ebrahim, Paul Elliott, Roberto
+  Elosua, Gudny Eiriksdottir, Michael~R Erdos, Johan~G Eriksson, Maurizio~F
+  Facheris, Stephan~B Felix, Pamela Fischer-Posovszky, Aaron~R Folsom, Nele
+  Friedrich, Nelson~B Freimer, Mao Fu, Stefan Gaget, Pablo~V Gejman, Eco J~C
+  Geus, Christian Gieger, Anette~P Gjesing, Anuj Goel, Philippe Goyette, Harald
+  Grallert, J{\"{u}}rgen Gr{\"{a}}{\ss}ler, Danielle~M Greenawalt,
+  Christopher~J Groves, Vilmundur Gudnason, Candace Guiducci, Anna-Liisa
+  Hartikainen, Neelam Hassanali, Alistair~S Hall, Aki~S Havulinna, Caroline
+  Hayward, Andrew~C Heath, Christian Hengstenberg, Andrew~A Hicks, Anke Hinney,
+  Albert Hofman, Georg Homuth, Jennie Hui, Wilmar Igl, Carlos Iribarren,
+  Bo~Isomaa, Kevin~B Jacobs, Ivonne Jarick, Elizabeth Jewell, Ulrich John,
+  Torben J{\o}rgensen, Pekka Jousilahti, Antti Jula, Marika Kaakinen, Eero
+  Kajantie, Lee~M Kaplan, Sekar Kathiresan, Johannes Kettunen, Leena Kinnunen,
+  Joshua~W Knowles, Ivana Kolcic, Inke~R K{\"{o}}nig, Seppo Koskinen, Peter
+  Kovacs, Johanna Kuusisto, Peter Kraft, Kirsti Kval{\o}y, Jaana Laitinen,
+  Olivier Lantieri, Chiara Lanzani, Lenore~J Launer, Cecile Lecoeur, Terho
+  Lehtim{\"{a}}ki, Guillaume Lettre, Jianjun Liu, Marja-Liisa Lokki, Mattias
+  Lorentzon, Robert~N Luben, Barbara Ludwig, MAGIC, Paolo Manunta, Diana Marek,
+  Michel Marre, Nicholas~G Martin, Wendy~L McArdle, Anne McCarthy, Barbara
+  McKnight, Thomas Meitinger, Olle Melander, David Meyre, Kristian Midthjell,
+  Grant~W Montgomery, Mario~A Morken, Andrew~P Morris, Rosanda Mulic, Julius~S
+  Ngwa, Mari Nelis, Matt~J Neville, Dale~R Nyholt, Christopher~J O'Donnell,
+  Stephen O'Rahilly, Ken~K Ong, Ben Oostra, Guillaume Par{\'{e}}, Alex~N
+  Parker, Markus Perola, Irene Pichler, Kirsi~H Pietil{\"{a}}inen, Carl G~P
+  Platou, Ozren Polasek, Anneli Pouta, Suzanne Rafelt, Olli Raitakari, Nigel~W
+  Rayner, Martin Ridderstr{\aa}le, Winfried Rief, Aimo Ruokonen, Neil~R
+  Robertson, Peter Rzehak, Veikko Salomaa, Alan~R Sanders, Manjinder~S Sandhu,
+  Serena Sanna, Jouko Saramies, Markku~J Savolainen, Susann Scherag, Sabine
+  Schipf, Stefan Schreiber, Heribert Schunkert, Kaisa Silander, Juha Sinisalo,
+  David~S Siscovick, Jan~H Smit, Nicole Soranzo, Ulla Sovio, Jonathan Stephens,
+  Ida Surakka, Amy~J Swift, Mari-Liis Tammesoo, Jean-Claude Tardif, Maris
+  Teder-Laving, Tanya~M Teslovich, John~R Thompson, Brian Thomson, Anke
+  T{\"{o}}njes, Tiinamaija Tuomi, Joyce B~J van Meurs, Gert-Jan van Ommen,
+  Vincent Vatin, Jorma Viikari, Sophie Visvikis-Siest, Veronique Vitart, Carla
+  I~G Vogel, Benjamin~F Voight, Lindsay~L Waite, Henri Wallaschofski, G~Bragi
+  Walters, Elisabeth Widen, Susanna Wiegand, Sarah~H Wild, Gonneke Willemsen,
+  Daniel~R Witte, Jacqueline~C Witteman, Jianfeng Xu, Qunyuan Zhang, Lina
+  Zgaga, Andreas Ziegler, Paavo Zitting, John~P Beilby, I~Sadaf Farooqi,
+  Johannes Hebebrand, Heikki~V Huikuri, Alan~L James, Mika K{\"{a}}h{\"{o}}nen,
+  Douglas~F Levinson, Fabio Macciardi, Markku~S Nieminen, Claes Ohlsson, Lyle~J
+  Palmer, Paul~M Ridker, Michael Stumvoll, Jacques~S Beckmann, Heiner Boeing,
+  Eric Boerwinkle, Dorret~I Boomsma, Mark~J Caulfield, Stephen~J Chanock,
+  Francis~S Collins, L~Adrienne Cupples, George~Davey Smith, Jeanette Erdmann,
+  Philippe Froguel, Henrik Gr{\"{o}}nberg, Ulf Gyllensten, Per Hall, Torben
+  Hansen, Tamara~B Harris, Andrew~T Hattersley, Richard~B Hayes, Joachim
+  Heinrich, Frank~B Hu, Kristian Hveem, Thomas Illig, Marjo-Riitta Jarvelin,
+  Jaakko Kaprio, Fredrik Karpe, Kay-Tee Khaw, Lambertus~A Kiemeney, Heiko
+  Krude, Markku Laakso, Debbie~A Lawlor, Andres Metspalu, Patricia~B Munroe,
+  Willem~H Ouwehand, Oluf Pedersen, Brenda~W Penninx, Annette Peters, Peter~P
+  Pramstaller, Thomas Quertermous, Thomas Reinehr, Aila Rissanen, Igor Rudan,
+  Nilesh~J Samani, Peter E~H Schwarz, Alan~R Shuldiner, Timothy~D Spector,
+  Jaakko Tuomilehto, Manuela Uda, Andr{\'{e}} Uitterlinden, Timo~T Valle,
+  Martin Wabitsch, G{\'{e}}rard Waeber, Nicholas~J Wareham, Hugh Watkins,
+  James~F Wilson, Alan~F Wright, M~Carola Zillikens, Nilanjan Chatterjee,
+  Steven~A McCarroll, Shaun Purcell, Eric~E Schadt, Peter~M Visscher,
+  Themistocles~L Assimes, Ingrid~B Borecki, Panos Deloukas, Caroline~S Fox,
+  Leif~C Groop, Talin Haritunians, David~J Hunter, Robert~C Kaplan, Karen~L
+  Mohlke, Jeffrey~R O'Connell, Leena Peltonen, David Schlessinger, David~P
+  Strachan, Cornelia~M van Duijn, H-Erich Wichmann, Timothy~M Frayling, Unnur
+  Thorsteinsdottir, Gon{\c{c}}alo~R Abecasis, In{\^{e}}s Barroso, Michael
+  Boehnke, Kari Stefansson, Kari~E North, Mark~I McCarthy, Joel~N Hirschhorn,
+  Erik Ingelsson, and Ruth J~F Loos.
+\newblock {Association analyses of 249,796 individuals reveal eighteen new loci
+  associated with body mass index}.
+\newblock \emph{Nature genetics}, 42\penalty0 (11):\penalty0 937--948, nov
+  2010.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/ng.686}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3014648/}.
+
+\bibitem[Storey(1995)]{Storey1995}
+John~D Storey.
+\newblock {A direct approachto false discovery rates}.
+\newblock \emph{J. R. Statist.Soc. B}, 1995.
+
+\bibitem[Sun et~al.(2006)Sun, Craiu, Paterson, and Bull]{Sun2006}
+Lei Sun, Radu~V. Craiu, Andrew~D. Paterson, and Shelley~B. Bull.
+\newblock {Stratified false discovery control for large-scale hypothesis
+  testing with application to genome-wide association studies}.
+\newblock \emph{Genetic Epidemiology}, 30\penalty0 (6):\penalty0 519--530, sep
+  2006.
+\newblock ISSN 07410395.
+\newblock \doi{10.1002/gepi.20164}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16800000}.
+
+\bibitem[{The CARDIoGRAMplusC4D
+  Consortium}(2015)]{TheCARDIoGRAMplusC4DConsortium2015}
+{The CARDIoGRAMplusC4D Consortium}.
+\newblock {A comprehensive 1000 Genomes-based genome-wide association
+  meta-analysis of coronary artery disease}.
+\newblock \emph{Nature Genetics}, 47\penalty0 (10):\penalty0 1121--1130, sep
+  2015.
+\newblock ISSN 1546-1718.
+\newblock \doi{10.1038/ng.3396}.
+\newblock URL \url{http://dx.doi.org/10.1038/ng.3396}.
+
+\bibitem[Viechtbauer(2010)]{metafor}
+Wolfgang Viechtbauer.
+\newblock Conducting meta-analyses in {R} with the {metafor} package.
+\newblock \emph{Journal of Statistical Software}, 36\penalty0 (3):\penalty0
+  1--48, 2010.
+\newblock URL \url{http://www.jstatsoft.org/v36/i03/}.
+
+\bibitem[Vinkhuyzen et~al.(2013)Vinkhuyzen, Wray, Yang, Goddard, and
+  Visscher]{Vinkhuyzen2013}
+Anna A~E Vinkhuyzen, Naomi~R Wray, Jian Yang, Michael~E Goddard, and Peter~M
+  Visscher.
+\newblock {Estimation and Partitioning of Heritability in Human Populations
+  using Whole Genome Analysis Methods}.
+\newblock \emph{Annual review of genetics}, 47:\penalty0 75--95, aug 2013.
+\newblock ISSN 0066-4197.
+\newblock \doi{10.1146/annurev-genet-111212-133258}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4037293/}.
+
+\bibitem[Visscher et~al.(2012)Visscher, Brown, McCarthy, and
+  Yang]{Visscher2012}
+Peter~M Visscher, Matthew~A Brown, Mark~I McCarthy, and Jian Yang.
+\newblock {Five years of GWAS discovery.}
+\newblock \emph{American journal of human genetics}, 90\penalty0 (1):\penalty0
+  7--24, jan 2012.
+\newblock ISSN 1537-6605.
+\newblock \doi{10.1016/j.ajhg.2011.11.029}.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3257326{\&}tool=pmcentrez{\&}rendertype=abstract}.
+
+\bibitem[Wickham(2009)]{ggplot}
+Hadley Wickham.
+\newblock \emph{ggplot2: Elegant Graphics for Data Analysis}.
+\newblock Springer-Verlag New York, 2009.
+\newblock ISBN 978-0-387-98140-6.
+\newblock URL \url{http://had.co.nz/ggplot2/book}.
+
+\bibitem[Zhang et~al.(2013)Zhang, Guan, and Pan]{Zhang2013}
+Yiwei Zhang, Weihua Guan, and Wei Pan.
+\newblock {Adjustment for Population Stratification via Principal Components in
+  Association Analysis of Rare Variants}.
+\newblock \emph{Genetic epidemiology}, 37\penalty0 (1):\penalty0 99--109, jan
+  2013.
+\newblock ISSN 0741-0395.
+\newblock \doi{10.1002/gepi.21691}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4066816/}.
+
+\end{thebibliography}

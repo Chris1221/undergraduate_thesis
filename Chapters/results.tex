@@ -28,7 +28,7 @@ LDLc$^3$ (mmol/L)     & 3.29 $\pm$ 1.08      &  & 3.18 $\pm$ 1.17 &  & 3.43 $\pm
 
 \section{Traditional Risk Score}
 
-The traditional risk score was significantly ($P < 2.2 \times 10^{16}$) associated with case/control status in all cohorts when adjusted for principal components to control for population stratification. \citep{Price2006,Zhang2013}. On average, scores between cases and control differed by $5.06 \times 10^{-4} \pm 1.73 \times 10^{-4}$. Full distributions of the score dependent on case control status are presented in Supplementary Figure 4.1. $\hat{S}_{TRS}$ predicted CAD status better than chance in all cohorts. Area under the receiver operator characteristic curve was calculated for each model and meta-analysed. The resulting AUC $\pm$ 95\% confidence intervals are displayed in Figure \ref{trs_meta}.
+The traditional risk score was significantly ($P < 2.2 \times 10^{16}$) associated with case/control status in all cohorts when adjusted for principal components to control for population stratification. \citep{Price2006,Zhang2013}. On average, scores between cases and control differed by $5.06 \times 10^{-4} \pm 1.73 \times 10^{-4}$. $\hat{S}_{TRS}$ predicted CAD status better than chance in all cohorts. Area under the receiver operator characteristic curve was calculated for each model and meta-analyzed. The resulting AUC $\pm$ 95\% confidence intervals are displayed in Figure \ref{trs_meta}.
 
 \begin{figure}[h]
 \label{trs_meta}
@@ -47,12 +47,12 @@ $$ CAD = X_0 + \hat{\beta}_1 \hat{S}_{TRS} + \hat{\beta}_2 PC_1 + \hat{\beta}_3 
 \begin{tabular}{llllll}
 \hline
 Cohort           & OR        & SE       & $R^2$      & AIC      & AUC       \\ \hline
-Cleveland Clinic & 153.89908 & 36.42776 & 0.01621871 & 1877.724 & 0.5740551 \\
-Duke University  & 255.78537 & 33.44304 & 0.04713465 & 2335.567 & 0.6129263 \\
-Interheart       & 83.95637  & 46.45943 & 0.01695232 & 1172.994 & 0.5554871 \\
-OHGS A2          & 310.49752 & 34.52749 & 0.07650691 & 2558.277 & 0.6391285 \\
-OHGS B2          & 259.59352 & 24.94511 & 0.07425403 & 3681.768 & 0.6339916 \\
-OHGS C2          & 276.96733 & 45.92012 & 0.05491302 & 1318.919 & 0.6193695 \\ \hline
+Cleveland Clinic & 153.899 & 36.427 & 0.0162 & 1877.724 & 0.574 \\
+Duke University  & 255.785 & 33.443 & 0.0471 & 2335.567 & 0.613 \\
+Interheart       & 83.956  & 46.459 & 0.0169 & 1172.994 & 0.555 \\
+OHGS A2          & 310.497 & 34.527 & 0.0765 & 2558.277 & 0.639 \\
+OHGS B2          & 259.593 & 24.945 & 0.0742 & 3681.768 & 0.634 \\
+OHGS C2          & 276.967 & 45.920 & 0.0549 & 1318.919 & 0.619 \\ \hline
 \end{tabular}
 \caption[Summary statistics from Logistic association model for $\hat{S}_{TRS}$.]{\textbf{Summary statistics from Logistic association model.} $\hat{S}_{TRS}$ along with the first two principal components to adjust for population stratification were used to predict \ac{CAD}. OR corresponds to the odds ratio of $\hat{S}_{TRS}$ along with its standard error (SE). $R^2$ corresponds to NagelKerke's Pseudo-$R^2$, while AIC corresponds to Akaike Information Criterion, a measure of model fit. AUC corresponds to the area under the \ac{ROC} curve as derived in the pROC package in R.}
 \label{trs}
@@ -87,26 +87,26 @@ The summary statistics of this analysis are presented in Table \ref{cmd-sum}. Hi
 \begin{tabular}{lllllll}
 \hline
 Score & Cohort           & OR        & SE       & R2         & AIC      & AUC       \\ \hline
-$\hat{S}_{CMB; 1}$     & OHGS A2          & 310.49752 & 34.52749 & 0.07650691 & 2558.277 & 0.6391285 \\
-      & OHGS B2          & 259.59352 & 24.94511 & 0.07425403 & 3681.768 & 0.6339916 \\
-      & OHGS C2          & 276.96733 & 45.92012 & 0.05491302 & 1318.919 & 0.6193695 \\
-      & Cleveland Clinic & 153.89908 & 36.42776 & 0.01621871 & 1877.724 & 0.5740551 \\ \hline
-$\hat{S}_{CMB; 2}$     & OHGS\_A2         & 252.9639  & 25.29332 & 0.09108544 & 2547.617 & 0.6555183 \\
-      & OHGS\_B2         & 267.348   & 22.48745 & 0.09187763 & 3654.756 & 0.6501946 \\
-      & OHGS\_C2         & 280.9237  & 38.98146 & 0.07687197 & 1300.585 & 0.6455279 \\
-      & Cleveland        & 337.3714  & 35.18263 & 0.08387982 & 1791.596 & 0.6659644 \\ \hline
-$\hat{S}_{CMB; 3}$     & OHGS\_A2         & 236.0145  & 26.17239 & 0.07656732 & 2570.063 & 0.6429851 \\
-      & OHGS\_B2         & 255.7401  & 24.09888 & 0.0767165  & 3688.513 & 0.6371506 \\
-      & OHGS\_C2         & 284.9796  & 41.16138 & 0.07121422 & 1305.337 & 0.640201  \\
-      & Cleveland        & 344.9182  & 37.87978 & 0.07572764 & 1802.024 & 0.6546671 \\ \hline
-$\hat{S}_{CMB; 4}$     & OHGS\_A2         & 266.5048  & 29.24856 & 0.07786803 & 2568.062 & 0.6442205 \\
-      & OHGS\_B2         & 270.8893  & 26.45495 & 0.07264458 & 3697.51  & 0.6330786 \\
-      & OHGS\_C2         & 298.9828  & 44.83843 & 0.06638254 & 1309.38  & 0.6337181 \\
-      & Cleveland        & 372.189   & 41.80231 & 0.07218274 & 1806.542 & 0.6509422 \\ \hline
-$\hat{S}_{CMB; 5}$     & OHGS\_A2         & 297.0165  & 34.10419 & 0.07234597 & 2576.54  & 0.6401786 \\
-      & OHGS\_B2         & 299.0699  & 30.76742 & 0.06720315 & 3709.488 & 0.6280858 \\
-      & OHGS\_C2         & 323.9172  & 50.90267 & 0.06088933 & 1313.958 & 0.6275034 \\
-      & Cleveland        & 410.9963  & 48.57387 & 0.06493754 & 1815.742 & 0.6436849 \\ \hline
+$\hat{S}_{CMB; 1}$     & OHGS A2          & 310.498 & 34.527 & 0.077 & 2558.277 & 0.639 \\
+      & OHGS B2          & 259.593 & 24.945 & 0.074 & 3681.768 & 0.634 \\
+      & OHGS C2          & 276.967 & 45.920 & 0.055 & 1318.919 & 0.619 \\
+      & Cleveland Clinic & 153.899 & 36.428 & 0.017 & 1877.724 & 0.574 \\ \hline
+$\hat{S}_{CMB; 2}$     & OHGS\_A2         & 252.964  & 25.292 & 0.091 & 2547.617 & 0.656 \\
+      & OHGS\_B2         & 267.348   & 22.487 & 0.092 & 3654.756 & 0.650 \\
+      & OHGS\_C2         & 280.924  & 38.981 & 0.077 & 1300.585 & 0.646 \\
+      & Cleveland        & 337.371  & 35.182 & 0.084 & 1791.596 & 0.666 \\ \hline
+$\hat{S}_{CMB; 3}$     & OHGS\_A2         & 236.0145  & 26.173 & 0.077 & 2570.063 & 0.643 \\
+      & OHGS\_B2         & 255.740  & 24.099 & 0.077  & 3688.513 & 0.637 \\
+      & OHGS\_C2         & 284.979  & 41.161 & 0.071 & 1305.337 & 0.640  \\
+      & Cleveland        & 344.918  & 37.879 & 0.076 & 1802.024 & 0.655 \\ \hline
+$\hat{S}_{CMB; 4}$     & OHGS\_A2         & 266.505  & 29.249 & 0.078 & 2568.062 & 0.644 \\
+      & OHGS\_B2         & 270.889  & 26.455 & 0.073 & 3697.51  & 0.633 \\
+      & OHGS\_C2         & 298.983  & 44.838 & 0.066 & 1309.38  & 0.634 \\
+      & Cleveland        & 372.189   & 41.802 & 0.072 & 1806.542 & 0.651 \\ \hline
+$\hat{S}_{CMB; 5}$     & OHGS\_A2         & 297.017  & 34.105 & 0.072 & 2576.54  & 0.640 \\
+      & OHGS\_B2         & 299.070  & 30.767 & 0.067 & 3709.488 & 0.628 \\
+      & OHGS\_C2         & 323.917  & 50.903 & 0.061 & 1313.958 & 0.628 \\
+      & Cleveland        & 410.996  & 48.574 & 0.065 & 1815.742 & 0.644 \\ \hline
 \end{tabular}
 \label{cmd-sum}
 \caption[Summary statistics from Logistic association model for $\hat{S}_{CMD}$.]{\textbf{Summary statistics from Logistic association model.} $\hat{S}_{CMD; x}$ along with the first two principal components to adjust for population stratification were used to predict \ac{CAD}. OR corresponds to the odds ratio of $\hat{S}_{TRS}$ along with its standard error (SE). $R^2$ corresponds to NagelKerke's Pseudo-$R^2$, while AIC corresponds to Akaike Information Criterion, a measure of model fit. AUC corresponds to the area under the \ac{ROC} curve as derived in the pROC package in R.}
@@ -159,10 +159,10 @@ Constructing a logistic regression model, we find that our cumulative score (com
 \begin{tabular}{lllllll}
 \hline
 Study & $n_{SNPs}$ & OR         & SE      & $R^2$     & AIC     & ROC    \\ \hline
-OHGS\_A2 & 439971 & $2.2\times10^4$  & $1.3\times10^3$ & 0.2451 & 2313    & 0.7478 \\
-OHGS\_B2 & 790128 & $3.42\times10^4$ & $1.5\times10^3$ & 0.3377 & 3061.9  & 0.7963 \\
-OHGS\_C2 & 622050 & $3.34\times10^4$ & $2.5\times10^3$ & 0.3009 & 1095.1  & 0.7929 \\
-CCGB\_2 & 847335 & $3.78\times10^4$ & $2.3\times10^3$ & 0.2836 & 1517.21 & 0.7953 \\ \hline
+OHGS\_A2 & 439971 & $2.2\times10^4$  & $1.3\times10^3$ & 0.245 & 2313    & 0.748 \\
+OHGS\_B2 & 790128 & $3.42\times10^4$ & $1.5\times10^3$ & 0.338 & 3061.9  & 0.796 \\
+OHGS\_C2 & 622050 & $3.34\times10^4$ & $2.5\times10^3$ & 0.301 & 1095.1  & 0.793 \\
+CCGB\_2 & 847335 & $3.78\times10^4$ & $2.3\times10^3$ & 0.284 & 1517.21 & 0.795 \\ \hline
 \end{tabular}
 \label{oprs_ss}
 \caption[Summary statistics from Logistic association model for $\hat{S}_{oCMD}$.]{\textbf{Summary statistics from Logistic association model.} $\hat{S}_{oCMD}$ along with the first two principal components to adjust for population stratification were used to predict \ac{CAD}. OR corresponds to the odds ratio of $\hat{S}_{TRS}$ along with its standard error (SE). $R^2$ corresponds to NagelKerke's Pseudo-$R^2$, while AIC corresponds to Akaike Information Criterion, a measure of model fit. AUC corresponds to the area under the \ac{ROC} curve as derived in the pROC package in R.}

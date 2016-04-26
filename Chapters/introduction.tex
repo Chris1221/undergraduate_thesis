@@ -30,7 +30,7 @@ This initial success began the era of the \ac{GWAS}, explained in more detail in
 
 \section{Genome Wide Association Studies} \label{gwas}
 
-In order to properly introduce the model, however, the basic underpinnings must be explored and explained. Genome wide association studies seek to identify associations between individual genotypes and disease phenotypes in a hypothesis free manner. In this section, the statistical model required to understand \ac{GWAS} is presented and explored.
+In order to properly introduce the model, however, the basic underpinnings and assumptions of \ac{GWAS} must be explored and explained. Genome wide association studies (GWAS) seek to identify associations between individual genotypes and disease phenotypes in a hypothesis free manner. This means that the researcher has no preconceived notions of which areas of the genome may be associated with the phenotype; they are simply looking for anything that appears. In this section, the statistical model required to understand \ac{GWAS} is presented and explored.
 
 \subsection{Primer on Genetics}
 
@@ -41,7 +41,7 @@ In order to properly introduce the model, however, the basic underpinnings must 
 DNA sequencing is the process of ascertaining a particular individual's genotype by means of chemical identification of the bases present at predefined sites. These sites, whether they be a change in a single base called a \ac{SNP}, a variation in the number of tandem repeats of a small sequence named a \ac{CNV} or an \ac{InDel} of a sequence, may alter amino acid sequence, affect regulatory regions, or impact regulatory \ac{RNA} sequences.
 
 \begin{definition}[Allele]
-A specific form or subtype of a genetic locus. This could be one or more individual variations or a combination thereof. 
+A specific form or subtype of a genetic locus. This could be one or more individual variations. 
 \end{definition}
 
 \begin{rem}
@@ -50,7 +50,7 @@ Allele frequency is the frequency at which a particular allele occurs in the pop
 
 \subsection{Statistical Definition}
 
-Consider a simple case control population where 1 defines case and 0 defines control. Define $\underline{\mathbf{Y}}$ as an $n$-vector where $n$ denotes the number of individuals in a population and $\underline{\mathbf{Y}}_i$ gives the individual's diesease staet. Additionally define $G$ as an $m \times n$ matrix where $m$ is the number of informative genotypic sites available with $\mathbf{G}_{ij}$ being the ``state'' (allele number) present at site $j, 1 \leq i \leq m, i \in \mathbb{Z}^+$ in individual $i, 1 \leq i \leq n, i \in \mathbb{Z}^+$.
+Consider a simple case control population where 1 defines case and 0 defines control. Define $\underline{\mathbf{Y}}$ as an $n$-vector where $n$ denotes the number of individuals in a population and $\underline{\mathbf{Y}}_i$ gives the individual's disease state. Additionally define $G$ as an $m \times n$ matrix where $m$ is the number of informative genotypic sites available with $\mathbf{G}_{ij}$ being the ``state'' (allele number) present at site $j, 1 \leq i \leq m, i \in \mathbb{Z}^+$ in individual $i, 1 \leq i \leq n, i \in \mathbb{Z}^+$.
 
 $$ \begin{aligned} &\mathbf{\underline{Y}} &= \begin{bmatrix} Y_1 \\ \vdots \\ Y_n \end{bmatrix} \, \, \, \, \, \, \, \,\, \, \, \,\, \, \, \, \, \, \, \, \, \, \, \,\, \, \, \,\, \, \, \, &  \mathbf{G} &= \begin{bmatrix} G_{1,1} & \dots & G_{1, n} \\ \vdots & \ddots & \vdots \\ G_{m, 1} & \dots & G_{m, n} \end{bmatrix} \end{aligned} $$
 
@@ -60,14 +60,14 @@ $$ \underline{\mathbf{Y}} = \underline{\mathbf{\beta}}' \mathbf{G} + \underline{
 
 $\underline{\mathbf{\beta}}$ and $\underline{\mathbf{\epsilon}}$ are approximated optimally by $\underline{\hat{\beta}}$ and $\underline{\hat{E}}$ in practice.
 
-The purpose of a \ac{GWAS} is not only to estimate these genetic effects $\underline{\mathbf{\beta}}$ by $\underline{\hat{\beta}}$ but also to estimate their significance of association with phenotype vector $\underline{\mathbf{Y}}$ through a $\chi^2$ test and corresponding test statistic $m$-vector $\hat{\chi}^2$. The degrees of freedom of this test statistic will vary between methods and models, and so will be left as futher reading. 
+The purpose of a \ac{GWAS} is not only to estimate these genetic effects $\underline{\mathbf{\beta}}$ by $\underline{\hat{\beta}}$ but also to estimate their significance of association with phenotype vector $\underline{\mathbf{Y}}$ through a $\chi^2$ test and corresponding test statistic $m$-vector $\hat{\chi}^2$. The degrees of freedom of this test statistic will vary between methods and models, and so will be left as further reading. 
 
-\ac{GWAS} commonly estimate these effects through linear regression. The disease state (or disease level, should it be a continuous variable) is used as the response variable, while the main dependent variable is usually the number of minor alleles (0, 1, or 2) present.  The $\beta$ coefficient (for continous disease state) or \ac{OR}, therefore represents the average increase (for the continuous case) or the \ac{OR} per additional risk allele present. 
+\ac{GWAS} commonly estimate these effects through linear regression. The disease state (or disease level, should it be a continuous variable) is used as the response variable, while the main dependent variable is usually the number of minor alleles (0, 1, or 2) present.  The $\beta$ coefficient (for continuous disease state) or \ac{OR}, therefore represents the average increase (for the continuous case) or the \ac{OR} per additional risk allele present. 
 
 
 \begin{rem} This description assumes an additive genetic model, which states that the effect of possessing one minor allele is exactly the same as half the effect of having two risk alleles. Additional genetic models include the dominant scheme, where the effect of having two minor alleles is the same as having one minor allele, the recessive scheme where only the case of two minor alleles impacts the phenotype, and the general genetic model, where the effect of one allele is $a \times$ the effect of two alleles, $a \in [0,1]$. \end{rem}
  
-By approximating $\underline{\chi^2}$ with $\hat{\underline{\chi^2}}$ and computing the corresponding $P$ values, reserchers are able to identify and quantify the effects of variants significantly ($P < 0.05$) associated with the phenotype. These results can be summarized in a Manhattan plot, named after the city of Manhattan with it's high rise buildings towering over the scenery. The $x$ axis of this plot is the genomic location (usually coloured by chromosome number) while the $y$ axis is the $\log_{10}$ of the $P$ value of association derived from $\hat{\underline{\chi^2}}$. 
+By approximating $\underline{\chi^2}$ with $\hat{\underline{\chi^2}}$ and computing the corresponding $P$ values, researchers are able to identify and quantify the effects of variants significantly ($P < 0.05$) associated with the phenotype. These results can be summarized in a Manhattan plot, named after the city of Manhattan with it's high rise buildings towering over the scenery. The $x$ axis of this plot is the genomic location (usually coloured by chromosome number) while the $y$ axis is the $\log_{10}$ of the $P$ value of association derived from $\hat{\underline{\chi^2}}$. 
 
 
 \begin{figure}[H]
@@ -103,28 +103,28 @@ This may equivalently be described as the probability of making at least one fal
 
 $$ Pr(V \geq 1) = 1-(1 - \alpha)^M $$
 
-Speaking asymptotically, $\lim_{M \to \infty} 1-(1 - \alpha)^M = 1$ and false positves are guarenteed. It is against this backdrop that we recall in any relevant genetic context, $M$ is large, and false positives are almost guarenteed.
+Speaking asymptotically, $\lim_{M \to \infty} 1-(1 - \alpha)^M = 1$ and false positives are guaranteed. It is against this backdrop that we recall in any relevant genetic context, $M$ is large, and false positives are almost guaranteed.
 
 There exist several ways to correct for this issue, chief among them is the widely adopted Bonferroni correction. Put simply, Bonferroni correction adjusts testing such that $Pr(V \geq 1) = \alpha$ rather than $1-(1 - \alpha)^M$. It does so by rejecting all tests $p_i \in \underline{\mathbf{P}} | i \in 1 \dots M, i \in \mathbb{Z}^+$ such that
 
 $$ p_i \leq \frac{\alpha}{M} $$
 
 
-The proof is not complex, but shall not be presented here for the sake of brevity. [cite bf]  This adjustment (for $Pr(V \geq 1)$) is defined as control of the \ac{FWER}. This approach does not make any assumptions about the internal dependency strucutre of the tests, and as such, is conservative in the case of all categories of dependency. This is often undesired, as typically researchers will not prune their \ac{GWAS} data to only independant variants. A more commonly accepted procedure, controlling the \ac{FDR} rather than the \ac{FWER} adjusts $\underline{\mathbf{P}}$ such that the proportion of false disoveries in all discoveries is controlled at $\alpha$: 
+The proof is not complex, but shall not be presented here for the sake of brevity.  This adjustment (for $Pr(V \geq 1)$) is defined as control of the \ac{FWER}. This approach does not make any assumptions about the internal dependency structure of the tests, and as such, is conservative in the case of all categories of dependency. This is often undesired, as typically researchers will not prune their \ac{GWAS} data to only independent variants. A more commonly accepted procedure, controlling the \ac{FDR} rather than the \ac{FWER} adjusts $\underline{\mathbf{P}}$ such that the proportion of false discoveries in all discoveries is controlled at $\alpha$: 
 
 $$ FDR \equiv E \left[ \frac{V}{R} \right] = \alpha $$
 
 This approach has the benefit of being adaptable and more powerful in circumstances of some forms of dependency (most notably \ac{PRDS} which is common scenario) and is most often applicable to \ac{GWAS} where researchers are more willing to find more true positives at the cost of a fraction of false positives.
 
-Therefore, in summation, \ac{GWAS} is a statistical investigation which estimates several parameters given certain assumptions. Concepts presented in this section will be important background knowledge for the following sections, as most of our model builds off of these premeses. 
+Therefore, in summation, \ac{GWAS} is a statistical investigation which estimates several parameters given certain assumptions. Concepts presented in this section will be important background knowledge for the following sections, as most of our model builds off of these premises. 
 
 \section{Polygenic Prediction of Complex Disease}
 
-Refering to the defintions proposed in the previous section and recalling that in a general additive model, a phenotype vector $\underline{\mathbf{Y}}$ may be expressed as a linear combination of the $\underline{\beta}$ weighted genetic $n \times m$-matrix $\mathbf{G}$ and $\underline{\epsilon}$ following a standard normal $N(0, 1)$ distrbution: 
+Referring to the definitions proposed in the previous section and recalling that in a general additive model, a phenotype vector $\underline{\mathbf{Y}}$ may be expressed as a linear combination of the $\underline{\beta}$ weighted genetic $n \times m$-matrix $\mathbf{G}$ and $\underline{\epsilon}$ following a standard normal $N(0, 1)$ distribution: 
 
 $$ \underline{\mathbf{Y}} = \underline{\beta}' \mathbf{G} + \underline{\epsilon} $$
 
-It has been previously proposed to combine genetic variants in order to crease a score $S$ which encompases estimated genetic effects in order to predict the phenotype vector $\underline{\mathbf{Y}}$. Define $S$ for individual $n$:
+It has been previously proposed to combine genetic variants in order to crease a score $S$ which encompass estimated genetic effects in order to predict the phenotype vector $\underline{\mathbf{Y}}$. Define $S$ for individual $n$:
 
 $$ S_n = \sum^m_{i=1} \beta_i G_{ni} $$
 
@@ -154,9 +154,9 @@ These mathematical properties become important later. These identities have been
 \section{Optimal Polygenic Risk Scores}
 \label{oPRS}
 
-Frequently, not all $m$ variants are used in the construction of the \ac{PRS} though. Typically, researchers will type the top $m | P_m \leq \alpha_{adj}$ where $\alpha_{adj}$ denotes the shifted acceptance threshold after multiple testing correction. We denote these variants as $m_{P \leq T}$ where $T$ is the $P$ value threshold. 
+Frequently, not all $m$ variants are used in the construction of the \ac{PRS} though. Typically, researchers will take the top $m | P_m \leq \alpha_{adj}$ where $\alpha_{adj}$ denotes the shifted acceptance threshold after multiple testing correction. We denote these variants as $m_{P \leq T}$ where $T$ is the $P$ value threshold. 
 
-Though these variants have the highest probability of being truly associated with the phenotype, constructing a score with this few \ac{SNP}s misses the many small and insignificant effects hidden in marginally significant and insignificant hits. Thus, \cite{Euesden2014} have developed a method to find the best-fit \ac{PRS}, that is, the PRS which maximizes genomic signal while minizing noise as in \ref{pt}. We denote this as the \ac{oPRS}. 
+Though these variants have the highest probability of being truly associated with the phenotype, constructing a score with this few \acp{SNP} misses the many small and insignificant effects hidden in marginally significant and insignificant hits. Thus, \cite{Euesden2014} have developed a method to find the best-fit \ac{PRS}, that is, the PRS which maximizes genomic signal while minimizing noise as in \ref{pt}. We denote this as the \ac{oPRS}. 
 
 \begin{figure}[h]
 \label{pt}
@@ -171,7 +171,7 @@ More formally, we fix individual $n$ and construct a vector of estimated scores 
 
 $$ \begin{aligned} \underline{\hat{S}} &\equiv \begin{bmatrix} \hat{S}_{T_1} \\ \vdots \\ \hat{S}_{n_T} \end{bmatrix} &&&&& \hat{S}_T &= \sum^{m_{P \leq T}}_{i=1} \hat{\beta}_i G_{ni} \end{aligned}$$
 
-Note, however, that when we build a score at each threshold for each individual, an $n \times T$ matrix is constructed, where $n$ is the number of individuals and $T$ is the number of thresholds. The entries are the estiamted score $\hat{S}_{nT}$ for individual $n$ at threshold $T$:
+Note, however, that when we build a score at each threshold for each individual, an $n \times T$ matrix is constructed, where $n$ is the number of individuals and $T$ is the number of thresholds. The entries are the estimated score $\hat{S}_{nT}$ for individual $n$ at threshold $T$:
 
 \begin{equation} 
 \label{score_matrix}
